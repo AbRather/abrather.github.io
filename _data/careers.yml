@@ -1,97 +1,74 @@
-- name:
-    detail: Senior Data scientist @ Saint-Gobain.
-    i18n: re
-  desc:
-    detail: From March 2022 to present. Develop and industrialized AI solutions for different businesses of Saint-Gobain.
-    i18n: re_des
-  date:
-    detail: April. 2022 - Present
-    i18n: re_date
-  job:
-    detail: Senior Data Scientist
-    i18n: re_job
-  icon: fa-search
+ # Careers and work experience from Resume_Abdul Hamid Rather.pdf
 
 - name:
-    detail: Data scientist & Project Manager @ Saint-Gobain Research Paris.
-    i18n: re
+    detail: Studentische Hilfskraft @ Faserinstitut Bremen
+    i18n: faser
   desc:
-    detail: From April 2018 to 2022. Developing AI solutions in context of R&D projects.
-    i18n: re_des
+    detail: Simulation, testing, digitization and documentation for fiber composites. Tools include Ansys, CATIA, Python, G-code and CNC. Work on composite tanks for hydrogen storage (HYTANK), permeation testing, cryogenic analysis, CAD modelling and 3D printing.
+    i18n: faser_des
   date:
-    detail: April. 2018 - March. 2022
-    i18n: re_date
+    detail: Aug. 2023 - Present
+    i18n: faser_date
   job:
-    detail: Research Engineer & Project Manager
-    i18n: re_job
-  icon: fa-search
+    detail: Studentische Hilfskraft
+    i18n: faser_job
+  icon: fa-wrench
 
 - name:
-    detail: Post-doc at UBFC, Le2i laboratory
-    i18n: postdoc
+    detail: Werkstudent - Flight Demonstrator Assembly & Component Testing @ Polaris Spaceplanes
+    i18n: polaris
   desc:
-    detail: From March 2016 to March 2018, I was a post-doc in UBFC, Le2i laboratory, working on ANR VIPeR project.
-    i18n: postdoc_des
+    detail: CAD modelling, assembly, integration and testing of flight demonstrator parts; post-processing and analysis of flight tests; development of Python post-processing libraries and data infrastructure; involvement in test campaigns and integration tasks.
+    i18n: polaris_des
   date:
-    detail: March. 2016 - March. 2018
-    i18n: postdoc_date
+    detail: Aug. 2023 - Jan. 2024
+    i18n: polaris_date
   job:
-    detail: Post-doc
-    i18n: potdoc_job
-  icon: fa-search
+    detail: Werkstudent
+    i18n: polaris_job
+  icon: fa-rocket
 
 - name:
-    detail: Joint PhD at UdG-UBFC
-    i18n: phd
+    detail: Propulsion Test Data Intern @ Rocket Factory Augsburg
+    i18n: rfa
   desc:
-    detail: In June 2016, I graduated from a joint PhD from the Universitat de Girona and the Universite de Bourgogne France-Comte. My thesis was entitled "An approach to Melanoma Classification Exploiting Polarization Information".
-    i18n: phd_des
+    detail: Rocket engine hot-fire and cold-flow test data analysis using Python (numpy, scipy, pandas), visualization (matplotlib, plotly), automatic detection of test parameters, spectral analysis and documentation of test results.
+    i18n: rfa_des
   date:
-    detail: Aug. 2012 - Jun. 2016
-    i18n: phd_date
+    detail: Jan. 2023 - Apr. 2023
+    i18n: rfa_date
   job:
-    detail: PhD candidate
-    i18n: phd_job
-  icon: fa-search
+    detail: Data Intern - Propulsion Test Data
+    i18n: rfa_job
+  icon: fa-fire
 
 - name:
-    detail: Barcelona Digital
-    i18n: bd
+    detail: Propulsion & Design Intern @ SpanTrik
+    i18n: spantrik
   desc:
-    detail: From September 2011 to June 2012, I was researcher at Barcelona Digital focusing on classification and data mining tools for European project Brainable.
-    i18n: bd_des
+    detail: Design, manufacture and analysis of a sounding rocket (RAVEN); propulsion system testing and documentation; worked in cross-functional team under project deadlines.
+    i18n: spantrik_des
   date:
-    detail: Sep. 2011 - Jun. 2012
-    i18n: bd_date
+    detail: Sep. 2021 - Dec. 2021
+    i18n: spantrik_date
   job:
-    detail: Intern researcher
-    i18n: bd_job
-  icon: fa-search
+    detail: Propulsion & Design Intern
+    i18n: spantrik_job
+  icon: fa-cogs
 
 - name:
-    detail: Erasmus Mundus MSc in Vision and Robotics (Vibot) at HWU-UdG-UBFC
-    i18n: vibot
+    detail: Werkstudent - Advanced Computational Laboratory, SRM Institute
+    i18n: srm
   desc:
-    detail: In September 2011, I graduated from a Master in Vision and Robotics. My final thesis was entitled "Change Detection in Epiluminescent Microscopy for Early Detection of Skin Cancer".
-    i18n: vibot_des
+    detail: Numerical calculations, data visualization and handling, CAD modelling, Ansys simulations and experimental work; documentation and collaboration with manufacturing for prototyping and testing.
+    i18n: srm_des
   date:
-    detail: Sep. 2009 - Sep. 2011
-    i18n: vibot_date
+    detail: Oct. 2018 - Jun. 2020
+    i18n: srm_date
   job:
-    detail: MSc student candidate
-    i18n: vibot_job
-  icon: fa-book
+    detail: Werkstudent (Advance Computational Laboratory)
+    i18n: srm_job
+  icon: fa-flask
 
-- name:
-    detail: Bachelor of Electrical and Electronics Engineering, University Teknologi PETRONAS
-    i18n: EE, UTP
+ # Education entries can be shown elsewhere; keep the careers file focused on positions.
   desc:
-    detail: In 2005 I obtained PETRONAS scholarship to study EE.Eng in UTP and four years after, in June 2009, I obtained my bachelor among Hounor class.
-    i18n: utp_des
-  date:
-    detail: Sep. 2005 - June. 2009
-    i18n: utp_date
-  job:
-    detail: Bsc student candidate
-    i18n: utp_job
-  icon: fa-book
