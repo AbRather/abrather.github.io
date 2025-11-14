@@ -1,0 +1,114 @@
+/* Custom Hero Landing Page Styles */
+.hero-landing {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/landing/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Dark overlay for better text readability */
+.hero-landing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero-content-center {
+    padding: 60px 20px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-name {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #00b4d8;
+    margin-bottom: 10px;
+    text-transform: none;
+    letter-spacing: 0;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.hero-tagline {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #00b4d8;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.hero-cta .btn {
+    padding: 14px 38px;
+    font-size: 0.95rem;
+    border-radius: 30px;
+    background: #00b4d8;
+    color: #ffffff;
+    border: 2px solid #00b4d8;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.hero-cta .btn:hover {
+    background: #0090b3;
+    border-color: #0090b3;
+    transform: scale(1.05);
+}
+
+/* Social icons in navbar - left side */
+.social-icons-nav {
+    float: left !important;
+    margin-left: 15px;
+}
+
+.social-icons-nav li a {
+    color: #333 !important;
+    padding: 15px 10px !important;
+}
+
+.social-icons-nav li a:hover {
+    background: transparent !important;
+    color: #00b4d8 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-name {
+        font-size: 3.5rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.5rem;
+    }
+    
+    .social-icons-nav {
+        float: none !important;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-name {
+        font-size: 2.5rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.2rem;
+    }
+}
