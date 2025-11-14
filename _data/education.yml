@@ -1,0 +1,15 @@
+# Education entries
+
+- school: "University of California, Los Angeles (UCLA)"
+  degree: "Master of Engineering, Autonomous Systems, M.Eng."
+  location: "Los Angeles, CA"
+  date: "Expected August 2025"
+  description: "The Autonomous Systems concentration integrates Mechanical Engineering, Electrical Engineering, and Computer Science with a focus on recent advances including dynamic systems and controls, machine learning, optimization, and embedded and cyber-physical systems."
+  status: "expected"
+
+- school: "University of California, Los Angeles (UCLA)"
+  degree: "Computer Science and Engineering, B.S."
+  location: "Los Angeles, CA"
+  date: "Graduated June 2024"
+  description: "The Computer Science and Engineering curriculum at UCLA provides students with the education and training necessary to design, implement, test, and utilize the hardware and software of digital computers and digital systems."
+  status: "graduated"
