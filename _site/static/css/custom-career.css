@@ -81,11 +81,27 @@
 
 /* Tab Content */
 .career .tab-content {
-    padding-top: 20px;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .career .tab-pane {
     animation: fadeIn 0.5s;
+}
+
+.career .tab-pane .features-block {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.career .tab-pane .vertical-container {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.career .tab-pane .vertical-timeline-block:first-child {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 @keyframes fadeIn {
