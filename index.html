@@ -16,12 +16,7 @@ permalink: /
                 </button>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-left social-icons-nav">
-                    <li><a href="https://github.com/{{ site.author.github_username }}" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
-                    <li><a href="https://instagram.com/{{ site.author.instagram_username }}" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
-                    <li><a href="{{ site.author.linkedin_username }}" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right" id="i18_navbar">
+                <ul class="nav navbar-nav navbar-left" id="i18_navbar">
                 {% for section in site.sections %}
                     <li>
                       <a class="page-scroll" href="#{{ section.id }}">
@@ -29,6 +24,11 @@ permalink: /
                       </a>
                     </li>
                 {% endfor %}
+                </ul>
+                <ul class="nav navbar-nav navbar-right social-icons-nav">
+                    <li><a href="https://github.com/{{ site.author.github_username }}" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
+                    <li><a href="https://instagram.com/{{ site.author.instagram_username }}" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    <li><a href="{{ site.author.linkedin_username }}" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
 
                 {% for language in site.languages %}
                   <li>
