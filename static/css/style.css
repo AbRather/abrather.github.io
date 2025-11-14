@@ -6709,6 +6709,15 @@ body.landing-page {
     position: relative;
 }
 
+.landing-page .header-section {
+    height: 470px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 /* Video background */
 .landing-page .header-back video {
     position: absolute;
