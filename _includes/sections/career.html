@@ -53,10 +53,10 @@
                         {% for edu in site.data.education %}
                         {% assign loopindex = forloop.index | modulo: 2 %}
                             <div class="vertical-timeline-block">
-                                <div class="vertical-timeline-icon navy-bg wow rotateIn">
+                                <div class="vertical-timeline-icon navy-bg">
                                     <i class="fa fa-graduation-cap"></i>
                                 </div>
-                                <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
+                                <div class="vertical-timeline-content">
                                     <h2>{{ edu.school }}</h2>
                                     <p>{{ edu.description }}</p>
                                     <span class="vertical-date">{{ edu.date }}
