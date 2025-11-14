@@ -29,18 +29,18 @@
     position: relative;
     z-index: 2;
     text-align: center;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .hero-name {
-    font-size: 120px;
+    font-size: 7rem;
     font-weight: 900;
-    line-height: 130px;
+    line-height: 1.2;
     color: #4A8FBD;
     margin-bottom: 10px;
     text-transform: none;
-    letter-spacing: 0;
+    letter-spacing: -2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: "Raleway", sans-serif;
 }
