@@ -1,34 +1,28 @@
 /* About Section Styling */
 .about-section {
-    padding: 60px 0 40px 0;
+    padding: 80px 0 60px 0;
     background-color: #ffffff;
 }
 
 .about-title {
     font-family: 'Raleway', sans-serif;
-    font-size: 36px;
-    font-weight: 800;
-    color: #046b99;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-}
-
-.about-underline {
-    width: 80px;
-    height: 3px;
-    background-color: #ff9800;
-    margin: 0 auto 20px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
 }
 
 .about-intro {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: #000000;
-    margin-bottom: 30px;
+    color: #333;
+    margin-bottom: 60px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.6;
 }
 
 .about-content {
@@ -39,12 +33,11 @@
 }
 
 .about-image-container {
-    padding: 0 20px 0 0;
+    padding: 0 40px 0 0;
 }
 
 .about-image {
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     width: 100%;
     height: auto;
 }
@@ -55,30 +48,26 @@
 
 .about-subtitle {
     font-family: 'Raleway', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     color: #000000;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 0;
 }
 
 .about-description {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1.8;
-    color: #000000;
+    color: #333;
     margin-bottom: 20px;
-    font-style: italic;
 }
 
 .about-details {
-    margin: 20px 0;
-}
-
-.about-details p {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1.8;
-    color: #000000;
+    color: #333;
     margin-bottom: 10px;
 }
 
@@ -91,7 +80,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1.8;
-    color: #000000;
+    color: #333;
     margin-top: 20px;
 }
 
