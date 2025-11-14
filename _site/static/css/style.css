@@ -6705,13 +6705,13 @@ body.landing-page {
     width: 100%;
 }
 .landing-page .header-back.one {
-    background: url('../img/landing/header_one.jpg');
+    background: url('../img/landing/bg_image1.jpg');
 }
 .landing-page .header-back.two {
-    background: url('../img/landing/header_two.jpg');
+    background: url('../img/landing/bg_image2.jpg');
 }
 .landing-page .header-back.three {
-    background: url('../img/landing/header_three.jpg');
+    background: url('../img/landing/bg_image1.jpg');
 }
 .landing-page .carousel {
     height: 470px;
