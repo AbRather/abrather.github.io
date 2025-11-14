@@ -6708,13 +6708,13 @@ body.landing-page {
     background-repeat: no-repeat;
 }
 .landing-page .header-back.one {
-    background: url('../img/landing/bg_image1.jpg') center center / cover no-repeat;
+    background: url('../img/landing/header_one.jpg') center center / cover no-repeat;
 }
 .landing-page .header-back.two {
-    background: url('../img/landing/bg_image2.jpg') center center / cover no-repeat;
+    background: url('../img/landing/header_two.jpg') center center / cover no-repeat;
 }
 .landing-page .header-back.three {
-    background: url('../img/landing/bg_image3.jpg') center center / cover no-repeat;
+    background: url('../img/landing/header_three.jpg') center center / cover no-repeat;
 }
 .landing-page .carousel {
     height: 470px;
