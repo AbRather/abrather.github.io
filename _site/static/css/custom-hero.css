@@ -28,8 +28,9 @@
     padding: 60px 20px;
     position: relative;
     z-index: 2;
-    text-align: left;
+    text-align: center;
     max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero-name {
