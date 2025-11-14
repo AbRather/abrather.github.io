@@ -7,7 +7,7 @@
 .about-title {
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 800;
     color: #046b99;
     margin-bottom: 10px;
     letter-spacing: 2px;
@@ -24,7 +24,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: #333;
+    color: #000000;
     margin-bottom: 30px;
     max-width: 1200px;
     margin-left: auto;
@@ -32,7 +32,7 @@
 }
 
 .about-content {
-    max-width: 1400px;
+    max-width: 2000px;
     margin: 0 auto;
     align-items: flex-start;
     display: flex;
@@ -65,7 +65,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1.8;
-    color: #333;
+    color: #000000;
     margin-bottom: 20px;
     font-style: italic;
 }
@@ -78,7 +78,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1.8;
-    color: #333;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -91,7 +91,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1.8;
-    color: #333;
+    color: #000000;
     margin-top: 20px;
 }
 
