@@ -9,3 +9,21 @@
   url: 'https://gitlab.com/olivimo/VIPeR'
   img: 'static/img/landing/VIPeR.png'
   desc: 'VIsion Polarimétrique pour la navigation de Robots, a project dedicated to exploit polarization as an extra navigation tool for the robot'
+
+- name: 'Master Project: CFRP microcracks'
+  i18n: 'master_cfrp'
+  url: ''
+  img: ''
+  desc: 'Development and validation of a model for the simulation of cryogenically thermally induced microcracks in CFRP — simulation and experimental study.'
+
+- name: 'Web / Programming projects'
+  i18n: 'web'
+  url: ''
+  img: ''
+  desc: 'Web development (HTML, CSS, progressing in JavaScript) and Python-based data processing and visualization projects; post-processing libraries for flight and test data.'
+
+- name: 'Heat Transfer & Flow Visualization'
+  i18n: 'heat_flow'
+  url: ''
+  img: ''
+  desc: 'Academic projects including fin orientation on convective heat transfer, jet-impingement tunnel construction and experimental flow visualization.'

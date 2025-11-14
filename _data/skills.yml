@@ -1,41 +1,45 @@
-- name: Melanoma Cancer
-  percentage: 98
+ # Updated skills from Resume_Abdul Hamid Rather.pdf
+ - name: Python
+   percentage: 90
 
-- name: Python
-  percentage: 95
+ - name: Pandas / Numpy
+   percentage: 88
 
-- name: Polarized Imaging
-  percentage: 90
+ - name: Data Visualization (Matplotlib / Plotly / Bokeh)
+   percentage: 80
 
-- name: Matlab
-  percentage: 95
+ - name: SQL
+   percentage: 70
 
-- name: Retinopathy
-  percentage: 85
+ - name: Matlab
+   percentage: 75
 
-- name: C/C++
-  percentage: 60
+ - name: Jupyter
+   percentage: 85
 
-- name: Pattern Recognition
-  percentage: 90
+ - name: Excel / MS Office
+   percentage: 80
 
-- name: Git
-  percentage: 98
+ - name: HTML / CSS
+   percentage: 60
 
-- name: Machine Learning
-  percentage: 98
+ - name: PowerBI
+   percentage: 60
 
-- name: Data Mining
-  percentage: 98
+ - name: Git / GitHub
+   percentage: 75
 
-- name: Computer Vision
-  percentage: 90
+ - name: CAD (CATIA / SolidWorks / Siemens NX)
+   percentage: 78
 
-- name: Linux/Unix
-  percentage: 95
+ - name: CAE (Ansys / CFD)
+   percentage: 70
 
-- name : ROS
-  percentage: 90
+ - name: LaTeX
+   percentage: 75
 
-- name: Latex
-  percentage: 95
+ - name: G-code / CNC scripting
+   percentage: 65
+
+ - name: Languages (EN / HI / UR / DE)
+   percentage: 70
