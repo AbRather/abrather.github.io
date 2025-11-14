@@ -32,37 +32,41 @@
 }
 
 .hero-name {
-    font-size: 6rem;
+    font-size: 48px;
     font-weight: 700;
-    color: #00b4d8;
+    line-height: 56px;
+    color: #046b99;
     margin-bottom: 10px;
     text-transform: none;
     letter-spacing: 0;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .hero-tagline {
-    font-size: 2rem;
-    font-weight: 400;
-    color: #00b4d8;
+    color: #00a6d2;
+    margin: 10px 0 0 0;
+    font-size: 22px;
     margin-bottom: 40px;
     line-height: 1.6;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .hero-cta .btn {
-    padding: 14px 38px;
-    font-size: 0.95rem;
-    border-radius: 30px;
-    background: #00b4d8;
-    color: #ffffff;
-    border: 2px solid #00b4d8;
-    transition: all 0.3s ease;
-    font-weight: 600;
+    font-family: "Raleway", sans-serif;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #fff;
+    background: #00b4d8;
+    border: 2px solid #00b4d8;
 }
 
 .hero-cta .btn:hover {
