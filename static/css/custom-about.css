@@ -1,6 +1,6 @@
 /* About Section Styling */
 .about-section {
-    padding: 80px 0;
+    padding: 60px 0 40px 0;
     background-color: #ffffff;
 }
 
@@ -17,7 +17,7 @@
     width: 80px;
     height: 3px;
     background-color: #ff9800;
-    margin: 0 auto 40px;
+    margin: 0 auto 20px;
 }
 
 .about-intro {
@@ -25,7 +25,7 @@
     font-size: 18px;
     font-weight: 400;
     color: #333;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -38,7 +38,7 @@
 }
 
 .about-image-container {
-    padding: 20px;
+    padding: 10px;
 }
 
 .about-image {
@@ -49,15 +49,15 @@
 }
 
 .about-text {
-    padding: 20px 40px;
+    padding: 10px 40px;
 }
 
 .about-subtitle {
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
     font-weight: 700;
-    color: #046b99;
-    margin-bottom: 20px;
+    color: #000000;
+    margin-bottom: 15px;
 }
 
 .about-description {
@@ -65,12 +65,12 @@
     font-size: 16px;
     line-height: 1.8;
     color: #333;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-style: italic;
 }
 
 .about-details {
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .about-details p {
@@ -78,12 +78,12 @@
     font-size: 16px;
     line-height: 1.8;
     color: #333;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .about-details strong {
     font-weight: 700;
-    color: #046b99;
+    color: #000000;
 }
 
 .about-experience {
@@ -91,7 +91,7 @@
     font-size: 16px;
     line-height: 1.8;
     color: #333;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 /* Responsive adjustments */
