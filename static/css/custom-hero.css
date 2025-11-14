@@ -1,0 +1,93 @@
+/* Custom Hero Landing Page Styles */
+.hero-landing {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+}
+
+.hero-content {
+    padding: 60px 20px;
+}
+
+.hero-name {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-tagline {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-social {
+    margin-bottom: 40px;
+}
+
+.hero-social a {
+    color: #ffffff;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.hero-social a:hover {
+    transform: translateY(-5px);
+    color: #ffd700;
+}
+
+.hero-cta .btn {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    background: #ffffff;
+    color: #667eea;
+    border: 2px solid #ffffff;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-cta .btn:hover {
+    background: transparent;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-name {
+        font-size: 3rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.3rem;
+    }
+    
+    .hero-social a {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-name {
+        font-size: 2.5rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.1rem;
+    }
+}
