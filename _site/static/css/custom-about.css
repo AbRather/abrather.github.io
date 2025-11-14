@@ -37,7 +37,7 @@
 }
 
 .about-image {
-    border-radius: 8px;
+    border-radius: 14px;
     width: 100%;
     height: auto;
 }
@@ -46,11 +46,15 @@
     padding: 0;
 }
 
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
 .about-subtitle {
     font-family: 'Raleway', sans-serif;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 700;
-    color: #000000;
+    color: #061f4a;
     margin-bottom: 20px;
     margin-top: 0;
 }
@@ -69,6 +73,7 @@
     line-height: 1.8;
     color: #333;
     margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .about-details strong {
