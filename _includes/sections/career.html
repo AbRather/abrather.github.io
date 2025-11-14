@@ -1,28 +1,60 @@
-<div class="container" id="i18_career">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <div class="navy-line"></div>
-            <h1><span data-i18n="career.my_career">My Career</span></h1>
+<section id="career" class="career">
+    <div class="container" data-aos="fade-up">
+        
+        <div class="section-title">
+            <h2><span data-i18n="career.my_career">CAREER</span></h2>
         </div>
-    </div>
-    <div class="row features-block">
-        <div class="col-lg-12">
-            <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
-            {% for career in site.data.careers %}
-            {% assign loopindex = forloop.index | modulo: 2 %}
-                <div class="vertical-timeline-block">
-                    <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa {{ career.icon }}"></i>
-                    </div>
-                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
-                        <h2><span data-i18n="career.{{ career.name.i18n }}">{{ career.name.detail }}</span></h2>
-                        <p><span data-i18n="career.{{ career.desc.i18n }}">{{ career.desc.detail }} </span></p>
-                        <span class="vertical-date"><span data-i18n="career.{{ career.date.i18n }}"> {{ career.date.detail }} </span>
-                        <br/> <small><span data-i18n="career.{{ career.job.i18n }}">{{ career.job.detail }}</span></small> </span>
+
+        <!-- Tab Navigation -->
+        <ul class="nav nav-tabs career-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#professional" role="tab">
+                    <span data-i18n="career.professional">Professional Experience</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#education" role="tab">
+                    <span data-i18n="career.education">Education</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Professional Experience Tab -->
+            <div class="tab-pane fade show active" id="professional" role="tabpanel">
+                <div class="row features-block">
+                    <div class="col-lg-12">
+                        <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
+                        {% for career in site.data.careers %}
+                        {% assign loopindex = forloop.index | modulo: 2 %}
+                            <div class="vertical-timeline-block">
+                                <div class="vertical-timeline-icon navy-bg wow rotateIn">
+                                    <i class="fa {{ career.icon }}"></i>
+                                </div>
+                                <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
+                                    <h2><span data-i18n="career.{{ career.name.i18n }}">{{ career.name.detail }}</span></h2>
+                                    <p><span data-i18n="career.{{ career.desc.i18n }}">{{ career.desc.detail }} </span></p>
+                                    <span class="vertical-date"><span data-i18n="career.{{ career.date.i18n }}"> {{ career.date.detail }} </span>
+                                    <br/> <small><span data-i18n="career.{{ career.job.i18n }}">{{ career.job.detail }}</span></small> </span>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        </div>
                     </div>
                 </div>
-            {% endfor %}
+            </div>
+
+            <!-- Education Tab -->
+            <div class="tab-pane fade" id="education" role="tabpanel">
+                <div class="row features-block">
+                    <div class="col-lg-12">
+                        <!-- Education content will go here -->
+                        <p>Education content coming soon...</p>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
-</div>
+</section>
