@@ -59,6 +59,12 @@
     margin-right: auto;
 }
 
+.hero-cta {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .hero-cta .btn {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
