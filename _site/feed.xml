@@ -5,8 +5,8 @@
     <description>Personal website of Abdul Hamid Rather</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Nov 2025 22:12:59 +0100</pubDate>
-    <lastBuildDate>Fri, 14 Nov 2025 22:12:59 +0100</lastBuildDate>
+    <pubDate>Fri, 14 Nov 2025 22:15:50 +0100</pubDate>
+    <lastBuildDate>Fri, 14 Nov 2025 22:15:50 +0100</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
   </channel>
