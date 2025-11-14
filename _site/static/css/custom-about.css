@@ -1,19 +1,22 @@
-/* About Section Styling */
-.about-section {
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
     padding: 80px 0 60px 0;
     background-color: #ffffff;
 }
 
-.about-title {
+.about .section-title h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 48px;
     font-weight: 900;
     color: #000000;
     margin-bottom: 30px;
     letter-spacing: 3px;
+    text-align: center;
 }
 
-.about-intro {
+.about .section-title p {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -23,34 +26,22 @@
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
+    text-align: center;
 }
 
-.about-content {
+.about .container {
     max-width: 2000px;
-    margin: 0 auto;
-    align-items: flex-start;
-    display: flex;
 }
 
-.about-image-container {
-    padding: 0 40px 0 0;
-}
-
-.about-image {
+.about .headshot {
     border-radius: 14px;
-    width: 100%;
-    height: auto;
 }
 
-.about-text {
-    padding: 0;
+.about .content {
+    padding-left: 40px;
 }
 
-.about-text p:last-child {
-    margin-bottom: 0;
-}
-
-.about-subtitle {
+.about .content h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
@@ -59,7 +50,7 @@
     margin-top: 0;
 }
 
-.about-description {
+.about .content p {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1.8;
@@ -67,26 +58,36 @@
     margin-bottom: 20px;
 }
 
-.about-details {
+.about .content p.fst-italic {
+    font-style: italic;
+}
+
+.about .content p:last-child {
+    margin-bottom: 0;
+}
+
+.about .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about .content ul li {
+    padding-bottom: 10px;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1.8;
     color: #333;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
 }
 
-.about-details strong {
+.about .content ul li i {
+    font-size: 20px;
+    padding-right: 2px;
+    color: #00a6d2;
+}
+
+.about .content ul li strong {
     font-weight: 700;
     color: #000000;
-}
-
-.about-experience {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #333;
-    margin-top: 20px;
 }
 
 /* Responsive adjustments */
