@@ -6703,15 +6703,18 @@ body.landing-page {
 .landing-page .header-back {
     height: 470px;
     width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .landing-page .header-back.one {
-    background: url('../img/landing/bg_image1.jpg');
+    background: url('../img/landing/bg_image1.jpg') center center / cover no-repeat;
 }
 .landing-page .header-back.two {
-    background: url('../img/landing/bg_image2.jpg');
+    background: url('../img/landing/bg_image2.jpg') center center / cover no-repeat;
 }
 .landing-page .header-back.three {
-    background: url('../img/landing/bg_image3.jpg');
+    background: url('../img/landing/bg_image3.jpg') center center / cover no-repeat;
 }
 .landing-page .carousel {
     height: 470px;
