@@ -17,6 +17,11 @@ permalink: /
                 <a class="navbar-brand" href="#page-top" id="i18_title"><span data-i18n="website.title">{{ site.title }}</span></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left social-icons-nav">
+                    <li><a href="https://github.com/{{ site.author.github_username }}" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
+                    <li><a href="https://instagram.com/{{ site.author.instagram_username }}" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    <li><a href="{{ site.author.linkedin_username }}" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                </ul>
                 <ul class="nav navbar-nav navbar-right" id="i18_navbar">
                 {% for section in site.sections %}
                     <li>
@@ -33,10 +38,6 @@ permalink: /
                     </a>
                   </li>
                 {% endfor %}
-                
-                <li><a href="https://github.com/{{ site.author.github_username }}" target="_blank"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://instagram.com/{{ site.author.instagram_username }}" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="{{ site.author.linkedin_username }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -46,12 +47,12 @@ permalink: /
     <div class="hero-landing">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-8">
-                    <div class="hero-content-left">
+                <div class="col-lg-12 text-center">
+                    <div class="hero-content-center">
                         <h1 class="hero-name wow fadeInDown">{{ site.author.first_name }} {{ site.author.last_name }}</h1>
-                        <h2 class="hero-tagline wow fadeInUp" data-wow-delay="0.2s">{{ site.author.desc }}</h2>
+                        <h2 class="hero-tagline wow fadeInUp" data-wow-delay="0.2s">Skate | Software | Systems</h2>
                         <div class="hero-cta wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="#about-me" class="btn btn-lg btn-primary page-scroll">About Me</a>
+                            <a href="#about-me" class="btn btn-lg btn-primary page-scroll">ABOUT ME</a>
                         </div>
                     </div>
                 </div>
