@@ -3,10 +3,10 @@
   <channel>
     <title>Abdul Hamid Rather</title>
     <description>Personal website of Abdul Hamid Rather</description>
-    <link>http://mrastgoo.github.io//</link>
-    <atom:link href="http://mrastgoo.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Nov 2025 16:11:26 +0100</pubDate>
-    <lastBuildDate>Fri, 14 Nov 2025 16:11:26 +0100</lastBuildDate>
+    <link>http://localhost:4001//</link>
+    <atom:link href="http://localhost:4001//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 14 Nov 2025 16:28:45 +0100</pubDate>
+    <lastBuildDate>Fri, 14 Nov 2025 16:28:45 +0100</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -22,8 +22,8 @@
 &lt;p&gt;差不多了，去吃饭。&lt;/p&gt;
 </description>
         <pubDate>Thu, 15 Sep 2016 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//life/2016/09/15/mid-autumn.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//life/2016/09/15/mid-autumn.html</guid>
+        <link>http://localhost:4001//life/2016/09/15/mid-autumn.html</link>
+        <guid isPermaLink="true">http://localhost:4001//life/2016/09/15/mid-autumn.html</guid>
         
         <category>blog</category>
         
@@ -52,8 +52,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Mon, 08 Aug 2016 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//html/2016/08/08/ionic-icon-splash.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//html/2016/08/08/ionic-icon-splash.html</guid>
+        <link>http://localhost:4001//html/2016/08/08/ionic-icon-splash.html</link>
+        <guid isPermaLink="true">http://localhost:4001//html/2016/08/08/ionic-icon-splash.html</guid>
         
         <category>Ionic</category>
         
@@ -90,8 +90,8 @@
 
 </description>
         <pubDate>Sun, 26 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//html/2016/06/26/JavaScript-if-statement.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//html/2016/06/26/JavaScript-if-statement.html</guid>
+        <link>http://localhost:4001//html/2016/06/26/JavaScript-if-statement.html</link>
+        <guid isPermaLink="true">http://localhost:4001//html/2016/06/26/JavaScript-if-statement.html</guid>
         
         <category>JavaScript</category>
         
@@ -161,8 +161,8 @@
 &lt;p&gt;toLocaleString 、toString 、valueOf：可以看作是join的特殊用法，不常用&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//html/2016/06/23/javascript-json-array.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//html/2016/06/23/javascript-json-array.html</guid>
+        <link>http://localhost:4001//html/2016/06/23/javascript-json-array.html</link>
+        <guid isPermaLink="true">http://localhost:4001//html/2016/06/23/javascript-json-array.html</guid>
         
         <category>JavaScript</category>
         
@@ -242,8 +242,8 @@ size  pack  SHA                                       location
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Sun, 19 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//linux/2016/06/19/clean-git-repo.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2016/06/19/clean-git-repo.html</guid>
+        <link>http://localhost:4001//linux/2016/06/19/clean-git-repo.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2016/06/19/clean-git-repo.html</guid>
         
         <category>Git</category>
         
@@ -773,8 +773,8 @@ size  pack  SHA                                       location
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 15 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//html/2016/06/15/angularjs-guide.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//html/2016/06/15/angularjs-guide.html</guid>
+        <link>http://localhost:4001//html/2016/06/15/angularjs-guide.html</link>
+        <guid isPermaLink="true">http://localhost:4001//html/2016/06/15/angularjs-guide.html</guid>
         
         <category>AngularJS</category>
         
@@ -917,8 +917,8 @@ iface wlan1 inet manual
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 09 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//linux/2016/06/09/install-raspbian-on-mac.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2016/06/09/install-raspbian-on-mac.html</guid>
+        <link>http://localhost:4001//linux/2016/06/09/install-raspbian-on-mac.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2016/06/09/install-raspbian-on-mac.html</guid>
         
         <category>Raspbian</category>
         
@@ -979,8 +979,8 @@ iface wlan1 inet manual
 &lt;p&gt;最后一步就是对分页的样式重新定义，因为jPages自带的样式很不好看，我使用的是bootstrap，这里需要在&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jPages.js&lt;/code&gt;中进行修改，具体可以在我&lt;a href=&quot;https://github.com/Jack614/jalpc_jekyll_theme/blob/gh-pages/static/js/jPages.js&quot;&gt;项目&lt;/a&gt;中的代码查看，有注释的部分是jPages原来的代码。&lt;/p&gt;
 </description>
         <pubDate>Sat, 04 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//html/2016/06/04/jekyll-pagination-with-jpages.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//html/2016/06/04/jekyll-pagination-with-jpages.html</guid>
+        <link>http://localhost:4001//html/2016/06/04/jekyll-pagination-with-jpages.html</link>
+        <guid isPermaLink="true">http://localhost:4001//html/2016/06/04/jekyll-pagination-with-jpages.html</guid>
         
         <category>pagination</category>
         
@@ -1021,8 +1021,8 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 &lt;p&gt;原来这就是Python之禅，哈哈&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//python/life/2016/06/02/zen-of-python.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//python/life/2016/06/02/zen-of-python.html</guid>
+        <link>http://localhost:4001//python/life/2016/06/02/zen-of-python.html</link>
+        <guid isPermaLink="true">http://localhost:4001//python/life/2016/06/02/zen-of-python.html</guid>
         
         <category>Python</category>
         
@@ -1164,8 +1164,8 @@ Parameters:         /usr/local/bin/iterm2-zmodem rz
 &lt;p&gt;Github链接：&lt;a href=&quot;https://github.com/Jack614/iterm2-zmodem&quot;&gt;https://github.com/Jack614/iterm2-zmodem&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 29 May 2016 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//mac/2016/05/29/Z-Modem-integration-for-iTerm2.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//mac/2016/05/29/Z-Modem-integration-for-iTerm2.html</guid>
+        <link>http://localhost:4001//mac/2016/05/29/Z-Modem-integration-for-iTerm2.html</link>
+        <guid isPermaLink="true">http://localhost:4001//mac/2016/05/29/Z-Modem-integration-for-iTerm2.html</guid>
         
         <category>Mac</category>
         
@@ -1251,8 +1251,8 @@ Parameters:         /usr/local/bin/iterm2-zmodem rz
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Wed, 04 May 2016 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//python/database/2016/05/04/python-mysql-redis.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//python/database/2016/05/04/python-mysql-redis.html</guid>
+        <link>http://localhost:4001//python/database/2016/05/04/python-mysql-redis.html</link>
+        <guid isPermaLink="true">http://localhost:4001//python/database/2016/05/04/python-mysql-redis.html</guid>
         
         <category>Python</category>
         
@@ -1481,8 +1481,8 @@ if not len(seq)&lt;/code&gt;&lt;/p&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 06 Apr 2016 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//python/2016/04/06/python-standard.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//python/2016/04/06/python-standard.html</guid>
+        <link>http://localhost:4001//python/2016/04/06/python-standard.html</link>
+        <guid isPermaLink="true">http://localhost:4001//python/2016/04/06/python-standard.html</guid>
         
         <category>优化</category>
         
@@ -1633,8 +1633,8 @@ no exceptions!
 &lt;p&gt;除了&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__enter__()&lt;/code&gt;和&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__exit__()&lt;/code&gt;方法，还有&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;contextlib&lt;/code&gt;模块可以辅助上下文管理，该模块是通过Generator实现的，contextlib中的contextmanager作为装饰器来提供一种针对函数级别的上下文管理机制，可以直接说作用函数\对象而不用去关心&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__enter__()&lt;/code&gt;和&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__exit__()&lt;/code&gt;方法的具体实现。具体可以百度。&lt;/p&gt;
 </description>
         <pubDate>Sat, 20 Feb 2016 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//python/2016/02/20/python-tips-2.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//python/2016/02/20/python-tips-2.html</guid>
+        <link>http://localhost:4001//python/2016/02/20/python-tips-2.html</link>
+        <guid isPermaLink="true">http://localhost:4001//python/2016/02/20/python-tips-2.html</guid>
         
         <category>优化</category>
         
@@ -1722,8 +1722,8 @@ True
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Fri, 19 Feb 2016 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//python/2016/02/19/python-tips-1.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//python/2016/02/19/python-tips-1.html</guid>
+        <link>http://localhost:4001//python/2016/02/19/python-tips-1.html</link>
+        <guid isPermaLink="true">http://localhost:4001//python/2016/02/19/python-tips-1.html</guid>
         
         <category>优化</category>
         
@@ -2040,8 +2040,8 @@ Student
 &lt;p&gt;转自&lt;a href=&quot;http://www.liaoxuefeng.com&quot;&gt;廖雪峰&lt;/a&gt;的网站&lt;/p&gt;
 </description>
         <pubDate>Wed, 17 Feb 2016 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//python/2016/02/17/python-class.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//python/2016/02/17/python-class.html</guid>
+        <link>http://localhost:4001//python/2016/02/17/python-class.html</link>
+        <guid isPermaLink="true">http://localhost:4001//python/2016/02/17/python-class.html</guid>
         
         <category>metaclass</category>
         
@@ -2261,8 +2261,8 @@ Student
 &lt;p&gt;Django原生提供了一种简单的全局权限（global permission）控制机制，但很多应用场景下，对象权限（object permission）更加有用；django-guardian是目前比较活跃的一个django extension，提供了一种有效的object permission控制机制，与django原生机制一脉相承，推荐使用。&lt;/p&gt;
 </description>
         <pubDate>Sat, 06 Feb 2016 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//python/2016/02/06/django-permission.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//python/2016/02/06/django-permission.html</guid>
+        <link>http://localhost:4001//python/2016/02/06/django-permission.html</link>
+        <guid isPermaLink="true">http://localhost:4001//python/2016/02/06/django-permission.html</guid>
         
         <category>django</category>
         
@@ -2379,8 +2379,8 @@ supervisorctl stop celery:celery-0
 
 </description>
         <pubDate>Thu, 04 Feb 2016 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//python/linux/2016/02/04/supervisord-celery.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//python/linux/2016/02/04/supervisord-celery.html</guid>
+        <link>http://localhost:4001//python/linux/2016/02/04/supervisord-celery.html</link>
+        <guid isPermaLink="true">http://localhost:4001//python/linux/2016/02/04/supervisord-celery.html</guid>
         
         <category>django</category>
         
@@ -2427,8 +2427,8 @@ Host github.com
 
 </description>
         <pubDate>Sun, 03 Jan 2016 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//linux/2016/01/03/git-ssh-key.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2016/01/03/git-ssh-key.html</guid>
+        <link>http://localhost:4001//linux/2016/01/03/git-ssh-key.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2016/01/03/git-ssh-key.html</guid>
         
         <category>ssh</category>
         
@@ -2662,8 +2662,8 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Mon, 21 Dec 2015 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//python/2015/12/21/django-settings.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//python/2015/12/21/django-settings.html</guid>
+        <link>http://localhost:4001//python/2015/12/21/django-settings.html</link>
+        <guid isPermaLink="true">http://localhost:4001//python/2015/12/21/django-settings.html</guid>
         
         <category>django</category>
         
@@ -2689,8 +2689,8 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Sun, 01 Nov 2015 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//database/2015/11/01/mysql-table-size.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//database/2015/11/01/mysql-table-size.html</guid>
+        <link>http://localhost:4001//database/2015/11/01/mysql-table-size.html</link>
+        <guid isPermaLink="true">http://localhost:4001//database/2015/11/01/mysql-table-size.html</guid>
         
         <category>MySQL</category>
         
@@ -2782,8 +2782,8 @@ Spark
 
 </description>
         <pubDate>Fri, 16 Oct 2015 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//database/2015/10/16/hadoop-ambari.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//database/2015/10/16/hadoop-ambari.html</guid>
+        <link>http://localhost:4001//database/2015/10/16/hadoop-ambari.html</link>
+        <guid isPermaLink="true">http://localhost:4001//database/2015/10/16/hadoop-ambari.html</guid>
         
         <category>hadoop</category>
         
@@ -2842,8 +2842,8 @@ char(13):  回车符&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 15 Oct 2015 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//database/2015/10/15/mysql-n-r.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//database/2015/10/15/mysql-n-r.html</guid>
+        <link>http://localhost:4001//database/2015/10/15/mysql-n-r.html</link>
+        <guid isPermaLink="true">http://localhost:4001//database/2015/10/15/mysql-n-r.html</guid>
         
         <category>MySQL</category>
         
@@ -2889,8 +2889,8 @@ char(13):  回车符&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/Malaysia_Sabah/4.jpg&quot; alt=&quot;Sabah&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Oct 2015 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//life/2015/10/04/sabah-travel.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//life/2015/10/04/sabah-travel.html</guid>
+        <link>http://localhost:4001//life/2015/10/04/sabah-travel.html</link>
+        <guid isPermaLink="true">http://localhost:4001//life/2015/10/04/sabah-travel.html</guid>
         
         <category>Life</category>
         
@@ -2977,8 +2977,8 @@ rsync -avR --delete --port=8723 dir@123.58.188.133::antiplug/ ./
 
 </description>
         <pubDate>Wed, 30 Sep 2015 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//linux/2015/09/30/rsync.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2015/09/30/rsync.html</guid>
+        <link>http://localhost:4001//linux/2015/09/30/rsync.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2015/09/30/rsync.html</guid>
         
         <category>rsync</category>
         
@@ -3361,8 +3361,8 @@ compressableMimeType=&quot;text/html,text/xml,text/javascript,text/css,text/plai
 &lt;p&gt;大家看看，这就提高了多少倍？这还只是在没有改动代码的情况下得到的改善，现在明白了好好的调优一个apache和tomcat其实是多么的重要了？如果加上后面的代码、SQL的调优、数据库的调优。。。。。。所以我在上一个工程中有单笔交易性能（无论是吞吐量、响应时间）提高了80倍这样的极端例子的存在。&lt;/p&gt;
 </description>
         <pubDate>Sat, 12 Sep 2015 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//linux/2015/09/12/tomcat-optimize.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2015/09/12/tomcat-optimize.html</guid>
+        <link>http://localhost:4001//linux/2015/09/12/tomcat-optimize.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2015/09/12/tomcat-optimize.html</guid>
         
         <category>tomcat</category>
         
@@ -3732,8 +3732,8 @@ spymemcached-2.10.2.jar
 
 </description>
         <pubDate>Fri, 11 Sep 2015 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//linux/2015/09/11/tomcat-nginx-memcached-session.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2015/09/11/tomcat-nginx-memcached-session.html</guid>
+        <link>http://localhost:4001//linux/2015/09/11/tomcat-nginx-memcached-session.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2015/09/11/tomcat-nginx-memcached-session.html</guid>
         
         <category>tomcat</category>
         
@@ -3919,8 +3919,8 @@ spymemcached-2.10.2.jar
 
 </description>
         <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//database/2015/09/01/linux-mysql.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//database/2015/09/01/linux-mysql.html</guid>
+        <link>http://localhost:4001//database/2015/09/01/linux-mysql.html</link>
+        <guid isPermaLink="true">http://localhost:4001//database/2015/09/01/linux-mysql.html</guid>
         
         <category>MySQL</category>
         
@@ -4018,8 +4018,8 @@ spymemcached-2.10.2.jar
 &lt;p&gt;/lib64/ld-linux-x86-64.so.2 (0x00002b83fc9b0000)&lt;/p&gt;
 </description>
         <pubDate>Tue, 18 Aug 2015 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//linux/2015/08/18/linux-memcached.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2015/08/18/linux-memcached.html</guid>
+        <link>http://localhost:4001//linux/2015/08/18/linux-memcached.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2015/08/18/linux-memcached.html</guid>
         
         <category>memcached</category>
         
@@ -4138,8 +4138,8 @@ spymemcached-2.10.2.jar
 &lt;p&gt;cpu usage=[(user_2 +sys_2+nice_2) – (user_1 + sys_1+nice_1)]/(total_2 – total_1)*100&lt;/p&gt;
 </description>
         <pubDate>Wed, 22 Jul 2015 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//linux/2015/07/22/cpu.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2015/07/22/cpu.html</guid>
+        <link>http://localhost:4001//linux/2015/07/22/cpu.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2015/07/22/cpu.html</guid>
         
         <category>CPU</category>
         
@@ -4382,8 +4382,8 @@ modprobe -l|grep ipvs     ##检查ipvs的模块
 
 </description>
         <pubDate>Sat, 09 May 2015 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//linux/2015/05/09/lvs.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2015/05/09/lvs.html</guid>
+        <link>http://localhost:4001//linux/2015/05/09/lvs.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2015/05/09/lvs.html</guid>
         
         <category>LVS</category>
         
@@ -4517,8 +4517,8 @@ Slave_SQL_Running: Yes
 
 </description>
         <pubDate>Fri, 03 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://mrastgoo.github.io//database/2015/04/03/mysql-master-slave.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//database/2015/04/03/mysql-master-slave.html</guid>
+        <link>http://localhost:4001//database/2015/04/03/mysql-master-slave.html</link>
+        <guid isPermaLink="true">http://localhost:4001//database/2015/04/03/mysql-master-slave.html</guid>
         
         <category>MySQL</category>
         
@@ -4563,8 +4563,8 @@ RUN_AS_USER=root
 &lt;p&gt;即可运行tomcat。&lt;/p&gt;
 </description>
         <pubDate>Thu, 12 Mar 2015 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//linux/2015/03/12/linux-tomcat.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2015/03/12/linux-tomcat.html</guid>
+        <link>http://localhost:4001//linux/2015/03/12/linux-tomcat.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2015/03/12/linux-tomcat.html</guid>
         
         <category>tomcat</category>
         
@@ -4618,8 +4618,8 @@ RUN_AS_USER=root
 
 </description>
         <pubDate>Tue, 03 Mar 2015 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//linux/2015/03/03/nginx.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2015/03/03/nginx.html</guid>
+        <link>http://localhost:4001//linux/2015/03/03/nginx.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2015/03/03/nginx.html</guid>
         
         <category>nginx</category>
         
@@ -4732,8 +4732,8 @@ RUN_AS_USER=root
 
 </description>
         <pubDate>Mon, 02 Mar 2015 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//linux/2015/03/02/shell.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2015/03/02/shell.html</guid>
+        <link>http://localhost:4001//linux/2015/03/02/shell.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2015/03/02/shell.html</guid>
         
         <category>shell</category>
         
@@ -4788,8 +4788,8 @@ RUN_AS_USER=root
 &lt;p&gt;最后一张图片的字母划掉了，所以答案是：&lt;strong&gt;disproportional&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 26 Feb 2015 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//python/2015/02/26/python-challenge12.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//python/2015/02/26/python-challenge12.html</guid>
+        <link>http://localhost:4001//python/2015/02/26/python-challenge12.html</link>
+        <guid isPermaLink="true">http://localhost:4001//python/2015/02/26/python-challenge12.html</guid>
         
         <category>Python</category>
         
@@ -4848,8 +4848,8 @@ UserKnownHostsFile /dev/null
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Mon, 02 Feb 2015 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//linux/2015/02/02/ssh-key.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2015/02/02/ssh-key.html</guid>
+        <link>http://localhost:4001//linux/2015/02/02/ssh-key.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2015/02/02/ssh-key.html</guid>
         
         <category>ssh</category>
         
@@ -4895,8 +4895,8 @@ UserKnownHostsFile /dev/null
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 02 Feb 2015 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//linux/2015/02/02/Top_command-VIRT-RES-SHR-DATA.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2015/02/02/Top_command-VIRT-RES-SHR-DATA.html</guid>
+        <link>http://localhost:4001//linux/2015/02/02/Top_command-VIRT-RES-SHR-DATA.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2015/02/02/Top_command-VIRT-RES-SHR-DATA.html</guid>
         
         <category>top</category>
         
@@ -4922,8 +4922,8 @@ UserKnownHostsFile /dev/null
 &lt;p&gt;EPEL版本不同，根据不同系统请自行安装。&lt;/p&gt;
 </description>
         <pubDate>Tue, 13 Jan 2015 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//linux/2015/01/13/linux-epel.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//linux/2015/01/13/linux-epel.html</guid>
+        <link>http://localhost:4001//linux/2015/01/13/linux-epel.html</link>
+        <guid isPermaLink="true">http://localhost:4001//linux/2015/01/13/linux-epel.html</guid>
         
         <category>epel</category>
         
@@ -4946,8 +4946,8 @@ UserKnownHostsFile /dev/null
 &lt;p&gt;从第一份运维工作开始，就开始写笔记，有用过印象笔记，有道云笔记，gist，后来也开始写博客，那时候是在CSDN上面注册了一个账号，写了有几个月见见的也荒废了；再后来，想自己搞个云主机，在&lt;a href=&quot;http://aliyun.com&quot;&gt;阿里云&lt;/a&gt;上租了一台主机，一个月￥60，先是用wordpress，感觉可定制功能不强，因为是PHP写的，个人主要学习Python，所以感觉自己用Django写了一个博客，在15年双十一，云主机降价，花了一半的价钱（￥200）在美团云上买了一台1C、1G、1MB带宽的主机，至此也了解了阿里云和美团云的一些不同之处，美团云主打的是纯净的系统，而阿里云应用市场比较丰富。现在准备把自己的博客迁移到&lt;a href=&quot;http://github.com&quot;&gt;github&lt;/a&gt;上，在学习了markdown入门和jekyll基础后，目前博客已经初步成立，同时完善了我的一些文章，希望今后能够勤写文章。&lt;/p&gt;
 </description>
         <pubDate>Thu, 08 Jan 2015 00:00:00 +0100</pubDate>
-        <link>http://mrastgoo.github.io//life/2015/01/08/first-blog.html</link>
-        <guid isPermaLink="true">http://mrastgoo.github.io//life/2015/01/08/first-blog.html</guid>
+        <link>http://localhost:4001//life/2015/01/08/first-blog.html</link>
+        <guid isPermaLink="true">http://localhost:4001//life/2015/01/08/first-blog.html</guid>
         
         <category>blog</category>
         
