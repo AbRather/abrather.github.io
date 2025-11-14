@@ -36,21 +36,21 @@
     font-size: 80px;
     font-weight: 900;
     line-height: 90px;
-    color: #046b99;
+    color: #0FAAFF;
     margin-bottom: 10px;
     text-transform: none;
     letter-spacing: 0;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     font-family: "Raleway", sans-serif;
 }
 
 .hero-tagline {
-    color: #00a6d2;
+    color: #0FAAFF;
     margin: 10px 0 0 0;
     font-size: 22px;
     margin-bottom: 40px;
     line-height: 1.6;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     font-family: "Raleway", sans-serif;
 }
 
