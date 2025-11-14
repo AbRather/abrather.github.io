@@ -1,0 +1,124 @@
+/* About Section Styling */
+.about-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.about-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #046b99;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.about-underline {
+    width: 80px;
+    height: 3px;
+    background-color: #ff9800;
+    margin: 0 auto 40px;
+}
+
+.about-intro {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.about-image-container {
+    padding: 20px;
+}
+
+.about-image {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+}
+
+.about-text {
+    padding: 20px 40px;
+}
+
+.about-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #046b99;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.about-details {
+    margin: 30px 0;
+}
+
+.about-details p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.about-details strong {
+    font-weight: 700;
+    color: #046b99;
+}
+
+.about-experience {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-top: 25px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .about-text {
+        padding: 20px 20px;
+        margin-top: 30px;
+    }
+    
+    .about-image-container {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 28px;
+    }
+    
+    .about-subtitle {
+        font-size: 20px;
+    }
+    
+    .about-intro,
+    .about-description,
+    .about-details p,
+    .about-experience {
+        font-size: 14px;
+    }
+}

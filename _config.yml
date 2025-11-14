@@ -11,15 +11,20 @@ url: "https://abrather.github.io"
 # author
 author:
   name: 'Rather'
-  first_name: 'Rather'
-  last_name: 'Hamid'
+  first_name: 'Abdul Hamid'
+  last_name: 'Rather'
   email: 'rhaamid24@gmail.com'
   linkedin_username: ''
   scholar_username: ''
   github_username: ''
   instagram_username: ''
   head_img: 'static/img/landing/abrather.jpeg'
-  desc: "M.Sc. Aerospace Engineering student at Universität Bremen. Experience in propulsion test data analysis, composite testing, CAD/CFD and Python-based data workflows."
+  intro: "Hey there! I'm Abdul Hamid, a graduate student, aerospace engineer, and researcher from Germany."
+  position: "MEng Student @ Universität Bremen"
+  desc: "I am pursuing a Master of Engineering (MEng) with a concentration in Aerospace Systems at Universität Bremen where I also completed my Bachelor of Science in Aerospace Engineering. I am currently continuing my academic journey as a Student Researcher in the Propulsion Systems Lab."
+  sports: "Skateboarding, Hiking, Cricket, and Fitness"
+  hobbies: "Reading technical papers and exploring new technologies"
+  experience: "My current research involves leveraging computational fluid dynamics, propulsion testing, and data analysis for rocket engine development. Last year, I was working on composite materials testing as a Research Assistant. I did engineering analysis on aerospace structures as an intern at a local aerospace company in the summer of 2023. Previously, I worked on CAD modeling and simulation projects. I also have experience in Python-based data workflows and automation."
   cv: 'static/files/Resume_Abdul Hamid Rather.pdf'
   
 
