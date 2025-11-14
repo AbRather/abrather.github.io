@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: <http://mrastgoo.github.io/sitemap.xml>
+Sitemap: <http://localhost:4001/sitemap.xml>
