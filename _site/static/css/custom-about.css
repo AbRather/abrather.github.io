@@ -43,7 +43,7 @@
 }
 
 .about .content {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .about .content h3 {
@@ -55,7 +55,7 @@
 
 .about .content p {
     color: #000000;
-    line-height: 1.8;
+    line-height: 1.5;
     margin-bottom: 15px;
     font-size: 17px;
 }
