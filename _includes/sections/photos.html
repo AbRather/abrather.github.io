@@ -1,0 +1,89 @@
+<section id="photos" class="photos">
+    <div class="container" data-aos="fade-up">
+        
+        <div class="section-title">
+            <h2><span data-i18n="photos.title">PHOTOS</span></h2>
+            <p><span data-i18n="photos.description">A collection of memorable moments and places</span></p>
+        </div>
+
+        <div class="photos-gallery">
+            {% for photo in site.data.photos %}
+            <div class="photo-item" data-category="{{ photo.category }}">
+                <div class="photo-wrapper">
+                    <img src="{{ photo.image }}" alt="{{ photo.title }}" loading="lazy">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <h3>{{ photo.title }}</h3>
+                            <p>{{ photo.description }}</p>
+                        </div>
+                        <button class="photo-zoom" data-image="{{ photo.image }}" data-title="{{ photo.title }}" data-description="{{ photo.description }}">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+
+<!-- Photo Modal -->
+<div id="photoModal" class="photo-modal">
+    <span class="photo-modal-close">&times;</span>
+    <div class="photo-modal-content">
+        <img id="modalImage" src="" alt="">
+        <div class="photo-modal-caption">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('photoModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const closeBtn = document.querySelector('.photo-modal-close');
+    
+    // Open modal on zoom button click
+    document.querySelectorAll('.photo-zoom').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const image = this.dataset.image;
+            const title = this.dataset.title;
+            const description = this.dataset.description;
+            
+            modalImage.src = image;
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    // Close modal
+    closeBtn.addEventListener('click', function() {
+        modal.classList.remove('show');
+        document.body.style.overflow = '';
+    });
+    
+    // Close on background click
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // Close on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    });
+});
+</script>
