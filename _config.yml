@@ -60,6 +60,18 @@ sections:
     tpl: 'publications.html'
     css: 'publications'
 
+  - id: 'photos'
+    i18n: 'nav.photos'
+    name: 'Photos'
+    tpl: 'photos.html'
+    css: 'photos'
+
+  - id: 'contact'
+    i18n: 'nav.contact'
+    name: 'Contact'
+    tpl: 'contact.html'
+    css: 'contact'
+
 # localization
 languages:
   - locale: 'en'

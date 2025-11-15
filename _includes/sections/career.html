@@ -78,3 +78,73 @@
 
     </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const careerSection = document.getElementById('career');
+    
+    function animateTimelineBlocks(timelineId) {
+        const timeline = document.getElementById(timelineId);
+        if (!timeline) return;
+        
+        const blocks = timeline.querySelectorAll('.vertical-timeline-block');
+        blocks.forEach((block, index) => {
+            setTimeout(() => {
+                block.classList.add('animate-in');
+            }, index * 150); // Stagger animation by 150ms
+        });
+    }
+    
+    function resetTimelineBlocks(timelineId) {
+        const timeline = document.getElementById(timelineId);
+        if (!timeline) return;
+        
+        const blocks = timeline.querySelectorAll('.vertical-timeline-block');
+        blocks.forEach(block => {
+            block.classList.remove('animate-in');
+        });
+    }
+    
+    // Animate on scroll into view
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Check which tab is active and animate that timeline
+                const professionalTab = document.getElementById('professional');
+                const educationTab = document.getElementById('education');
+                
+                if (professionalTab && professionalTab.classList.contains('active')) {
+                    resetTimelineBlocks('vertical-timeline');
+                    setTimeout(() => animateTimelineBlocks('vertical-timeline'), 50);
+                } else if (educationTab && educationTab.classList.contains('active')) {
+                    resetTimelineBlocks('education-timeline');
+                    setTimeout(() => animateTimelineBlocks('education-timeline'), 50);
+                }
+            } else {
+                // Reset when leaving viewport
+                resetTimelineBlocks('vertical-timeline');
+                resetTimelineBlocks('education-timeline');
+            }
+        });
+    }, { threshold: 0.2 });
+    
+    if (careerSection) {
+        observer.observe(careerSection);
+    }
+    
+    // Animate when switching tabs
+    const tabs = document.querySelectorAll('.career-tabs a[data-toggle="tab"]');
+    tabs.forEach(tab => {
+        tab.addEventListener('shown.bs.tab', function(e) {
+            const target = e.target.getAttribute('href');
+            if (target === '#professional') {
+                resetTimelineBlocks('vertical-timeline');
+                setTimeout(() => animateTimelineBlocks('vertical-timeline'), 50);
+            } else if (target === '#education') {
+                resetTimelineBlocks('education-timeline');
+                setTimeout(() => animateTimelineBlocks('education-timeline'), 50);
+            }
+        });
+    });
+});
+</script>

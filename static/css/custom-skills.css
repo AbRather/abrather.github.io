@@ -56,12 +56,20 @@
 }
 
 .skills .progress-bar-wrap {
-  background: #f3f3f3;
+  background: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .skills .progress-bar {
-  width: 1px;
+  width: 0;
   height: 10px;
-  transition: 0.9s;
+  transition: width 1.5s ease-in-out;
   background-color: #00a6d2;
+  border-radius: 5px;
+}
+
+.skills .progress-bar.animated {
+  width: var(--target-width);
 }

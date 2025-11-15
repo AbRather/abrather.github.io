@@ -255,7 +255,7 @@ svg.blob-7 path {
 
 .project-short-desc {
     font-size: 14px;
-    color: #061f4a;
+    color: #000000 !important;
     line-height: 1.6;
     margin: 0;
     flex-grow: 1;
@@ -309,7 +309,7 @@ svg.blob-7 path {
 
 .project-details p {
     font-size: 15px;
-    color: #555;
+    color: #000000 !important;
     line-height: 1.7;
     margin-bottom: 20px;
 }
@@ -320,7 +320,7 @@ svg.blob-7 path {
 
 .project-details ul li {
     margin-bottom: 10px;
-    color: #555;
+    color: #000000 !important;
     line-height: 1.6;
 }
 

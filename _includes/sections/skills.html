@@ -14,7 +14,7 @@
                 <div class="progress">
                     <span class="skill">{{ skill.name }} <i class="val">{{ skill.percentage }}%</i></span>
                     <div class="progress-bar-wrap">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="{{ skill.percentage }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ skill.percentage }}%;"></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="{{ skill.percentage }}" aria-valuemin="0" aria-valuemax="100" data-target="{{ skill.percentage }}" style="--target-width: {{ skill.percentage }}%;"></div>
                     </div>
                 </div>
                 {% endfor %}
@@ -25,7 +25,7 @@
                 <div class="progress">
                     <span class="skill">{{ skill.name }} <i class="val">{{ skill.percentage }}%</i></span>
                     <div class="progress-bar-wrap">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="{{ skill.percentage }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ skill.percentage }}%;"></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="{{ skill.percentage }}" aria-valuemin="0" aria-valuemax="100" data-target="{{ skill.percentage }}" style="--target-width: {{ skill.percentage }}%;"></div>
                     </div>
                 </div>
                 {% endfor %}
@@ -35,3 +35,43 @@
 
     </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const skillsSection = document.getElementById('skills');
+    
+    function animateSkills() {
+        const progressBars = skillsSection.querySelectorAll('.progress-bar');
+        progressBars.forEach(bar => {
+            bar.classList.add('animated');
+        });
+    }
+    
+    function resetSkills() {
+        const progressBars = skillsSection.querySelectorAll('.progress-bar');
+        progressBars.forEach(bar => {
+            bar.classList.remove('animated');
+        });
+    }
+    
+    // Check if skills section is in viewport
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Reset and animate when entering viewport
+                resetSkills();
+                setTimeout(() => {
+                    animateSkills();
+                }, 50);
+            } else {
+                // Reset when leaving viewport
+                resetSkills();
+            }
+        });
+    }, { threshold: 0.2 });
+    
+    if (skillsSection) {
+        observer.observe(skillsSection);
+    }
+});
+</script>

@@ -1,0 +1,28 @@
+# Photos Gallery
+# Add your photos here with their descriptions
+
+- image: /static/img/photos/IMG_0755_Original.jpg
+  title: "Original Photo"
+  description: "IMG_0755 Original"
+  category: "photography"
+
+- image: /static/img/photos/binter.jpeg
+  title: "Binter"
+  description: "Binter image"
+  category: "aviation"
+
+- image: /static/img/photos/flight4_starship.jpeg
+  title: "Starship Flight 4"
+  description: "SpaceX Starship Flight 4"
+  category: "space"
+
+- image: /static/img/photos/hero-bg.jpg
+  title: "Hero Background"
+  description: "Portfolio hero background"
+  category: "design"
+
+- image: /static/img/photos/hero-bg 2.jpg
+  title: "Hero Background 2"
+  description: "Alternative hero background"
+  category: "design"
+

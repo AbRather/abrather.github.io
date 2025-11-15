@@ -135,9 +135,28 @@
     margin-bottom: 2em !important;
 }
 
+/* Ensure vertical line is visible for education timeline */
+.career #education-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+    background: #e7eaec;
+}
+
+@media only screen and (min-width: 1170px) {
+    .career #education-timeline.center-orientation::before {
+        left: 50%;
+        margin-left: -2px;
+    }
+}
+
 /* Professional Experience heading color */
 .career #vertical-timeline .vertical-timeline-content h2 {
     color: #046b99;
+    transition: color 0.3s ease;
 }
 
 /* Professional Experience paragraph color */
@@ -145,6 +164,7 @@
     color: #000000;
     position: relative;
     padding-left: 20px;
+    transition: color 0.3s ease;
 }
 
 /* Add bullet point before paragraph */
@@ -154,6 +174,67 @@
     left: 0;
     color: #000000;
     font-weight: bold;
+}
+
+/* Initial state - hidden and positioned */
+.career #vertical-timeline .vertical-timeline-block {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.6s ease-out;
+}
+
+.career #vertical-timeline .vertical-timeline-block:nth-child(even) {
+    transform: translateX(50px);
+}
+
+/* Animated state */
+.career #vertical-timeline .vertical-timeline-block.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Icon animation */
+.career #vertical-timeline .vertical-timeline-icon {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s ease-out;
+}
+
+.career #vertical-timeline .vertical-timeline-block.animate-in .vertical-timeline-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Hover effect for timeline content */
+.career #vertical-timeline .vertical-timeline-content {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.career #vertical-timeline .vertical-timeline-content:hover,
+.career #vertical-timeline .vertical-timeline-block:hover .vertical-timeline-content {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.career #vertical-timeline .vertical-timeline-content:hover h2,
+.career #vertical-timeline .vertical-timeline-block:hover .vertical-timeline-content h2 {
+    color: #00a6d2;
+}
+
+/* Hover effect for timeline icon */
+.career #vertical-timeline .vertical-timeline-icon {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.career #vertical-timeline .vertical-timeline-block:hover .vertical-timeline-icon {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 5px 15px rgba(4, 107, 153, 0.4);
+}
+
+.career #vertical-timeline .vertical-timeline-block.animate-in:hover .vertical-timeline-icon {
+    transform: scale(1.15) rotate(5deg);
 }
 
 /* Professional Experience date container - remove default styling */
@@ -187,11 +268,104 @@
 /* Education Section Styles */
 .career #education-timeline .vertical-timeline-content h2 {
     color: #046b99;
+    transition: color 0.3s ease;
 }
 
 /* Education paragraph - no bullet points */
 .career #education-timeline .vertical-timeline-content p {
     color: #000000;
+    transition: color 0.3s ease;
+}
+
+/* Initial state - hidden and positioned for animation */
+.career #education-timeline .vertical-timeline-block {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.6s ease-out;
+}
+
+/* Animation will override when triggered */
+.career #education-timeline .vertical-timeline-block:not(.animate-in) {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+/* Show education items when tab is active (fallback) */
+.career .tab-pane.active #education-timeline .vertical-timeline-block {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.career #education-timeline .vertical-timeline-block:nth-child(even):not(.animate-in) {
+    transform: translateX(50px);
+}
+
+/* Show even items when tab is active (fallback) */
+.career .tab-pane.active #education-timeline .vertical-timeline-block:nth-child(even) {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Animated state */
+.career #education-timeline .vertical-timeline-block.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Icon animation */
+.career #education-timeline .vertical-timeline-icon {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease-out;
+}
+
+/* Hide icons only before animation */
+.career #education-timeline .vertical-timeline-block:not(.animate-in) .vertical-timeline-icon {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Ensure icons are visible when tab is active */
+.career .tab-pane.active #education-timeline .vertical-timeline-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.career #education-timeline .vertical-timeline-block.animate-in .vertical-timeline-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Hover effect for education timeline content */
+.career #education-timeline .vertical-timeline-content {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.career #education-timeline .vertical-timeline-content:hover,
+.career #education-timeline .vertical-timeline-block:hover .vertical-timeline-content {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.career #education-timeline .vertical-timeline-content:hover h2,
+.career #education-timeline .vertical-timeline-block:hover .vertical-timeline-content h2 {
+    color: #00a6d2;
+}
+
+/* Hover effect for education timeline icon */
+.career #education-timeline .vertical-timeline-icon {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.career #education-timeline .vertical-timeline-block:hover .vertical-timeline-icon {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 5px 15px rgba(4, 107, 153, 0.4);
+}
+
+.career #education-timeline .vertical-timeline-block.animate-in:hover .vertical-timeline-icon {
+    transform: scale(1.15) rotate(5deg);
 }
 
 /* Education date container */
