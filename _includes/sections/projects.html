@@ -2,42 +2,97 @@
     <div class="row m-b-lg">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1><span data-i18n="projects.my_projects">My Projects</span></h1>
+            <h1><span data-i18n="projects.my_projects">Projects</span></h1>
         </div>
     </div>
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <p><a href="https://github.com/mrastgoo"><i class="fa fa-github fa-3x"></i></a></p>
-      <p><a href="https://github.com/mrastgoo">GitHub</i></a></p>
-    </div>
-  </div>
+    
     <div class="row">
+        <div class="col-lg-12">
+            <p class="text-center projects-intro">Over the years, I have developed and managed many websites including the ones below. Websites with an * may not be actively managed by me.</p>
+        </div>
+    </div>
+    
+    <div class="row project-cards-container">
         {% for project in site.data.projects %}
-            {% assign loopindex = forloop.index | modulo: 2 %}
-            {% if forloop.last %}
-                {% if forloop.last == forloop.first %}
-            <div class="col-sm-6 wow col-sm-offset-3 zoomIn">
-                {% else %}
-            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft col-sm-offset-3 {% else %} fadeInRight {% endif %}">
-                {% endif %}
-            {% else %}
-            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
-            {% endif %}
-              <div class="team-member">
-                  <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
-                  <h4><a href="{{ project.url | prepend: 'https://github.com' }}" target="blank"><span class="navy">{{ project.name }}</a></span></h4>
-                  <p><span data-i18n="projects.{{ project.i18n }}">{{ project.desc }}</span></p>
-                  <ul class="list-inline">
-                      <li>
-                          <a class="github-button" href="{{ project.url | prepend: 'https://github.com'}}" data-icon="octicon-star" data-count-href="{{ project.url | append: '/stargazers' }}" data-count-api="{{ project.url | prepend: '/repos' | append: '#stargazers_count' }}" data-count-aria-label="# stargazers on GitHub" aria-label="Star hydepress/jekyll-install on GitHub">Star</a>
-                      </li>
-                      <li>
-                          <a class="github-button" href="{{ project.url | prepend: 'https://github.com'}}" data-icon="octicon-fork" data-count-href="{{ project.url | append: '/network/members' }}" data-count-api="{{ project.url | prepend: '/repos' | append: '#forks_count' }}" data-count-aria-label="# forks on GitHub" aria-label="Star hydepress/jekyll-install on GitHub">Fork</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      {% endfor %}
+        <div class="col-lg-4 col-md-6 col-sm-6 project-card-wrapper">
+            <div class="project-card" data-toggle="modal" data-target="#projectModal{{ forloop.index }}">
+                <div class="project-icon-wrapper">
+                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="blob-{{ forloop.index }}">
+                        <path stroke="none" stroke-width="0" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                    </svg>
+                    <i class="{{ project.icon }} project-icon"></i>
+                </div>
+                <h3 class="project-title">{{ project.name }}</h3>
+                <p class="project-short-desc">{{ project.desc }}</p>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </div>
+
+<!-- Project Modals -->
+{% for project in site.data.projects %}
+<div class="modal fade" id="projectModal{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel{{ forloop.index }}">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h2 class="modal-title" id="projectModalLabel{{ forloop.index }}">
+                    <i class="{{ project.icon }}"></i> {{ project.name }}
+                </h2>
+            </div>
+            <div class="modal-body">
+                {% if project.img %}
+                <div class="project-modal-image">
+                    <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ project.name }}">
+                </div>
+                {% endif %}
+                
+                <div class="project-details">
+                    <h3>Overview</h3>
+                    <p>{{ project.desc }}</p>
+                    
+                    {% if project.details %}
+                    <h3>Details</h3>
+                    <p>{{ project.details }}</p>
+                    {% endif %}
+                    
+                    {% if project.technologies %}
+                    <h3>Technologies</h3>
+                    <ul class="technologies-list">
+                        {% for tech in project.technologies %}
+                        <li><span class="tech-badge">{{ tech }}</span></li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    
+                    {% if project.features %}
+                    <h3>Key Features</h3>
+                    <ul>
+                        {% for feature in project.features %}
+                        <li>{{ feature }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="modal-footer">
+                {% if project.url %}
+                <a href="{{ project.url }}" target="_blank" class="btn btn-primary">
+                    <i class="fa fa-external-link"></i> View Project
+                </a>
+                {% endif %}
+                {% if project.github %}
+                <a href="{{ project.github }}" target="_blank" class="btn btn-default">
+                    <i class="fa fa-github"></i> GitHub
+                </a>
+                {% endif %}
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
 <br>

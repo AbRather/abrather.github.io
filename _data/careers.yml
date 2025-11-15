@@ -4,7 +4,11 @@
     detail: Studentische Hilfskraft @ Faserinstitut Bremen
     i18n: faser
   desc:
-    detail: Simulation, testing, digitization and documentation for fiber composites. Tools include Ansys, CATIA, Python, G-code and CNC. Work on composite tanks for hydrogen storage (HYTANK), permeation testing, cryogenic analysis, CAD modelling and 3D printing.
+    details:
+      - Simulation, testing, digitization and documentation for fiber composites
+      - Tools include Ansys, CATIA, Python, G-code and CNC
+      - Work on composite tanks for hydrogen storage (HYTANK), permeation testing, cryogenic analysis
+      - CAD modelling and 3D printing
     i18n: faser_des
   date:
     detail: Aug. 2023 - Present
@@ -12,13 +16,17 @@
   job:
     detail: Studentische Hilfskraft
     i18n: faser_job
-  icon: fa-wrench
+  icon: fa-rocket
 
 - name:
     detail: Werkstudent - Flight Demonstrator Assembly & Component Testing @ Polaris Spaceplanes
     i18n: polaris
   desc:
-    detail: CAD modelling, assembly, integration and testing of flight demonstrator parts; post-processing and analysis of flight tests; development of Python post-processing libraries and data infrastructure; involvement in test campaigns and integration tasks.
+    details:
+      - CAD modelling, assembly, integration and testing of flight demonstrator parts
+      - Post-processing and analysis of flight tests
+      - Development of Python post-processing libraries and data infrastructure
+      - Involvement in test campaigns and integration tasks
     i18n: polaris_des
   date:
     detail: Aug. 2023 - Jan. 2024
@@ -32,7 +40,11 @@
     detail: Propulsion Test Data Intern @ Rocket Factory Augsburg
     i18n: rfa
   desc:
-    detail: Rocket engine hot-fire and cold-flow test data analysis using Python (numpy, scipy, pandas), visualization (matplotlib, plotly), automatic detection of test parameters, spectral analysis and documentation of test results.
+    details:
+      - Rocket engine hot-fire and cold-flow test data analysis using Python (numpy, scipy, pandas)
+      - Visualization using matplotlib and plotly
+      - Automatic detection of test parameters and spectral analysis
+      - Documentation of test results
     i18n: rfa_des
   date:
     detail: Jan. 2023 - Apr. 2023
@@ -46,7 +58,10 @@
     detail: Propulsion & Design Intern @ SpanTrik
     i18n: spantrik
   desc:
-    detail: Design, manufacture and analysis of a sounding rocket (RAVEN); propulsion system testing and documentation; worked in cross-functional team under project deadlines.
+    details:
+      - Design, manufacture and analysis of a sounding rocket (RAVEN)
+      - Propulsion system testing and documentation
+      - Worked in cross-functional team under project deadlines
     i18n: spantrik_des
   date:
     detail: Sep. 2021 - Dec. 2021
@@ -60,7 +75,11 @@
     detail: Werkstudent - Advanced Computational Laboratory, SRM Institute
     i18n: srm
   desc:
-    detail: Numerical calculations, data visualization and handling, CAD modelling, Ansys simulations and experimental work; documentation and collaboration with manufacturing for prototyping and testing.
+    details:
+      - Numerical calculations, data visualization and handling
+      - CAD modelling and Ansys simulations
+      - Experimental work and documentation
+      - Collaboration with manufacturing for prototyping and testing
     i18n: srm_des
   date:
     detail: Oct. 2018 - Jun. 2020

@@ -44,11 +44,11 @@
     margin-bottom: 40px;
 }
 
-.career-tabs .nav-item {
+.career-tabs li {
     margin: 0 20px;
 }
 
-.career-tabs .nav-link {
+.career-tabs a {
     color: #000000;
     font-size: 18px;
     font-weight: 600;
@@ -57,26 +57,31 @@
     background: transparent;
     transition: all 0.3s ease;
     position: relative;
+    display: block;
 }
 
-.career-tabs .nav-link:hover {
+.career-tabs a:hover {
     color: #046b99;
+    text-decoration: none;
 }
 
-.career-tabs .nav-link.active {
-    color: #046b99;
-    background: transparent;
-    border: none;
+.career-tabs li.active a,
+.career-tabs li.active a:hover,
+.career-tabs li.active a:focus {
+    color: #046b99 !important;
+    background: transparent !important;
+    border: none !important;
 }
 
-.career-tabs .nav-link.active::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: #f9aa43;
+.career-tabs li.active a::after {
+    content: "" !important;
+    position: absolute !important;
+    bottom: -2px !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 3px !important;
+    background: #f9aa43 !important;
+    display: block !important;
 }
 
 /* Tab Content */
@@ -85,33 +90,156 @@
     margin-top: 0;
 }
 
-.career .tab-pane {
-    animation: fadeIn 0.5s;
+/* Make sure inactive tabs don't take up space - use :not() to exclude active tabs */
+.career .tab-content > .tab-pane:not(.active) {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+/* Ensure active tab is visible with full opacity - Bootstrap 3 uses .fade with opacity: 0 */
+.career .tab-content > .tab-pane.active,
+.career .tab-content > .tab-pane.active.fade,
+.career .tab-content > .tab-pane.active.show,
+.career .tab-content > .tab-pane.active.in {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+/* Override default timeline margins for both Professional and Education tabs */
+.career #vertical-timeline,
+.career #education-timeline {
+    margin-top: 0 !important;
+    margin-bottom: 2em !important;
+    padding-top: 0 !important;
 }
 
 .career .tab-pane .features-block {
-    margin-top: 0;
-    padding-top: 0;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
 .career .tab-pane .vertical-container {
-    margin-top: 0;
-    padding-top: 0;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
 .career .tab-pane .vertical-timeline-block:first-child {
-    margin-top: 0;
-    padding-top: 0;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Ensure center-orientation doesn't add extra margin */
+.career #vertical-timeline.center-orientation,
+.career #education-timeline.center-orientation {
+    margin-top: 0 !important;
+    margin-bottom: 2em !important;
 }
 
+/* Professional Experience heading color */
+.career #vertical-timeline .vertical-timeline-content h2 {
+    color: #046b99;
+}
+
+/* Professional Experience paragraph color */
+.career #vertical-timeline .vertical-timeline-content p {
+    color: #000000;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Add bullet point before paragraph */
+.career #vertical-timeline .vertical-timeline-content p::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Professional Experience date container - remove default styling */
+.career #vertical-timeline .vertical-timeline-content .vertical-date {
+    float: none;
+    display: block;
+    font-weight: 600;
+}
+
+/* Only the date text itself gets the box - not the job title */
+.career #vertical-timeline .vertical-timeline-content .vertical-date > span:first-child {
+    background-color: rgba(0, 166, 210, 0.15);
+    color: #00a6d2;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 166, 210, 0.3);
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Job title within date container - no background, appears below */
+.career #vertical-timeline .vertical-timeline-content .vertical-date small {
+    display: block;
+    margin-top: 8px;
+    color: #046b99;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Education Section Styles */
+.career #education-timeline .vertical-timeline-content h2 {
+    color: #046b99;
+}
+
+/* Education paragraph - no bullet points */
+.career #education-timeline .vertical-timeline-content p {
+    color: #000000;
+}
+
+/* Education date container */
+.career #education-timeline .vertical-timeline-content .vertical-date {
+    float: none;
+    display: block;
+    font-weight: 600;
+}
+
+/* Education date box */
+.career #education-timeline .vertical-timeline-content .vertical-date > span:first-child {
+    background-color: rgba(0, 166, 210, 0.15);
+    color: #00a6d2;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 166, 210, 0.3);
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Hide empty date boxes */
+.career #education-timeline .vertical-timeline-content .vertical-date > span:first-child:empty {
+    display: none;
+}
+
+/* Education degree (like job title) */
+.career #education-timeline .vertical-timeline-content .vertical-date small {
+    display: block;
+    margin-top: 8px;
+    color: #046b99;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Summary Section Styles */
+.career .summary-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.career .summary-content p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}

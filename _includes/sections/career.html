@@ -7,13 +7,13 @@
 
         <!-- Tab Navigation -->
         <ul class="nav nav-tabs career-tabs" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#professional" role="tab">
+            <li role="presentation" class="active">
+                <a data-toggle="tab" href="#professional" role="tab">
                     <span data-i18n="career.professional">Professional Experience</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#education" role="tab">
+            <li role="presentation">
+                <a data-toggle="tab" href="#education" role="tab">
                     <span data-i18n="career.education">Education</span>
                 </a>
             </li>
@@ -34,7 +34,13 @@
                                 </div>
                                 <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
                                     <h2><span data-i18n="career.{{ career.name.i18n }}">{{ career.name.detail }}</span></h2>
-                                    <p><span data-i18n="career.{{ career.desc.i18n }}">{{ career.desc.detail }} </span></p>
+                                    {% if career.desc.details %}
+                                        {% for item in career.desc.details %}
+                                            <p>{{ item }}</p>
+                                        {% endfor %}
+                                    {% else %}
+                                        <p><span data-i18n="career.{{ career.desc.i18n }}">{{ career.desc.detail }} </span></p>
+                                    {% endif %}
                                     <span class="vertical-date"><span data-i18n="career.{{ career.date.i18n }}"> {{ career.date.detail }} </span>
                                     <br/> <small><span data-i18n="career.{{ career.job.i18n }}">{{ career.job.detail }}</span></small> </span>
                                 </div>
@@ -53,13 +59,13 @@
                         {% for edu in site.data.education %}
                         {% assign loopindex = forloop.index | modulo: 2 %}
                             <div class="vertical-timeline-block">
-                                <div class="vertical-timeline-icon navy-bg">
-                                    <i class="fa fa-graduation-cap"></i>
+                                <div class="vertical-timeline-icon navy-bg wow rotateIn">
+                                    <i class="fa {{ edu.icon }}"></i>
                                 </div>
-                                <div class="vertical-timeline-content">
+                                <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
                                     <h2>{{ edu.school }}</h2>
                                     <p>{{ edu.description }}</p>
-                                    <span class="vertical-date">{{ edu.date }}
+                                    <span class="vertical-date"><span>{{ edu.date }}</span>
                                     <br/> <small>{{ edu.degree }}</small> </span>
                                 </div>
                             </div>
