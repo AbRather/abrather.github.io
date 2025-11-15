@@ -1,11 +1,18 @@
 # Education entries
 
+- school: "Abdul Hamid Rather"
+  degree: "Los Angeles, CA 90024<br/>(XXX) XXX-XXXX<br/>youremail@example.com"
+  date: ""
+  description: "Detail-oriented, driven university (graduate) student and software developer with 4+ years of software and systems engineering experience interested in cutting-edge technologies and research"
+  icon: fa-user
+
 - school: "University of California, Los Angeles (UCLA)"
   degree: "Master of Engineering, Autonomous Systems, M.Eng."
   location: "Los Angeles, CA"
   date: "Expected August 2025"
   description: "The Autonomous Systems concentration integrates Mechanical Engineering, Electrical Engineering, and Computer Science with a focus on recent advances including dynamic systems and controls, machine learning, optimization, and embedded and cyber-physical systems."
   status: "expected"
+  icon: fa-graduation-cap
 
 - school: "University of California, Los Angeles (UCLA)"
   degree: "Computer Science and Engineering, B.S."
@@ -13,3 +20,4 @@
   date: "Graduated June 2024"
   description: "The Computer Science and Engineering curriculum at UCLA provides students with the education and training necessary to design, implement, test, and utilize the hardware and software of digital computers and digital systems."
   status: "graduated"
+  icon: fa-graduation-cap

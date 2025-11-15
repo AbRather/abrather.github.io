@@ -1,0 +1,394 @@
+/*--------------------------------------------------------------
+# Projects Section
+--------------------------------------------------------------*/
+#i18_projects {
+    padding: 60px 0;
+}
+
+#i18_projects .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#i18_projects h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #046b99;
+    margin-top: 0;
+}
+
+#i18_projects h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #f9aa43;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+/* Hide the old navy-line */
+#i18_projects .navy-line {
+    display: none;
+}
+
+.projects-intro {
+    font-size: 16px;
+    color: #666;
+    margin: 30px 0 50px;
+    line-height: 1.6;
+}
+
+/* Project Cards */
+.project-cards-container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.project-card-wrapper {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.project-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.project-icon-wrapper {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-icon-wrapper svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project-icon {
+    font-size: 40px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icon colors - different colors initially */
+.project-card-wrapper:nth-child(1) .project-icon {
+    color: #5dade2;
+    transition: color 0.3s ease;
+}
+
+.project-card-wrapper:nth-child(2) .project-icon {
+    color: #ff9966;
+    transition: color 0.3s ease;
+}
+
+.project-card-wrapper:nth-child(3) .project-icon {
+    color: #ec407a;
+    transition: color 0.3s ease;
+}
+
+.project-card-wrapper:nth-child(4) .project-icon {
+    color: #ffa726;
+    transition: color 0.3s ease;
+}
+
+.project-card-wrapper:nth-child(5) .project-icon {
+    color: #ff5252;
+    transition: color 0.3s ease;
+}
+
+.project-card-wrapper:nth-child(6) .project-icon {
+    color: #4dd0e1;
+    transition: color 0.3s ease;
+}
+
+.project-card-wrapper:nth-child(7) .project-icon {
+    color: #ab47bc;
+    transition: color 0.3s ease;
+}
+
+/* Blob background colors - light initially */
+svg.blob-1 path {
+    fill: #f5f5f5;
+    transition: fill 0.3s ease;
+}
+
+svg.blob-2 path {
+    fill: #f5f5f5;
+    transition: fill 0.3s ease;
+}
+
+svg.blob-3 path {
+    fill: #f5f5f5;
+    transition: fill 0.3s ease;
+}
+
+svg.blob-4 path {
+    fill: #f5f5f5;
+    transition: fill 0.3s ease;
+}
+
+svg.blob-5 path {
+    fill: #f5f5f5;
+    transition: fill 0.3s ease;
+}
+
+svg.blob-6 path {
+    fill: #f5f5f5;
+    transition: fill 0.3s ease;
+}
+
+svg.blob-7 path {
+    fill: #f5f5f5;
+    transition: fill 0.3s ease;
+}
+
+/* Hover effects - blob gets icon color, icon turns white */
+.project-card:hover .project-card:nth-child(1) svg.blob-1 path {
+    fill: #5dade2;
+}
+
+.project-card-wrapper:nth-child(1) .project-card:hover svg.blob-1 path {
+    fill: #5dade2;
+}
+
+.project-card-wrapper:nth-child(1) .project-card:hover .project-icon {
+    color: #ffffff;
+}
+
+.project-card-wrapper:nth-child(2) .project-card:hover svg.blob-2 path {
+    fill: #ff9966;
+}
+
+.project-card-wrapper:nth-child(2) .project-card:hover .project-icon {
+    color: #ffffff;
+}
+
+.project-card-wrapper:nth-child(3) .project-card:hover svg.blob-3 path {
+    fill: #ec407a;
+}
+
+.project-card-wrapper:nth-child(3) .project-card:hover .project-icon {
+    color: #ffffff;
+}
+
+.project-card-wrapper:nth-child(4) .project-card:hover svg.blob-4 path {
+    fill: #ffa726;
+}
+
+.project-card-wrapper:nth-child(4) .project-card:hover .project-icon {
+    color: #ffffff;
+}
+
+.project-card-wrapper:nth-child(5) .project-card:hover svg.blob-5 path {
+    fill: #ff5252;
+}
+
+.project-card-wrapper:nth-child(5) .project-card:hover .project-icon {
+    color: #ffffff;
+}
+
+.project-card-wrapper:nth-child(6) .project-card:hover svg.blob-6 path {
+    fill: #4dd0e1;
+}
+
+.project-card-wrapper:nth-child(6) .project-card:hover .project-icon {
+    color: #ffffff;
+}
+
+.project-card-wrapper:nth-child(7) .project-card:hover svg.blob-7 path {
+    fill: #ab47bc;
+}
+
+.project-card-wrapper:nth-child(7) .project-card:hover .project-icon {
+    color: #ffffff;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #061f4a;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-short-desc {
+    font-size: 14px;
+    color: #061f4a;
+    line-height: 1.6;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Modal Styling */
+.modal-header h2 {
+    color: #046b99;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.modal-header h2 i {
+    margin-right: 10px;
+}
+
+.modal-header .close {
+    font-size: 32px;
+    opacity: 0.5;
+}
+
+.modal-header .close:hover {
+    opacity: 0.8;
+}
+
+.project-modal-image {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project-modal-image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+    width: auto;
+}
+
+.project-details h3 {
+    color: #046b99;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f9aa43;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.project-details p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-details ul {
+    padding-left: 20px;
+}
+
+.project-details ul li {
+    margin-bottom: 10px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.technologies-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.technologies-list li {
+    margin: 0;
+}
+
+.tech-badge {
+    display: inline-block;
+    background: #046b99;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.modal-footer .btn-primary {
+    background-color: #046b99;
+    border-color: #046b99;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #035580;
+    border-color: #035580;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-card {
+        min-height: 280px;
+        padding: 30px 20px;
+    }
+    
+    .project-title {
+        font-size: 18px;
+        min-height: 48px;
+    }
+    
+    .project-card-wrapper {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .project-card-wrapper {
+        display: flex;
+    }
+    
+    .project-card {
+        min-height: 340px;
+    }
+}
+
+@media (min-width: 992px) {
+    .project-card-wrapper {
+        display: flex;
+    }
+    
+    .project-card {
+        min-height: 320px;
+    }
+}
