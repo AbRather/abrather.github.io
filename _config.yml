@@ -11,7 +11,7 @@ url: "https://abrather.github.io"
 # author
 author:
   name: 'Rather'
-  first_name: 'Abdul Hamid'
+  first_name: 'Hamid'
   last_name: 'Rather'
   email: 'rhaamid24@gmail.com'
   linkedin_username: ''
@@ -19,12 +19,25 @@ author:
   github_username: ''
   instagram_username: ''
   head_img: 'static/img/landing/abrather.jpeg'
-  intro: "Hey there! I'm Abdul Hamid, a graduate student, aerospace engineer, and researcher from Germany."
-  position: "MEng Student @ Universität Bremen"
-  desc: "I am pursuing a Master of Engineering (MEng) with a concentration in Aerospace Systems at Universität Bremen where I also completed my Bachelor of Science in Aerospace Engineering. I am currently continuing my academic journey as a Student Researcher in the Propulsion Systems Lab."
-  sports: "Skateboarding, Hiking, Cricket, and Fitness"
+  intro: "Hey there! I am Rather Hamid, a graduate student, aerospace engineer, and researcher from Germany."
+  position: "MS Student @ Universität Bremen"
+  desc: >
+    I am pursuing a Master of Science (MS) with a concentration in the design, integration, and analysis 
+    of aerospace systems at Universität Bremen and hold a Bachelor of Science in Aerospace Engineering. 
+    I am currently a Student Researcher in the Fiber, composites & cryogenics lab. In this role, I design 
+    and integrate test equipment for cryogenic materials, and crucially, I also develop and automate the 
+    data analysis pipelines for these experiments. I use Python, Pandas, Plotly, other libraries and PowerBI 
+    to process, analyze, and visualize the test results, turning raw sensor data into actionable insights 
+    for material selection.
+  sports: "Camping, Volleyball, and Fitness"
   hobbies: "Reading technical papers and exploring new technologies"
-  experience: "My current research involves leveraging computational fluid dynamics, propulsion testing, and data analysis for rocket engine development. Last year, I was working on composite materials testing as a Research Assistant. I did engineering analysis on aerospace structures as an intern at a local aerospace company in the summer of 2023. Previously, I worked on CAD modeling and simulation projects. I also have experience in Python-based data workflows and automation."
+  experience: >
+    My current work as a Student Researcher at Faserinstitut Bremen is focused on materials for 
+    next-generation propulsion. I am designing and building test stands to analyze how composite materials 
+    and adhesives behave in cryogenic environments, specifically for hydrogen fuel tanks. This role combines 
+    hands-on design and simulations with hardware integration. A key part of this role is developing the 
+    Python-based data workflows to process and analyze the permeation test results, turning raw sensor data 
+    into meaningful insights.
   cv: 'static/files/Resume_Abdul Hamid Rather.pdf'
   
 

@@ -33,7 +33,17 @@
                                     <i class="fa {{ career.icon }}"></i>
                                 </div>
                                 <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
-                                    <h2><span data-i18n="career.{{ career.name.i18n }}">{{ career.name.detail }}</span></h2>
+                                    <h2>
+                                        <span data-i18n="career.{{ career.name.i18n }}">{{ career.name.detail }}</span>
+                                        {% if career.reference and career.reference.available %}
+                                        <span class="reference-badge" 
+                                              data-toggle="modal" 
+                                              data-target="#referenceModal{{ forloop.index }}"
+                                              title="View Reference Letter">
+                                            <i class="fa fa-certificate"></i>
+                                        </span>
+                                        {% endif %}
+                                    </h2>
                                     {% if career.desc.details %}
                                         {% for item in career.desc.details %}
                                             <p>{{ item }}</p>
@@ -49,6 +59,63 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Reference Letter Modals -->
+                {% for career in site.data.careers %}
+                {% if career.reference and career.reference.available %}
+                <div class="modal fade reference-modal" id="referenceModal{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="referenceModalLabel{{ forloop.index }}">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="referenceModalLabel{{ forloop.index }}">
+                                    <i class="fa fa-certificate"></i> {{ career.reference.title }}
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="reference-loader" id="referenceLoader{{ forloop.index }}">
+                                    <i class="fa fa-spinner fa-spin fa-3x"></i>
+                                    <p>Loading reference letter...</p>
+                                </div>
+                                <div class="reference-error" id="referenceError{{ forloop.index }}" style="display: none;">
+                                    <i class="fa fa-exclamation-triangle fa-3x"></i>
+                                    <p>Unable to load reference letter.</p>
+                                    <p class="error-message">The PDF file may not be available or there was an error loading it.</p>
+                                </div>
+                                <div class="reference-content" id="referenceContent{{ forloop.index }}" style="display: none;">
+                                    <div class="pdf-viewer-container">
+                                        <embed 
+                                            class="pdf-viewer" 
+                                            data-src="{{ site.baseurl }}/static/pdf/references/{{ career.reference.filename }}#zoom=100&view=FitH&toolbar=1"
+                                            id="pdfFrame{{ forloop.index }}"
+                                            type="application/pdf"
+                                            width="100%"
+                                            height="100%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="{{ site.baseurl }}/static/pdf/references/{{ career.reference.filename }}" 
+                                   class="btn btn-primary" 
+                                   download="{{ career.reference.filename }}"
+                                   id="downloadBtn{{ forloop.index }}">
+                                    <i class="fa fa-download"></i> Download PDF
+                                </a>
+                                <a href="{{ site.baseurl }}/static/pdf/references/{{ career.reference.filename }}" 
+                                   class="btn btn-default" 
+                                   target="_blank"
+                                   id="openBtn{{ forloop.index }}">
+                                    <i class="fa fa-external-link"></i> Open in New Tab
+                                </a>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
             </div>
 
             <!-- Education Tab -->
@@ -146,5 +213,115 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    
+    // ===== REFERENCE MODAL HANDLING =====
+    
+    // Handle reference modal opening
+    $('.reference-modal').on('show.bs.modal', function(e) {
+        const modalId = $(this).attr('id');
+        const index = modalId.replace('referenceModal', '');
+        
+        const loader = $('#referenceLoader' + index);
+        const error = $('#referenceError' + index);
+        const content = $('#referenceContent' + index);
+        const iframe = $('#pdfFrame' + index);
+        
+        // Reset states
+        loader.show();
+        error.hide();
+        content.hide();
+        
+        // Get the PDF source - extract base URL without parameters
+        const pdfSrc = iframe.attr('data-src');
+        const pdfBaseUrl = pdfSrc.split('#')[0]; // Get URL without hash parameters
+        
+        // Check if PDF exists and load it
+        checkPDFExists(pdfBaseUrl, function(exists) {
+            if (exists) {
+                // Load the PDF in iframe with zoom parameters for full-width display
+                // Using zoom=page-width ensures PDF fills the container width
+                iframe.attr('src', pdfSrc);
+                
+                // Wait for iframe to load
+                iframe.on('load', function() {
+                    setTimeout(function() {
+                        loader.hide();
+                        content.show();
+                        
+                        // Try to apply additional zoom if browser supports it
+                        try {
+                            const iframeDoc = iframe[0].contentDocument || iframe[0].contentWindow.document;
+                            if (iframeDoc) {
+                                // Some browsers support setting zoom on the PDF viewer
+                                const pdfViewer = iframeDoc.querySelector('#viewer');
+                                if (pdfViewer) {
+                                    pdfViewer.style.width = '100%';
+                                }
+                            }
+                        } catch(e) {
+                            // Cross-origin restrictions may prevent this - that's okay
+                            console.log('PDF zoom adjustment not available due to cross-origin restrictions');
+                        }
+                    }, 500);
+                });
+                
+                // Fallback in case load event doesn't fire
+                setTimeout(function() {
+                    if (loader.is(':visible')) {
+                        loader.hide();
+                        content.show();
+                    }
+                }, 2000);
+                
+            } else {
+                // PDF doesn't exist - show error
+                loader.hide();
+                error.show();
+                
+                // Disable download and open buttons
+                $('#downloadBtn' + index).addClass('disabled').attr('disabled', 'disabled');
+                $('#openBtn' + index).addClass('disabled').attr('disabled', 'disabled');
+            }
+        });
+    });
+    
+    // Clean up when modal is closed
+    $('.reference-modal').on('hidden.bs.modal', function(e) {
+        const modalId = $(this).attr('id');
+        const index = modalId.replace('referenceModal', '');
+        const iframe = $('#pdfFrame' + index);
+        
+        // Clear iframe src to stop loading
+        iframe.attr('src', '');
+    });
+    
+    // Function to check if PDF exists
+    function checkPDFExists(url, callback) {
+        const xhr = new XMLHttpRequest();
+        xhr.open('HEAD', url, true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    callback(true);
+                } else {
+                    callback(false);
+                }
+            }
+        };
+        xhr.onerror = function() {
+            callback(false);
+        };
+        xhr.send();
+    }
+    
+    // Add hover effect to reference badges
+    $('.reference-badge').hover(
+        function() {
+            $(this).addClass('badge-hover');
+        },
+        function() {
+            $(this).removeClass('badge-hover');
+        }
+    );
 });
 </script>

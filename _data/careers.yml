@@ -1,7 +1,7 @@
  # Careers and work experience from Resume_Abdul Hamid Rather.pdf
 
 - name:
-    detail: Studentische Hilfskraft @ Faserinstitut Bremen
+    detail: Werkstudent @ Faserinstitut Bremen
     i18n: faser
   desc:
     details:
@@ -17,6 +17,10 @@
     detail: Studentische Hilfskraft
     i18n: faser_job
   icon: fa-rocket
+  reference:
+    available: true
+    filename: studentische_hilfskraft.pdf
+    title: Reference Letter - Faserinstitut Bremen
 
 - name:
     detail: Werkstudent - Flight Demonstrator Assembly & Component Testing @ Polaris Spaceplanes
@@ -35,6 +39,10 @@
     detail: Werkstudent
     i18n: polaris_job
   icon: fa-rocket
+  reference:
+    available: true
+    filename: Polaris.pdf
+    title: Reference Letter - Polaris Spaceplanes
 
 - name:
     detail: Propulsion Test Data Intern @ Rocket Factory Augsburg
@@ -53,6 +61,10 @@
     detail: Data Intern - Propulsion Test Data
     i18n: rfa_job
   icon: fa-fire
+  reference:
+    available: true
+    filename: Reference-RFA-Rather.pdf
+    title: Reference Letter - Rocket Factory Augsburg
 
 - name:
     detail: Propulsion & Design Intern @ SpanTrik
@@ -70,6 +82,10 @@
     detail: Propulsion & Design Intern
     i18n: spantrik_job
   icon: fa-cogs
+  reference:
+    available: false
+    filename: propulsion_design_intern.pdf
+    title: Reference Letter - SpanTrik
 
 - name:
     detail: Werkstudent - Advanced Computational Laboratory, SRM Institute
@@ -88,6 +104,10 @@
     detail: Werkstudent (Advance Computational Laboratory)
     i18n: srm_job
   icon: fa-flask
+  reference:
+    available: true
+    filename: werkstudent_advanced_computational.pdf
+    title: Reference Letter - SRM Institute
 
  # Education entries can be shown elsewhere; keep the careers file focused on positions.
   desc:

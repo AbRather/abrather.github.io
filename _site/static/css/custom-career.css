@@ -417,3 +417,336 @@
     line-height: 1.8;
     text-align: justify;
 }
+
+/*--------------------------------------------------------------
+# Reference Badge Styles
+--------------------------------------------------------------*/
+.reference-badge {
+    display: inline-block;
+    margin-left: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    vertical-align: middle;
+}
+
+.reference-badge i {
+    color: #f9aa43;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(249, 170, 67, 0.3));
+}
+
+.reference-badge:hover i {
+    color: #046b99;
+    transform: scale(1.15) rotate(5deg);
+    filter: drop-shadow(0 3px 6px rgba(4, 107, 153, 0.4));
+}
+
+.reference-badge.badge-hover i {
+    animation: badgePulse 0.6s ease-in-out;
+}
+
+@keyframes badgePulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Tooltip for reference badge */
+.reference-badge[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    margin-bottom: 8px;
+    z-index: 1000;
+    opacity: 0;
+    animation: tooltipFadeIn 0.3s ease forwards;
+}
+
+@keyframes tooltipFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/*--------------------------------------------------------------
+# Reference Modal Styles
+--------------------------------------------------------------*/
+.reference-modal .modal-content {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.reference-modal .modal-header {
+    background: linear-gradient(135deg, #046b99 0%, #00a6d2 100%);
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 20px 25px;
+    border-bottom: none;
+}
+
+.reference-modal .modal-header .close {
+    color: #fff;
+    opacity: 0.8;
+    text-shadow: none;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.reference-modal .modal-header .close:hover {
+    opacity: 1;
+}
+
+.reference-modal .modal-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.reference-modal .modal-title i {
+    margin-right: 10px;
+    color: #f9aa43;
+}
+
+.reference-modal .modal-body {
+    padding: 0;
+    min-height: 600px;  /* Reduced from 700px */
+    max-height: 80vh;  /* Reduced from 90vh */
+    background: #525252;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Loading State */
+.reference-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;  /* Reduced from 700px */
+    height: 75vh;  /* Reduced from 85vh */
+    color: #fff;
+    background: #525252;
+}
+
+.reference-loader i {
+    color: #046b99;
+    margin-bottom: 20px;
+}
+
+.reference-loader p {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Error State */
+.reference-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;  /* Reduced from 700px */
+    height: 75vh;  /* Reduced from 85vh */
+    padding: 40px;
+    text-align: center;
+    background: #525252;
+}
+
+.reference-error i {
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+.reference-error p {
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.reference-error .error-message {
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* PDF Viewer Container */
+.reference-content {
+    width: 100%;
+    height: 100%;
+}
+
+.pdf-viewer-container {
+    width: 100%;
+    height: 75vh;
+    min-height: 600px;
+    max-height: 750px;
+    background: #525252;
+    position: relative;
+    overflow: auto;  /* Enable scrolling for multi-page PDFs */
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    border: none;
+    background: #fff;
+    display: block;
+    /* Force PDF to scale properly */
+    transform: scale(1);
+    transform-origin: top left;
+}
+
+/* Alternative: Use object tag for better PDF rendering */
+.pdf-viewer-object {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    border: none;
+    display: block;
+}
+
+/* Modal Footer */
+.reference-modal .modal-footer {
+    padding: 15px 25px;
+    background: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.reference-modal .modal-footer .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.reference-modal .modal-footer .btn-primary {
+    background: #046b99;
+    border-color: #046b99;
+}
+
+.reference-modal .modal-footer .btn-primary:hover {
+    background: #035580;
+    border-color: #035580;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(4, 107, 153, 0.3);
+}
+
+.reference-modal .modal-footer .btn-default {
+    border-color: #ddd;
+}
+
+.reference-modal .modal-footer .btn-default:hover {
+    background: #f5f5f5;
+    border-color: #bbb;
+}
+
+.reference-modal .modal-footer .btn.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .reference-modal .modal-dialog {
+        margin: 10px;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .reference-badge {
+        margin-left: 8px;
+    }
+    
+    .reference-badge i {
+        font-size: 16px;
+    }
+    
+    .pdf-viewer-container {
+        height: 70vh;
+        min-height: 500px;
+    }
+    
+    .reference-loader,
+    .reference-error {
+        min-height: 500px;
+        height: 70vh;
+    }
+    
+    .reference-modal .modal-body {
+        min-height: 500px;
+        max-height: 80vh;
+    }
+    
+    .reference-modal .modal-header {
+        padding: 15px 20px;
+    }
+    
+    .reference-modal .modal-title {
+        font-size: 18px;
+    }
+    
+    .reference-modal .modal-footer {
+        padding: 12px 15px;
+    }
+    
+    .reference-modal .modal-footer .btn {
+        padding: 8px 15px;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pdf-viewer-container {
+        height: 60vh;
+        min-height: 400px;
+    }
+    
+    .reference-loader,
+    .reference-error {
+        min-height: 400px;
+        height: 60vh;
+    }
+    
+    .reference-modal .modal-body {
+        min-height: 400px;
+        max-height: 70vh;
+    }
+    
+    .reference-badge[title]:hover::after {
+        display: none; /* Hide tooltip on very small screens */
+    }
+}
+
+/* Animation for modal appearance */
+.reference-modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+.reference-modal.fade.in .modal-dialog {
+    transform: scale(1);
+    opacity: 1;
+}
