@@ -431,16 +431,16 @@
 }
 
 .reference-badge i {
-    color: #f9aa43;
+    color: #5dade2;
     font-size: 18px;
     transition: all 0.3s ease;
-    filter: drop-shadow(0 2px 4px rgba(249, 170, 67, 0.3));
+    filter: drop-shadow(0 2px 4px rgba(93, 173, 226, 0.3));
 }
 
 .reference-badge:hover i {
-    color: #046b99;
+    color: #f9aa43;
     transform: scale(1.15) rotate(5deg);
-    filter: drop-shadow(0 3px 6px rgba(4, 107, 153, 0.4));
+    filter: drop-shadow(0 3px 6px rgba(249, 170, 67, 0.4));
 }
 
 .reference-badge.badge-hover i {

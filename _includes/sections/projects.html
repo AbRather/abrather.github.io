@@ -44,7 +44,7 @@
                 </h2>
             </div>
             <div class="modal-body">
-                {% if project.img %}
+                {% if project.img and project.img != "" %}
                 <div class="project-modal-image">
                     <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive" alt="{{ project.name }}">
                 </div>

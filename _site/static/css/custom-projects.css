@@ -39,7 +39,7 @@
 
 .projects-intro {
     font-size: 16px;
-    color: #666;
+    color: #000 !important;
     margin: 30px 0 50px;
     line-height: 1.6;
 }
@@ -347,13 +347,16 @@ svg.blob-7 path {
 }
 
 .modal-footer .btn-primary {
-    background-color: #046b99;
-    border-color: #046b99;
+    background-color: #5dade2;
+    border-color: #5dade2;
+    transition: all 0.3s ease;
 }
 
 .modal-footer .btn-primary:hover {
-    background-color: #035580;
-    border-color: #035580;
+    background-color: #f9aa43;
+    border-color: #f9aa43;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive */
