@@ -13,8 +13,8 @@
   max-width: none !important;
   width: 100% !important;
   margin: 0 auto;
-  padding-left: 40px !important;
-  padding-right: 40px !important;
+  padding-left: clamp(20px, 5vw, 40px) !important;
+  padding-right: clamp(20px, 5vw, 40px) !important;
   box-sizing: border-box;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .skills .section-title h2 {
-  font-size: 32px;
+  font-size: clamp(24px, 5vw, 32px);
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -47,14 +47,14 @@
 .skills .section-title p {
   margin-bottom: 0;
   color: #666;
-  font-size: 16px;
+  font-size: clamp(14px, 3vw, 16px);
 }
 
 .skills-grid {
   margin-top: 50px;
   display: flex;
   flex-wrap: nowrap;
-  gap: 25px;
+  gap: clamp(15px, 2vw, 25px);
   justify-content: space-between;
 }
 

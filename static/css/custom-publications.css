@@ -9,13 +9,19 @@
     padding: 60px 0;
 }
 
+#i18_publications .container {
+    max-width: 100%;
+    padding-left: max(20px, 5vw);
+    padding-right: max(20px, 5vw);
+}
+
 #i18_publications .section-title {
     text-align: center;
     padding-bottom: 30px;
 }
 
 #i18_publications h1 {
-    font-size: 32px;
+    font-size: clamp(24px, 5vw, 32px);
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -44,25 +50,30 @@
 /* Publications list styling */
 .entry {
     margin-bottom: 30px;
+    padding-left: max(15px, 3vw);
+    padding-right: max(15px, 3vw);
 }
 
 .entry h2 {
-    font-size: 18px;
+    font-size: clamp(15px, 3.5vw, 18px);
     font-weight: 600;
     color: #000000;
     margin-bottom: 10px;
+    line-height: 1.4;
 }
 
 .entry em {
     color: #046b99;
     font-style: normal;
     font-weight: 500;
+    font-size: clamp(13px, 3vw, 15px);
 }
 
 .entry a {
     color: #00a6d2;
     text-decoration: none;
     margin-left: 10px;
+    font-size: clamp(13px, 3vw, 14px);
 }
 
 .entry a:hover {
@@ -79,31 +90,40 @@
     margin-bottom: 0 !important;
 }
 
-/* Responsive */
+/* Responsive - Using flexible approach for all devices */
 @media (max-width: 991px) {
     #i18_publications {
-        padding: 50px 0;
+        padding: clamp(40px, 8vw, 50px) 0;
     }
     
     #i18_publications h1 {
-        font-size: 28px;
+        font-size: clamp(22px, 4.5vw, 28px);
+    }
+    
+    .entry {
+        margin-bottom: 25px;
     }
 }
 
 @media (max-width: 768px) {
     #i18_publications {
-        padding: 50px 0;
+        padding: clamp(35px, 7vw, 50px) 0;
     }
     
     #i18_publications .container {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: max(20px, 6vw);
+        padding-right: max(20px, 6vw);
     }
     
-    #i18_publications h1 {
-        font-size: 28px;
-        margin-bottom: 15px;
-        padding-bottom: 15px;
+    /* Fix the Bootstrap column layout on mobile */
+    #i18_publications .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .col-lg-8.col-lg-offset-2 {
+        padding-left: max(15px, 4vw);
+        padding-right: max(15px, 4vw);
     }
     
     #i18_publications h1::after {
@@ -116,17 +136,12 @@
     }
     
     .entry {
-        margin-bottom: 25px;
-    }
-    
-    .entry h2 {
-        font-size: 16px;
-        margin-bottom: 8px;
-        line-height: 1.4;
+        margin-bottom: 20px;
+        padding-left: max(10px, 2vw);
+        padding-right: max(10px, 2vw);
     }
     
     .entry em {
-        font-size: 14px;
         display: block;
         margin-bottom: 5px;
     }
@@ -134,7 +149,6 @@
     .entry a {
         margin-left: 0;
         margin-right: 10px;
-        font-size: 14px;
         display: inline-block;
         margin-top: 5px;
     }
@@ -142,29 +156,56 @@
 
 @media (max-width: 480px) {
     #i18_publications {
-        padding: 40px 0;
+        padding: clamp(30px, 6vw, 40px) 0;
     }
     
-    #i18_publications h1 {
-        font-size: 24px;
-        margin-bottom: 12px;
-        padding-bottom: 12px;
+    #i18_publications .container {
+        padding-left: max(15px, 5vw);
+        padding-right: max(15px, 5vw);
+    }
+    
+    .col-lg-8.col-lg-offset-2 {
+        padding-left: max(10px, 3vw);
+        padding-right: max(10px, 3vw);
     }
     
     .entry {
-        margin-bottom: 20px;
+        margin-bottom: 18px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+/* Ultra-small devices (< 375px) */
+@media (max-width: 374px) {
+    #i18_publications .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
-    .entry h2 {
-        font-size: 15px;
-        margin-bottom: 6px;
+    .col-lg-8.col-lg-offset-2 {
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
-    .entry em {
-        font-size: 13px;
+    .entry {
+        padding-left: 0;
+        padding-right: 0;
     }
-    
-    .entry a {
-        font-size: 13px;
+}
+
+/* Large tablets and small desktops (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #i18_publications .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/* Extra large screens (> 1400px) */
+@media (min-width: 1400px) {
+    #i18_publications .container {
+        max-width: 1320px;
+        margin: 0 auto;
     }
 }
