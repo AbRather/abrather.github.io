@@ -6878,7 +6878,7 @@ body.landing-page {
 }
 .landing-page .gray-section {
     background: #f4f4f4;
-    margin-top: 60px;
+    margin-top: 0;
 }
 .landing-page .team-member {
     text-align: center;

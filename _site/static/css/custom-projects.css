@@ -357,19 +357,126 @@ svg.blob-7 path {
 }
 
 /* Responsive */
+@media (max-width: 991px) {
+    #i18_projects {
+        padding: 50px 0;
+    }
+    
+    #i18_projects h1 {
+        font-size: 28px;
+    }
+    
+    .projects-intro {
+        font-size: 15px;
+        margin: 25px 0 40px;
+    }
+}
+
 @media (max-width: 768px) {
+    #i18_projects {
+        padding: 50px 0;
+    }
+    
+    #i18_projects .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #i18_projects h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    
+    #i18_projects h1::after {
+        width: 40px;
+        left: calc(50% - 20px);
+    }
+    
+    .projects-intro {
+        font-size: 15px;
+        margin: 20px 0 30px;
+    }
+    
+    .project-cards-container {
+        margin-top: 30px;
+    }
+    
     .project-card {
         min-height: 280px;
         padding: 30px 20px;
     }
     
+    .project-icon-wrapper {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    
+    .project-icon {
+        font-size: 34px;
+    }
+    
     .project-title {
         font-size: 18px;
         min-height: 48px;
+        margin-bottom: 12px;
+    }
+    
+    .project-description {
+        font-size: 14px;
+        line-height: 1.6;
     }
     
     .project-card-wrapper {
         display: flex;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    #i18_projects {
+        padding: 40px 0;
+    }
+    
+    #i18_projects h1 {
+        font-size: 24px;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .projects-intro {
+        font-size: 14px;
+        margin: 15px 0 25px;
+    }
+    
+    .project-card {
+        min-height: 260px;
+        padding: 25px 15px;
+    }
+    
+    .project-icon-wrapper {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+    }
+    
+    .project-icon {
+        font-size: 30px;
+    }
+    
+    .project-title {
+        font-size: 17px;
+        min-height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .project-description {
+        font-size: 13px;
+    }
+    
+    .project-card-wrapper {
+        margin-bottom: 20px;
     }
 }
 
@@ -392,3 +499,4 @@ svg.blob-7 path {
         min-height: 320px;
     }
 }
+

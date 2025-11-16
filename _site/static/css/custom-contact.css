@@ -1,43 +1,71 @@
 /* Contact Section Styling */
 
 #contact {
-    padding: 80px 0 100px;
+    padding: 60px 0;
     background-color: #ffffff;
 }
 
-.contact-header {
-    margin-bottom: 50px;
+/* Section Title - Matching other sections */
+#contact .section-title {
+    text-align: center;
+    padding-bottom: 30px;
 }
 
-.contact-title {
-    font-size: 36px;
-    font-weight: 700;
-    color: #046b99;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
+#contact .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #046b99;
 }
 
-.contact-divider {
-    width: 60px;
+#contact .section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
     height: 3px;
-    background-color: #ffa62b;
-    border: none;
-    margin: 20px auto;
+    background: #f9aa43;
+    bottom: 0;
+    left: calc(50% - 25px);
 }
 
-.contact-subtitle {
+#contact .section-title p {
+    margin-bottom: 0;
+    color: #000000;
     font-size: 16px;
     line-height: 1.8;
-    color: #000000 !important;
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+/* Remove old contact-header styling */
+.contact-header {
+    display: none;
+}
+
+/* Remove old contact-title styling */
+.contact-title {
+    display: none;
+}
+
+/* Remove old contact-divider styling */
+.contact-divider {
+    display: none;
+}
+
+/* Remove old contact-subtitle as it's now part of section-title */
+.contact-subtitle {
+    display: none;
+}
+
 /* Google Map */
 .map-container {
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 0;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -189,6 +217,14 @@
 
 /* Responsive Design */
 @media (max-width: 991px) {
+    #contact {
+        padding: 50px 0;
+    }
+    
+    #contact .section-title h2 {
+        font-size: 28px;
+    }
+    
     .contact-info-wrapper {
         margin-bottom: 40px;
     }
@@ -196,19 +232,40 @@
 
 @media (max-width: 768px) {
     #contact {
-        padding: 60px 0 80px;
+        padding: 50px 0;
+    }
+    
+    #contact .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
-    .contact-title {
+    #contact .section-title {
+        padding-bottom: 20px;
+    }
+
+    #contact .section-title h2 {
         font-size: 28px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    
+    #contact .section-title h2::after {
+        width: 40px;
+        left: calc(50% - 20px);
     }
 
-    .contact-subtitle {
+    #contact .section-title p {
         font-size: 14px;
+    }
+    
+    .contact-content {
+        margin-top: 30px;
     }
 
     .map-container {
-        margin-bottom: 40px;
+        margin-top: 40px;
+        margin-bottom: 0;
     }
 
     .contact-form-wrapper {
@@ -219,6 +276,14 @@
         margin-bottom: 25px;
         padding-bottom: 25px;
     }
+    
+    .contact-text h3 {
+        font-size: 16px;
+    }
+    
+    .contact-text p {
+        font-size: 14px;
+    }
 
     .btn-contact {
         width: 100%;
@@ -227,8 +292,27 @@
 }
 
 @media (max-width: 480px) {
-    .contact-title {
+    #contact {
+        padding: 40px 0;
+    }
+    
+    #contact .section-title h2 {
         font-size: 24px;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+    }
+    
+    #contact .section-title p {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+    
+    .contact-content {
+        margin-top: 25px;
+    }
+    
+    .map-container {
+        margin-top: 30px;
     }
 
     .contact-icon {
@@ -238,5 +322,26 @@
 
     .contact-icon i {
         font-size: 16px;
+    }
+    
+    .contact-text h3 {
+        font-size: 15px;
+    }
+    
+    .contact-text p {
+        font-size: 13px;
+    }
+    
+    .contact-form-wrapper {
+        padding: 20px 15px;
+    }
+    
+    .contact-info-item {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .btn-contact {
+        padding: 12px 35px;
     }
 }

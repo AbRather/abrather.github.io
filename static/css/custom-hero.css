@@ -98,6 +98,7 @@ h2.hero-tagline {
 .navbar-default .navbar-nav > li > a {
     color: #333 !important;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -120,28 +121,103 @@ h2.hero-tagline {
     color: #00b4d8 !important;
 }
 
+/* Navbar Toggle for Mobile */
+.navbar-toggle {
+    border-color: #333 !important;
+    margin-top: 12px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #333 !important;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    h1.hero-name {
-        font-size: 3.5rem;
+@media (max-width: 991px) {
+    .navbar-nav {
+        margin: 7.5px 0;
     }
     
-    h2.hero-tagline {
-        font-size: 1.5rem;
+    .navbar-default .navbar-nav > li > a {
+        padding: 10px 15px;
     }
     
     .social-icons-nav {
         float: none !important;
-        margin-left: 0;
+        margin: 10px 0;
+    }
+    
+    .social-icons-nav li {
+        display: inline-block;
+    }
+    
+    .social-icons-nav li a {
+        padding: 10px 15px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-landing {
+        min-height: 70vh;
+        padding: 80px 0 40px 0;
+    }
+    
+    h1.hero-name {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        letter-spacing: -1px;
+    }
+    
+    h2.hero-tagline {
+        font-size: 1.3rem;
+        margin: 15px auto;
+    }
+    
+    .hero-cta .btn {
+        padding: 14px 40px;
+        font-size: 13px;
+    }
+    
+    .hero-content-center {
+        padding: 40px 15px;
+    }
+    
+    .navbar-wrapper {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
     }
 }
 
 @media (max-width: 480px) {
+    .hero-landing {
+        min-height: 60vh;
+    }
+    
     h1.hero-name {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-top: 20px;
     }
     
     h2.hero-tagline {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        margin: 10px auto 15px;
+    }
+    
+    .hero-cta .btn {
+        padding: 12px 35px;
+        font-size: 12px;
+    }
+    
+    .hero-content-center {
+        padding: 30px 10px;
+    }
+    
+    .navbar-brand {
+        font-size: 16px !important;
     }
 }

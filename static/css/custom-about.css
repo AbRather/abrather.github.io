@@ -83,11 +83,71 @@
     border-radius: 10px;
     width: 100%;
     height: auto;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
 }
 
 @media (max-width: 991px) {
     .about .content {
         padding-left: 0;
         padding-top: 30px;
+    }
+    
+    .about .headshot {
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 50px 0;
+    }
+    
+    .about .section-title h2 {
+        font-size: 28px;
+        padding-bottom: 15px;
+    }
+    
+    .about .section-title p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+    
+    .about .content h3 {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    
+    .about .content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    
+    .about .headshot {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about .section-title h2 {
+        font-size: 24px;
+    }
+    
+    .about .section-title p {
+        font-size: 15px;
+    }
+    
+    .about .content h3 {
+        font-size: 20px;
+    }
+    
+    .about .content p {
+        font-size: 14px;
+    }
+    
+    .about .content .details p {
+        font-size: 14px;
     }
 }

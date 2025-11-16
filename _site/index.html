@@ -32,8 +32,10 @@
   <link href="static/css/custom-skills.css" rel="stylesheet">
   <link href="static/css/custom-career.css" rel="stylesheet">
   <link href="static/css/custom-projects.css" rel="stylesheet">
+  <link href="static/css/custom-publications.css" rel="stylesheet">
   <link href="static/css/custom-photos.css" rel="stylesheet">
   <link href="static/css/custom-contact.css" rel="stylesheet">
+  <link href="static/css/custom-footer.css" rel="stylesheet">
 
   <!-- Third-party scripts -->
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
@@ -1186,7 +1188,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <h2>Hamid Rather</h2>
                                     <p>Aerospace Engineering master's student and data analyst with 4+ years of experience at the intersection of hardware and software. I design, build, and test complex systems, from rocket engine test stands to cryogenic permeation rigs. I write Python code to model and analyze cutting-edge hardware, from staged-combustion rocket engines to cryogenic material test stands.</p>
                                     <span class="vertical-date"><span></span>
-                                    <br/> <small>Bremen, Germany<br/>abhrather@gmail.com</small> </span>
+                                    <br/> <small>Bremen, Germany<br/>abrather@uni-bremen.de</small> </span>
                                 </div>
                             </div>
                         
@@ -1870,7 +1872,6 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 </div>
 
-<br>
 
   </section>
 
@@ -1910,7 +1911,6 @@ document.addEventListener('DOMContentLoaded', function() {
           <a href="https://pubs.aip.org/aip/acp/article-abstract/2311/1/030036/1027694/Visualization-of-flow-control-using-ion-wind-on">[link]</a>
         </li>
       </ul>
-
     </div>
   </div>
 </div>
@@ -2074,31 +2074,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   <section id="contact" class="features  contact" style="margin-top: 0px;">
     <div class="container" id="contact">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <div class="contact-header">
-                <h2 class="contact-title">CONTACT</h2>
-                <hr class="contact-divider">
-                <p class="contact-subtitle">Please reach out to me with the information below if you believe there is something related to my interests that I can help out with!</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Google Map -->
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.4779869647994!2d-118.44518!3d34.068921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc85f05c0f65%3A0x25a993585c134837!2sUCLA%20Engineering%20IV!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
-                    width="100%" 
-                    height="400" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
+    <div class="section-title">
+        <h2><span data-i18n="contact.heading">CONTACT</span></h2>
+        <p><span data-i18n="contact.subheading">Please reach out to me with the information below if you believe there is something related to my interests that I can help out with!</span></p>
     </div>
 
     <!-- Contact Info and Form -->
@@ -2113,9 +2091,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="contact-details">
                         <h4 class="contact-label">Location:</h4>
-                        <p class="contact-value">University of California, Los Angeles (UCLA)</p>
+                        <p class="contact-value">Universität Bremen, Bremen, Germany</p>
                         
-                        <p class="contact-description">Westwood Plaza, Los Angeles, CA</p>
+                        <p class="contact-description">Bibliothekstraße 1, 28359 Bremen, Germany</p>
                         
                     </div>
                 </div>
@@ -2128,8 +2106,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="contact-details">
                         <h4 class="contact-label">Email:</h4>
                         <p class="contact-value">
-                            <a href="mailto:philipminhdo@ucla.edu" class="contact-link">
-                                philipminhdo@ucla.edu
+                            <a href="mailto:abrather@uni-bremen.de" class="contact-link">
+                                abrather@uni-bremen.de
                             </a>
                         </p>
                     </div>
@@ -2142,9 +2120,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="contact-details">
                         <h4 class="contact-label">Call:</h4>
-                        <p class="contact-value">+1 (714) 548-2027</p>
+                        <p class="contact-value">+49 (0) 176-465566</p>
                         
-                        <p class="contact-description">Available Mon-Fri 9am-5pm PST</p>
+                        <p class="contact-description">Available Mon-Fri 9am-5pm CET</p>
                         
                     </div>
                 </div>
@@ -2154,7 +2132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- Right Side - Contact Form -->
         <div class="col-lg-7 col-md-6">
             <div class="contact-form-wrapper">
-                <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+                <form action="https://formspree.io/f/xyzlbokr" method="POST" class="contact-form">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -2180,6 +2158,23 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </div>
     </div>
+
+    <!-- Google Map - Now below the form -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.8255984563947!2d8.849140776918433!3d53.079340172178634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b1281fae3fffff%3A0x4e3b9c8d5a6f1234!2sBibliothekstra%C3%9Fe%201%2C%2028359%20Bremen%2C%20Germany!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
 </div>
 
   </section>
@@ -2197,54 +2192,56 @@ document.addEventListener('DOMContentLoaded', function() {
 </style>
 
 <!-- Footer Section -->
-<footer style="background-color: #2c3e50; color: #ecf0f1; padding: 40px 0 0 0; margin: 60px 0 0 0 !important; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw !important; margin-right: -50vw !important;">
+<footer class="site-footer">
     <div class="container">
         <div class="row">
             <!-- About Section -->
-            <div class="col-md-4 col-sm-6">
-                <h4 style="color: #00a6d2; margin-bottom: 20px;">Hamid Rather</h4>
-                <p style="font-size: 14px; line-height: 1.6;">
+            <div class="col-md-4 col-sm-6 footer-col">
+                <h4 class="footer-heading">Hamid Rather</h4>
+                <p class="footer-description">
                     MS Student @ Universität Bremen<br>
                     Specializing in aerospace systems, cryogenic materials, and data analysis.
                 </p>
             </div>
             
             <!-- Quick Links -->
-            <div class="col-md-4 col-sm-6">
-                <h4 style="color: #00a6d2; margin-bottom: 20px;">Quick Links</h4>
-                <ul style="list-style: none; padding: 0; font-size: 14px;">
-                    <li style="margin-bottom: 10px;"><a href="#about" style="color: #ecf0f1; text-decoration: none;"><i class="fa fa-angle-right"></i> About Me</a></li>
-                    <li style="margin-bottom: 10px;"><a href="#career" style="color: #ecf0f1; text-decoration: none;"><i class="fa fa-angle-right"></i> Experience</a></li>
-                    <li style="margin-bottom: 10px;"><a href="#projects" style="color: #ecf0f1; text-decoration: none;"><i class="fa fa-angle-right"></i> Projects</a></li>
-                    <li style="margin-bottom: 10px;"><a href="#publications" style="color: #ecf0f1; text-decoration: none;"><i class="fa fa-angle-right"></i> Publications</a></li>
-                    <li style="margin-bottom: 10px;"><a href="#contact" style="color: #ecf0f1; text-decoration: none;"><i class="fa fa-angle-right"></i> Contact</a></li>
+            <div class="col-md-4 col-sm-6 footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#about"><i class="fa fa-angle-right"></i> About Me</a></li>
+                    <li><a href="#career"><i class="fa fa-angle-right"></i> Experience</a></li>
+                    <li><a href="#projects"><i class="fa fa-angle-right"></i> Projects</a></li>
+                    <li><a href="#publications"><i class="fa fa-angle-right"></i> Publications</a></li>
+                    <li><a href="#contact"><i class="fa fa-angle-right"></i> Contact</a></li>
                 </ul>
             </div>
             
             <!-- Contact Info -->
-            <div class="col-md-4 col-sm-12">
-                <h4 style="color: #00a6d2; margin-bottom: 20px;">Get in Touch</h4>
-                <p style="font-size: 14px; line-height: 1.8;">
-                    <i class="fa fa-envelope" style="color: #00a6d2; margin-right: 10px;"></i>
-                    <a href="mailto:rhaamid24@gmail.com" style="color: #ecf0f1; text-decoration: none;">rhaamid24@gmail.com</a>
-                </p>
-                <p style="font-size: 14px; line-height: 1.8;">
-                    <i class="fa fa-map-marker" style="color: #00a6d2; margin-right: 10px;"></i>
-                    Bremen, Germany
-                </p>
-                <div style="font-size: 14px; margin-top: 15px;">
+            <div class="col-md-4 col-sm-12 footer-col">
+                <h4 class="footer-heading">Get in Touch</h4>
+                <div class="footer-contact">
+                    <p>
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:abrather@uni-bremen.de">abrather@uni-bremen.de</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-map-marker"></i>
+                        Bremen, Germany
+                    </p>
+                </div>
+                <div class="footer-social">
                     
-                    <a href="https://linkedin.com/in/rather-hamid" target="_blank" style="color: #ecf0f1; margin-right: 15px; font-size: 18px;">
+                    <a href="https://linkedin.com/in/rather-hamid" target="_blank">
                         <i class="fa fa-linkedin"></i>
                     </a>
                     
                     
-                    <a href="https://github.com/AbRather" target="_blank" style="color: #ecf0f1; margin-right: 15px; font-size: 18px;">
+                    <a href="https://github.com/AbRather" target="_blank">
                         <i class="fa fa-github"></i>
                     </a>
                     
                     
-                    <a href="https://www.researchgate.net/profile/Abdul-Hamid-25" target="_blank" style="color: #ecf0f1; margin-right: 15px; font-size: 18px;" title="ResearchGate">
+                    <a href="https://www.researchgate.net/profile/Abdul-Hamid-25" target="_blank" title="ResearchGate">
                         <i class="ai ai-researchgate"></i>
                     </a>
                     
@@ -2254,15 +2251,15 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         
         <!-- Divider -->
-        <hr style="border-color: #34495e; margin: 30px 0 20px 0;">
+        <hr class="footer-divider">
         
         <!-- Copyright -->
-        <div class="row" style="margin-bottom: 0; padding-bottom: 20px;">
+        <div class="row footer-copyright">
             <div class="col-md-12 text-center">
-                <p style="font-size: 13px; margin: 0; color: #95a5a6;">
+                <p class="copyright-text">
                     &copy; 2025 Hamid Rather. All rights reserved.
                 </p>
-                <p style="font-size: 12px; margin: 5px 0 0 0; color: #7f8c8d;"></p>
+                <p class="copyright-subtext"></p>
             </div>
         </div>
     </div>

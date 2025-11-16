@@ -667,7 +667,150 @@
 }
 
 /* Mobile Responsive */
+@media (max-width: 991px) {
+    /* Section adjustments */
+    .career {
+        padding: 50px 0;
+    }
+    
+    .career .section-title h2 {
+        font-size: 28px;
+    }
+    
+    /* Tab navigation - allow wrapping on tablets */
+    .career-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .career-tabs li {
+        margin: 0 15px 10px 15px;
+    }
+    
+    .career-tabs a {
+        font-size: 17px;
+        padding: 10px 25px;
+    }
+}
+
 @media (max-width: 768px) {
+    /* Section adjustments */
+    .career {
+        padding: 50px 0;
+    }
+    
+    .career .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .career .section-title {
+        padding-bottom: 20px;
+    }
+    
+    .career .section-title h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    
+    /* Tab navigation - stack on mobile */
+    .career-tabs {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .career-tabs li {
+        margin: 0 0 10px 0;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .career-tabs a {
+        font-size: 16px;
+        padding: 12px 20px;
+        display: block;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+    }
+    
+    .career-tabs li.active a {
+        border-color: #046b99;
+        background: rgba(4, 107, 153, 0.05);
+    }
+    
+    /* Timeline - switch to left-aligned on mobile */
+    .career #vertical-timeline::before,
+    .career #education-timeline::before {
+        left: 30px !important;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-block,
+    .career #education-timeline .vertical-timeline-block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-icon,
+    .career #education-timeline .vertical-timeline-icon {
+        left: 12px;
+        width: 40px;
+        height: 40px;
+        margin-left: 0;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-icon i,
+    .career #education-timeline .vertical-timeline-icon i {
+        font-size: 18px;
+        line-height: 40px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content,
+    .career #education-timeline .vertical-timeline-content {
+        margin-left: 70px;
+        width: calc(100% - 70px);
+        float: none !important;
+        padding: 20px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content::before,
+    .career #education-timeline .vertical-timeline-content::before {
+        display: none;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content h2,
+    .career #education-timeline .vertical-timeline-content h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content p,
+    .career #education-timeline .vertical-timeline-content p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        padding-left: 18px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content .vertical-date,
+    .career #education-timeline .vertical-timeline-content .vertical-date {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content .vertical-date > span:first-child {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content .vertical-date small {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+    
+    /* Reference modal adjustments */
     .reference-modal .modal-dialog {
         margin: 10px;
         max-width: 100%;
@@ -718,6 +861,97 @@
 }
 
 @media (max-width: 480px) {
+    /* Further reduce sizing on very small screens */
+    .career {
+        padding: 40px 0;
+    }
+    
+    .career .section-title h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .career .section-title h2::after {
+        width: 40px;
+        left: calc(50% - 20px);
+    }
+    
+    /* Tabs - full width buttons */
+    .career-tabs li {
+        max-width: 100%;
+    }
+    
+    .career-tabs a {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+    
+    /* Timeline adjustments */
+    .career #vertical-timeline::before,
+    .career #education-timeline::before {
+        left: 20px !important;
+        width: 2px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-icon,
+    .career #education-timeline .vertical-timeline-icon {
+        left: 5px;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-icon i,
+    .career #education-timeline .vertical-timeline-icon i {
+        font-size: 14px;
+        line-height: 32px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content,
+    .career #education-timeline .vertical-timeline-content {
+        margin-left: 50px;
+        width: calc(100% - 50px);
+        padding: 15px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content h2,
+    .career #education-timeline .vertical-timeline-content h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content p,
+    .career #education-timeline .vertical-timeline-content p {
+        font-size: 13px;
+        padding-left: 15px;
+        margin-bottom: 8px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content p::before {
+        font-size: 12px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content .vertical-date,
+    .career #education-timeline .vertical-timeline-content .vertical-date {
+        font-size: 12px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content .vertical-date > span:first-child {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    
+    .career #vertical-timeline .vertical-timeline-content .vertical-date small {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    
+    /* Reference badge */
+    .reference-badge i {
+        font-size: 14px;
+    }
+    
+    /* Reference modal */
     .pdf-viewer-container {
         height: 60vh;
         min-height: 400px;

@@ -1,0 +1,170 @@
+/*--------------------------------------------------------------
+# Publications Section
+--------------------------------------------------------------*/
+.publications {
+    padding: 60px 0;
+}
+
+#i18_publications {
+    padding: 60px 0;
+}
+
+#i18_publications .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#i18_publications h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #046b99;
+    margin-top: 0;
+}
+
+#i18_publications h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #f9aa43;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+/* Hide the old navy-line */
+#i18_publications .navy-line {
+    display: none;
+}
+
+/* Publications list styling */
+.entry {
+    margin-bottom: 30px;
+}
+
+.entry h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.entry em {
+    color: #046b99;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.entry a {
+    color: #00a6d2;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.entry a:hover {
+    color: #046b99;
+    text-decoration: underline;
+}
+
+/* Remove extra bottom spacing */
+.publications .row:last-child {
+    margin-bottom: 0 !important;
+}
+
+.publications .row:last-child .col-lg-12 {
+    margin-bottom: 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    #i18_publications {
+        padding: 50px 0;
+    }
+    
+    #i18_publications h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    #i18_publications {
+        padding: 50px 0;
+    }
+    
+    #i18_publications .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #i18_publications h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    
+    #i18_publications h1::after {
+        width: 40px;
+        left: calc(50% - 20px);
+    }
+    
+    #i18_publications .section-title {
+        padding-bottom: 20px;
+    }
+    
+    .entry {
+        margin-bottom: 25px;
+    }
+    
+    .entry h2 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+    
+    .entry em {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .entry a {
+        margin-left: 0;
+        margin-right: 10px;
+        font-size: 14px;
+        display: inline-block;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #i18_publications {
+        padding: 40px 0;
+    }
+    
+    #i18_publications h1 {
+        font-size: 24px;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .entry {
+        margin-bottom: 20px;
+    }
+    
+    .entry h2 {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    
+    .entry em {
+        font-size: 13px;
+    }
+    
+    .entry a {
+        font-size: 13px;
+    }
+}

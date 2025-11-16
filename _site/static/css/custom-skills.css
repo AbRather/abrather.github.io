@@ -2,7 +2,7 @@
 # Skills - 4 Column Grid Layout
 --------------------------------------------------------------*/
 .skills {
-  padding: 80px 0;
+  padding: 60px 0;
   background: #ffffff;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -337,23 +337,48 @@
 
 @media (max-width: 767px) {
   .skills {
-    padding: 60px 0;
+    padding: 50px 0;
+  }
+  
+  .skills .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  .skills .section-title h2 {
+    font-size: 28px;
+  }
+  
+  .skills .section-title p {
+    font-size: 14px;
   }
   
   .skills-grid {
     flex-direction: column;
+    gap: 20px;
   }
   
   .skill-column {
     flex: 0 0 100%;
     max-width: 100%;
     min-width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+  }
+  
+  .skill-card {
+    padding: 30px 20px;
+    min-height: auto;
+  }
+  
+  .skill-card h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
   }
   
   .circular-skills {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    padding: 0 10px;
   }
   
   .circular-progress {
@@ -370,6 +395,30 @@
     font-size: 20px;
   }
   
+  .skill-name {
+    font-size: 13px;
+  }
+  
+  .knowledge-list {
+    gap: 12px;
+  }
+  
+  .knowledge-item {
+    font-size: 14px;
+  }
+  
+  .language-item {
+    margin-bottom: 20px;
+  }
+  
+  .language-name {
+    font-size: 15px;
+  }
+  
+  .language-description {
+    font-size: 12px;
+  }
+  
   .dot-indicators {
     gap: 7px;
   }
@@ -377,5 +426,30 @@
   .dot {
     width: 11px;
     height: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills .section-title h2 {
+    font-size: 24px;
+  }
+  
+  .circular-skills {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .circular-progress {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .progress-ring {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .skill-name {
+    font-size: 14px;
   }
 }
