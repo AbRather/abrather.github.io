@@ -52,9 +52,12 @@
   desc:
     details:
       - CAD modelling, assembly, integration and testing of flight demonstrator parts
-      - Post-processing and analysis of flight tests
       - Development of Python post-processing libraries and data infrastructure
-      - Involvement in test campaigns and integration tasks
+      - Core team member for the MIRA II, the world's first aerospike rocket plane, supporting its assembly from the ground up.
+      - Integrated all major vehicle systems, including structural components, avionics, and the AS-1F aerospike rocket engine.
+      - Co-built and integrated the LOX/Kerosene engine test stand and actively participated in the aerospike hot-fire test campaigns.
+      - Designed and 3D printed flight components, and was responsible for soldering and processing the entire vehicle's cable harnesses.
+      - Analyzed all flight and engine test data using Python to validate performance
     i18n: polaris_des
   date:
     detail: Aug. 2023 - Jan. 2024
@@ -77,6 +80,11 @@
       - Visualization using matplotlib and plotly
       - Automatic detection of test parameters and spectral analysis
       - Documentation of test results
+      - Used test data to develop and improve Python models for engine performance estimation and behavior prediction.
+      - Automated a key in-house test procedure using Python, which was "previously processed manually". I developed the script for automatic parameter detection in pressure drop tests.
+      - Interpreted data and provided active, actionable advice to test engineers after analyzing hot-fire and cold-flow tests.
+      - Performed spectral analysis (FFT, PSD, spectrograms) on high-frequency data from vibration sensors.
+      - Supported the propulsion and operations team in all pre- and post-test activities.
     i18n: rfa_des
   date:
     detail: Jan. 2023 - Apr. 2023
@@ -112,11 +120,15 @@
     title: Reference Letter - SpanTrik
 
 - name:
-    detail: Werkstudent - Advanced Computational Laboratory, SRM Institute
+    detail: Student Researcher (Werkstudent) | Advanced Computational Laboratory, SRM Institute
     i18n: srm
   desc:
     details:
-      - Numerical calculations, data visualization and handling
+      - Led the design and construction of a mini jet impingement wind tunnel from the ground up for experimental research.
+      - Used the tunnel to conduct flow visualization studies and analyze fluid dynamics.
+      - Performed Ansys simulations of turbulent flows to compare computational models against experimental data.
+      - Handled the full experimental data pipeline, data extraction, numerical calculation, and data visualization.
+      - Designed CAD models for composite parts and fabricated 3D printed test prototypes
       - CAD modelling and Ansys simulations
       - Experimental work and documentation
       - Collaboration with manufacturing for prototyping and testing
