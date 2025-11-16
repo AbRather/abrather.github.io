@@ -5,22 +5,46 @@
     i18n: faser
   desc:
     details:
-      - Simulation, testing, digitization and documentation for fiber composites
-      - Tools include Ansys, CATIA, Python, G-code and CNC
-      - Work on composite tanks for hydrogen storage (HYTANK), permeation testing, cryogenic analysis
-      - CAD modelling and 3D printing
+      - Developing and automating data analysis pipelines in Python (Pandas, Matplotlib) to process and visualize experimental data from materials science research.
+      - My work supports high-profile projects like HyTank (an Airbus project) and WaGuPa, focusing on materials for cryogenic liquid hydrogen (LH2) storage.
+      - Designed, built, and commissioned a high-pressure helium permeation test stand, integrating all hardware, sensors, and DAQ systems from the ground up.
+      - Conducting cryogenic material characterization for the HyTank project, including tensile tests on composites submerged in liquid nitrogen (−196°C).
+      - Performing coupled Ansys (CFD) simulations for material analysis in composite tank structures.
     i18n: faser_des
   date:
     detail: Aug. 2023 - Present
     i18n: faser_date
   job:
-    detail: Studentische Hilfskraft
+    detail: Werkstudent
     i18n: faser_job
-  icon: fa-rocket
+  icon: fa-plane
   reference:
     available: true
     filename: studentische_hilfskraft.pdf
     title: Reference Letter - Faserinstitut Bremen
+
+- name:
+    detail: Studentische_hilfskraft -  Resiliente Energiesysteme @ University of Bremen
+    i18n: uob
+  desc:
+    details:
+      - Developed and implemented mathematical models in Python in Python to simulate and analyze complex, resilient energy systems for the HyBit project.
+      - Focused on the modeling and simulation of electrochemical systems, such as hydrogen electrolyzers and fuel cells, to understand their behavior within a larger grid.
+      - Conducted energy system analysis by testing the models against four different power input data sets representing various renewable electricity supply scenarios.
+      - My work directly supported the techno-economic assessment of these hydrogen systems.
+      - Utilized libraries like Pyomo, SciPy, Pandas, etc to build and run the simulations.
+    i18n: uob_des
+  date:
+    detail: Aug. 2023 - March 2024
+    i18n: uob_date
+  job:
+    detail: Studentische_hilfskraft
+    i18n: uob_job
+  icon: fa-code-fork
+  reference:
+    available: true
+    filename: Polaris.pdf
+    title: Reference Letter - Polaris Spaceplanes
 
 - name:
     detail: Werkstudent - Flight Demonstrator Assembly & Component Testing @ Polaris Spaceplanes
@@ -45,7 +69,7 @@
     title: Reference Letter - Polaris Spaceplanes
 
 - name:
-    detail: Propulsion Test Data Intern @ Rocket Factory Augsburg
+    detail: Rocket Propulsion Test Data Intern @ Rocket Factory Augsburg
     i18n: rfa
   desc:
     details:
