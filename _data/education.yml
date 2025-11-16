@@ -1,23 +1,23 @@
 # Education entries
 
 - school: "Hamid Rather"
-  degree: "Los Angeles, CA 90024<br/>(XXX) XXX-XXXX<br/>youremail@example.com"
+  degree: "Bremen, Germany<br/>abhrather@gmail.com"
   date: ""
-  description: "Detail-oriented, driven university (graduate) student and software developer with 4+ years of software and systems engineering experience interested in cutting-edge technologies and research"
+  description: "Aerospace Engineering master's student and data analyst with 4+ years of experience at the intersection of hardware and software. I design, build, and test complex systems, from rocket engine test stands to cryogenic permeation rigs. I write Python code to model and analyze cutting-edge hardware, from staged-combustion rocket engines to cryogenic material test stands."
   icon: fa-user
 
-- school: "University of California, Los Angeles (UCLA)"
-  degree: "Master of Engineering, Autonomous Systems, M.Eng."
-  location: "Los Angeles, CA"
-  date: "Expected August 2025"
-  description: "The Autonomous Systems concentration integrates Mechanical Engineering, Electrical Engineering, and Computer Science with a focus on recent advances including dynamic systems and controls, machine learning, optimization, and embedded and cyber-physical systems."
+- school: "Universität Bremen, Bremen, Germany"
+  degree: "Master of Science, Aerospace Engineering, MS."
+  location: "Bremen, Germany"
+  date: "Expected August 2026"
+  description: "My master's focus at Universität Bremen is a blend of Aerospace Engineering, and Computer Science, specializing in the intersection of hardware and software. My concentration integrates dynamic systems (rocket propulsion ), optimization (Python-based data analysis ), and cyber-physical systems (hands-on test stand design and integration )"
   status: "expected"
   icon: fa-graduation-cap
 
-- school: "University of California, Los Angeles (UCLA)"
-  degree: "Computer Science and Engineering, B.S."
-  location: "Los Angeles, CA"
-  date: "Graduated June 2024"
-  description: "The Computer Science and Engineering curriculum at UCLA provides students with the education and training necessary to design, implement, test, and utilize the hardware and software of digital computers and digital systems."
+- school: "SRM University, Chennai, India"
+  degree: "Aerospace Engineering, B.Tech."
+  location: "Chennai, India"
+  date: "Graduated June 2020"
+  description: "The Aerospace Engineering curriculum at SRM Institute of Science and Technology provided me with the education and training necessary to design, analyze, and visualize complex aerospace systems. My program's focus on Design and Space Propulsion and Fluid Flow Visualization & Analysis gave me a strong foundation in both computational simulation and hands-on experimental work."
   status: "graduated"
   icon: fa-graduation-cap
