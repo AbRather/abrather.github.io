@@ -26,3 +26,143 @@
   description: "Alternative hero background"
   category: "design"
 
+- image: /static/img/photos/IMG_2080.jpg
+  title: "Agricultural Fields at Sunset, #Kashmir"
+  description: "Elevated view of agricultural fields at sunset from the rooftop"
+  category: "landscape"
+
+- image: /static/img/photos/IMG_2081.jpg
+  title: "Agricultural Fields at Sunset, #Kashmir"
+  description: "Elevated view of agricultural fields at sunset from the rooftop"
+  category: "landscape"
+
+- image: /static/img/photos/IMG_2082.jpg
+  title: "Agricultural Fields at Sunset, #Kashmir"
+  description: "Elevated view of agricultural fields at sunset from the rooftop"
+  category: "landscape"
+
+- image: /static/img/photos/IMG_1756.jpg
+  title: "Emirates"
+  description: "UAE Trip"
+  category: "travel"
+
+- image: /static/img/photos/IMG_1761.jpg
+  title: "Emirates"
+  description: "UAE Trip"
+  category: "travel"
+
+- image: /static/img/photos/IMG_1773.jpg
+  title: "Emirates"
+  description: "UAE Trip"
+  category: "travel"
+
+- image: /static/img/photos/IMG_1781.jpg
+  title: "Emirates"
+  description: "UAE Trip"
+  category: "travel"
+
+- image: /static/img/photos/IMG_1783.jpg
+  title: "Emirates"
+  description: "UAE Trip"
+  category: "travel"
+
+- image: /static/img/photos/2023-02-20_Original.jpg
+  title: "Winter Memories 2023"
+  description: "A memorable moment captured in February 2023"
+  category: "memories"
+
+- image: /static/img/photos/IMG_0319.jpg
+  title: "Urban Architecture"
+  description: "Modern architectural perspective"
+  category: "architecture"
+
+- image: /static/img/photos/IMG_0456.jpg
+  title: "City Lights"
+  description: "Evening cityscape with ambient lighting"
+  category: "urban"
+
+- image: /static/img/photos/IMG_0530.jpg
+  title: "Natural Beauty"
+  description: "Capturing nature's essence"
+  category: "nature"
+
+- image: /static/img/photos/IMG_0574.jpg
+  title: "Scenic Vista"
+  description: "Panoramic view of natural landscape"
+  category: "landscape"
+
+- image: /static/img/photos/IMG_0598.jpg
+  title: "Golden Hour"
+  description: "Perfect lighting during sunset"
+  category: "landscape"
+
+- image: /static/img/photos/IMG_0598-2.jpg
+  title: "Golden Hour Variant"
+  description: "Alternative capture of the golden hour moment"
+  category: "landscape"
+
+- image: /static/img/photos/IMG_0599.jpg
+  title: "Twilight Sky"
+  description: "Beautiful sky colors at dusk"
+  category: "sky"
+
+- image: /static/img/photos/IMG_0637.jpg
+  title: "Mountain Range"
+  description: "Majestic mountain peaks in the distance"
+  category: "mountains"
+
+- image: /static/img/photos/IMG_0844.jpg
+  title: "Coastal View"
+  description: "Serene coastal scenery"
+  category: "seascape"
+
+- image: /static/img/photos/IMG_0907.jpg
+  title: "Horizon Line"
+  description: "Where earth meets sky"
+  category: "landscape"
+
+- image: /static/img/photos/IMG_0920.jpg
+  title: "Natural Patterns"
+  description: "Patterns found in nature"
+  category: "nature"
+
+- image: /static/img/photos/IMG_1018.jpg
+  title: "Sunrise Glow"
+  description: "Early morning light breaking through"
+  category: "sunrise"
+
+- image: /static/img/photos/IMG_1038.jpg
+  title: "Forest Path"
+  description: "Trail through natural woodland"
+  category: "nature"
+
+- image: /static/img/photos/IMG_1043.jpg
+  title: "Misty Morning"
+  description: "Atmospheric morning fog"
+  category: "weather"
+
+- image: /static/img/photos/IMG_1044.jpg
+  title: "Peaceful Waters"
+  description: "Calm water reflections"
+  category: "water"
+
+- image: /static/img/photos/IMG_1240.jpg
+  title: "Urban Exploration"
+  description: "Discovering city perspectives"
+  category: "urban"
+
+- image: /static/img/photos/IMG_1261.jpg
+  title: "Architectural Details"
+  description: "Intricate building design elements"
+  category: "architecture"
+
+- image: /static/img/photos/IMG_1312.jpg
+  title: "Cultural Heritage"
+  description: "Historic architecture and culture"
+  category: "culture"
+
+- image: /static/img/photos/IMG_1526.jpg
+  title: "Travel Moments"
+  description: "Captured during journey"
+  category: "travel"
+
