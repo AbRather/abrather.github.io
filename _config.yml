@@ -1,8 +1,8 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: "Abdul Hamid Rather"
-description: "Personal website of Abdul Hamid Rather"
+title: "Hamid Rather"
+description: "Personal website of Hamid Rather"
 keywords: "mrastgoo,mojdeh,rastgoo,medical,imaging,vision,melanoma,polarized,multispectral"
 baseurl: ""
 url: "https://abrather.github.io"
@@ -38,7 +38,7 @@ author:
     hands-on design and simulations with hardware integration. A key part of this role is developing the 
     Python-based data workflows to process and analyze the permeation test results, turning raw sensor data 
     into meaningful insights.
-  cv: 'static/files/Resume_Abdul Hamid Rather.pdf'
+  cv: 'static/files/Resume_Hamid_Rather.pdf'
   
 
 # sections
