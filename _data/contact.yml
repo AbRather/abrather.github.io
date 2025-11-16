@@ -5,7 +5,7 @@ subheading: "Please reach out to me with the information below if you believe th
 
 # Google Map Embed
 map:
-  embed_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.4779869647994!2d-118.44518!3d34.068921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc85f05c0f65%3A0x25a993585c134837!2sUCLA%20Engineering%20IV!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+  embed_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.8255984563947!2d8.849140776918433!3d53.079340172178634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b1281fae3fffff%3A0x4e3b9c8d5a6f1234!2sBibliothekstra%C3%9Fe%201%2C%2028359%20Bremen%2C%20Germany!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
   width: "100%"
   height: "400"
 
@@ -13,20 +13,20 @@ map:
 location:
   icon: "fa-map-marker"
   label: "Location:"
-  value: "University of California, Los Angeles (UCLA)"
-  description: "Westwood Plaza, Los Angeles, CA"
+  value: "Universität Bremen, Bremen, Germany"
+  description: "Bibliothekstraße 1, 28359 Bremen, Germany"
 
 email:
   icon: "fa-envelope"
   label: "Email:"
-  value: "philipminhdo@ucla.edu"
-  link: "mailto:philipminhdo@ucla.edu"
+  value: "abhrather@gmail.com"
+  link: "mailto:abhrather@gmail.com"
 
 phone:
   icon: "fa-phone"
   label: "Call:"
-  value: "+1 (714) 548-2027"
-  description: "Available Mon-Fri 9am-5pm PST"
+  value: "+49 (0) 176-465566"
+  description: "Available Mon-Fri 9am-5pm CET"
 
 # Contact Form
 form:
