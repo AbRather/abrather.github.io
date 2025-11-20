@@ -15,8 +15,8 @@
     - 'Coupled CFD simulations for tank structures'
     - 'Experimental data analysis pipelines'
   url: 'https://tu-dresden.de/ing/maschinenwesen/ilk/projekte/hytank2024'
-  github: ''
-  img: ''
+  #github: ''
+  #img: '/Users/abdulhamid/Developer/portfolio/abrather.github.io/static/img/landing/q1.svg'
 
   # ========================== WaGuPa ==========================
 - name: 'WaGuPa - Composite Materials Research'

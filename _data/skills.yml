@@ -6,7 +6,7 @@ circular_skills:
     percentage: 90
   - name: Pandas / Numpy
     percentage: 88
-  - name: Matplotlib / Plotly
+  - name: Matplotlib / Plotly /PowerBI
     percentage: 80
   - name: CAD (CATIA / SolidWorks)
     percentage: 78
@@ -26,15 +26,12 @@ language_skills:
   - name: Hindi
     level: 9
     description: "Fluent - Native Speaker"
-  - name: Urdu
+  - name: Urdu/Kashmiri
     level: 9
     description: "Fluent - Native Speaker"
   - name: Arabic
     level: 4
     description: "Basic - Elementary"
-  - name: French
-    level: 3
-    description: "Basic - Beginner"
 
 # List-based skills (for knowledge areas)
 knowledge_areas:
