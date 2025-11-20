@@ -144,6 +144,16 @@
     transition: color 0.3s ease;
 }
 
+.project-card-wrapper:nth-child(8) .project-icon {
+    color: #66bb6a;
+    transition: color 0.3s ease;
+}
+
+.project-card-wrapper:nth-child(9) .project-icon {
+    color: #ff7043;
+    transition: color 0.3s ease;
+}
+
 /* Blob background colors - light initially */
 svg.blob-1 path {
     fill: #f5f5f5;
@@ -176,6 +186,16 @@ svg.blob-6 path {
 }
 
 svg.blob-7 path {
+    fill: #f5f5f5;
+    transition: fill 0.3s ease;
+}
+
+svg.blob-8 path {
+    fill: #f5f5f5;
+    transition: fill 0.3s ease;
+}
+
+svg.blob-9 path {
     fill: #f5f5f5;
     transition: fill 0.3s ease;
 }
@@ -238,6 +258,22 @@ svg.blob-7 path {
 }
 
 .project-card-wrapper:nth-child(7) .project-card:hover .project-icon {
+    color: #ffffff;
+}
+
+.project-card-wrapper:nth-child(8) .project-card:hover svg.blob-8 path {
+    fill: #66bb6a;
+}
+
+.project-card-wrapper:nth-child(8) .project-card:hover .project-icon {
+    color: #ffffff;
+}
+
+.project-card-wrapper:nth-child(9) .project-card:hover svg.blob-9 path {
+    fill: #ff7043;
+}
+
+.project-card-wrapper:nth-child(9) .project-card:hover .project-icon {
     color: #ffffff;
 }
 

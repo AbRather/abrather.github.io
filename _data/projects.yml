@@ -1,3 +1,4 @@
+  # ========================== HyTank ==========================
 - name: 'HyTank - Cryogenic Hydrogen Storage'
   i18n: 'hytank'
   icon: 'fa fa-flask'
@@ -17,6 +18,7 @@
   github: ''
   img: ''
 
+  # ========================== WaGuPa ==========================
 - name: 'WaGuPa - Composite Materials Research'
   i18n: 'wagupa'
   icon: 'fa fa-cube'
@@ -36,6 +38,7 @@
   github: ''
   img: ''
 
+  # ========================== BeNeNe ==========================
 - name: 'BENENE - Fiber Composite Research'
   i18n: 'benene'
   icon: 'fa fa-cogs'
@@ -55,6 +58,7 @@
   github: ''
   img: ''
 
+  # ========================== Resilient Energy Systems ==========================
 - name: 'HyBit - Resilient Energy Systems'
   i18n: 'hybit'
   icon: 'fa fa-bolt'
@@ -74,6 +78,7 @@
   github: ''
   img: ''
 
+  # ========================== Polaris ==========================
 - name: 'Polaris MIRA II - Aerospike Rocket Plane'
   i18n: 'polaris_mira'
   icon: 'fa fa-rocket'
@@ -90,5 +95,155 @@
     - 'Flight test data post-processing'
     - 'Cable harness fabrication and soldering'
   url: 'https://polaris-raumflugzeuge.de/Technology/Demonstrators'
+  github: ''
+  img: ''
+
+  # Example usage of fa fa-snowflake-o icon:
+  # <i class="fa fa-snowflake-o"></i>
+
+  # ========================== Master Project ==========================
+- name: 'Master Project - Cryogenic Microcracks in CFRP'
+  i18n: 'polaris_mira'
+  icon: 'fa fa-asterisk'
+  desc: 'Development and validation of a model for the simulation of cryogenically thermally induced microcracks in CFRP'
+  details: 'This research project aims to provide a reliable way to improve the quality and durability of CFRP components for use in challenging cryogenic environments.
+   The combination of experimental testing and simulation enables a well-founded analysis of how manufacturing processes interact with the structural performance of CFRP under 
+   cryogenic conditions. By comparing the simulation and test results, this project work provided a deep understanding of how material design and structural configuration can 
+   be made better to minimize microcrack formation. The findings served as a crucial guide for the future design and engineering of cryo-safe CFRP structures, ensuring their 
+   durability and reliability for the next generation of hydrogen technology applications.
+    <br>
+   This research investigates the micromechanical behavior and damage evolution of a 
+   high-performance Carbon Fiber Reinforced Polymer (CFRP) composite subjected to extreme 
+   cryogenic thermal cycling. Using Abaqus/Standard and Python scripting, a 3D Representative Volume Element (RVE) 
+   with a variable fiber volume fraction was generated to simulate a cryogenic thermal cycle. 
+   The simulation explicitly models the fiber-matrix interface using cohesive elements to 
+   capture debonding and micro-cracking phenomena driven by the significant mismatch in the 
+   Coefficient of Thermal Expansion (CTE) between the fiber and the matrix. The model incorporates 
+   Periodic Boundary Conditions (PBCs) to ensure the RVE accurately represents the bulk material behavior.
+   '
+
+  technologies:
+    - 'CAD (CATIA)'
+    - 'Autoclave manufacturing'
+    - 'Microcracks'
+    - 'Cryogenic testing'
+    - 'Composite laminates'
+    - 'Thermal analysis'
+    - 'Finite Element Analysis'
+    - 'Material characterization'
+  features:
+    - 'Manufacturing of CFRP plates using autoclave process'
+    - 'Cryogenic thermal cycling'
+    - 'Python scripting for RVE generation'
+    - 'Finite Element Analysis with Abaqus/Standard'
+    - 'Modeling of fiber-matrix interface with cohesive elements'
+    - 'Microcrack analysis and validation against experimental data'
+
+  url: 'https://polaris-raumflugzeuge.de/Technology/Demonstrators'
+  github: ''
+  img: ''
+
+  # ========================== Credit Card Dashboard ==========================
+- name: 'Real-Time Credit Card Financial Dashboard'
+  i18n: 'credit_card_dashboard'
+  icon: 'fa fa-line-chart'
+  desc: 'Development of a comprehensive Power BI dashboard using SQL and DAX to monitor financial key figures and customer behavior'
+  details: 'This project aimed to bridge the gap between raw transaction data and actionable business insights by developing a real-time monitoring system for credit card operations.
+   The solution enables stakeholders to control project key figures and visualize complex financial data, facilitating faster and more accurate internal management reporting.
+   By synthesizing data from over 46 million transactions, the dashboard provides immediate visibility into $57 million in revenue and $8 million in interest earned.
+   The analysis revealed critical risk segments, including a 6.06% delinquency rate, allowing for the implementation of data-driven risk mitigation strategies.
+    <br>
+   From a technical perspective, the project involved orchestrating a complete ETL pipeline. Raw data was imported, cleaned, and structured within a PostgreSQL database using SQL. 
+   Advanced DAX functions were defined to calculate dynamic measures for weekly trends and customer segmentation. 
+   The final Power BI visualization automates the reporting process, ensuring data consistency and plausibility while offering interactive filtering 
+   by geography, card category, and customer demographics.'
+
+  technologies:
+    - 'Power BI'
+    - 'SQL (PostgreSQL)'
+    - 'DAX'
+    - 'ETL Pipelines'
+    - 'Data Modeling'
+    - 'Data Quality Management'
+    - 'Financial Analysis'
+    - 'Data Visualization'
+  features:
+    - 'Automated data extraction and transformation using SQL'
+    - 'Real-time monitoring of $57M revenue and transaction trends'
+    - 'Dynamic KPI calculation using advanced DAX measures'
+    - 'Interactive customer segmentation (Age, Job, Income)'
+    - 'Risk analysis and delinquency rate tracking'
+    - 'Weekly trend reporting for internal management'
+
+  url: ''
+  #github: 'https://github.com/rishabhnmishra/Credit_Card_Financial_Dashboard/tree/main'
+  img: ''
+
+  # ========================== Heat Transfer Projects ==========================
+- name: 'Experimental Heat Transfer & Thermal Management Analysis'
+  i18n: 'heat_transfer_analysis'
+  icon: 'fa fa-fire'
+  desc: 'A comprehensive experimental study on passive heat transfer enhancement techniques, focusing on phase change, geometric optimization, and surface modulation.'
+  details: 'Efficient thermal management is critical for the reliability of modern high-power electronic systems. This project series investigated three distinct passive cooling strategies to quantify their impact on heat dissipation rates. 
+   The first phase focused on <strong>Phase Change Thermal Management</strong>, analyzing the performance of Heat Pipes. By characterizing the two-phase flow mechanism (evaporation and condensation), the study demonstrated how utilizing the latent heat of vaporization allows for an effective thermal conductivity that significantly outperforms solid copper conductors.
+    <br>
+   The second phase explored <strong>Geometric Optimization</strong> through a parametric study of extended surfaces (fins). The experiment isolated the effects of orientation (vertical vs. horizontal) on natural convection, quantifying the variation in the convective heat transfer coefficient (h) to determine optimal heat sink configurations driven by buoyancy effects.
+    <br>
+   The final phase investigated <strong>Passive Turbulence Induction</strong>. By introducing controlled surface roughness using wire mesh overlays, the study analyzed the disruption of the thermal boundary layer. The results showed a direct correlation between surface irregularity and an increased Nusselt number, proving that tripping the boundary layer from laminar to turbulent effectively enhances the overall heat transfer rate without active energy input.'
+
+  technologies:
+    - 'Thermocouple Data Acquisition'
+    - 'Two-Phase Flow'
+    - 'Fluid Dynamics'
+    - 'Experimental Design'
+    - 'Thermal Resistance Networks'
+    - 'Error Analysis'
+    - 'Dimensionless Numbers (Nu, Ra, Pr)'
+  features:
+    - 'Performance characterization of Heat Pipes vs. Solid Conductors'
+    - 'Calculation of effective thermal conductivity enhancements'
+    - 'Parametric analysis of Fin Orientation on natural convection'
+    - 'Quantification of convective heat transfer coefficients (h)'
+    - 'Boundary layer manipulation using surface roughness (wire mesh)'
+    - 'Correlation of Nusselt number increases with turbulence induction'
+
+  url: ''
+  github: ''
+  img: ''
+
+  # ========================== Fluid Dynamics Projects ==========================
+- name: 'Experimental Fluid Dynamics & Flow Visualization Platform'
+  i18n: 'fluid_dynamics_visualization'
+  icon: 'fa fa-tint'
+  desc: 'End-to-end development of a custom wind tunnel facility, high-speed optical analysis of jet flows, and computational data processing.'
+  details: 'This extensive portfolio of projects centers on the complete lifecycle of experimental fluid mechanics, moving from hardware fabrication to data-driven discovery. The initiative was divided into three critical phases to investigate the complex physics of jet impingement and vortex shedding.
+   <br>
+   <strong>Phase I: Facility Design & Fabrication</strong>
+   The foundation of this research was the ground-up development of a custom Mini Jet Impingement Wind Tunnel. Over a rigorous 7-month period, the facility was designed, prototyped, and assembled. This required a focus on system integration and "frugal engineering," utilizing cost-effective commercial components to construct a precision testing rig capable of delivering stable, controllable airflow for experimental validation.
+   <br>
+   <strong>Phase II: Optical Diagnostics (Flow Visualization)</strong>
+   With the facility operational, the focus shifted to advanced visualization techniques. Utilizing a departmental High-Speed Camera, experimental campaigns were conducted to capture the transient nature of fluid motion. The research meticulously analyzed the evolution of flow structures issuing from various nozzle geometries and the stagnation dynamics of jet impingement on flat plates, revealing complex vortex interactions invisible to standard observation.
+   <br>
+   <strong>Phase III: Computational Analysis (MATLAB)</strong>
+   The final phase bridged the gap between qualitative footage and quantitative engineering data. Custom MATLAB algorithms were developed to process the high-speed imagery. This post-processing pipeline allowed for the extraction of key flow features, the generation of precise velocity profiles, and the mathematical characterization of turbulence intensity, converting raw experimental data into actionable insights.'
+
+  technologies:
+    - 'Wind Tunnel Design'
+    - 'High-Speed Imaging'
+    - 'MATLAB & Image Processing'
+    - 'Rapid Prototyping'
+    - 'System Integration'
+    - 'Fluid Mechanics'
+    - 'Optical Diagnostics'
+    - 'Experimental Data Analysis'
+  features:
+    - 'Design and construction of a custom Mini Jet Impingement Wind Tunnel (7-month timeline)'
+    - 'Integration of commercial components for cost-effective system design'
+    - 'High-speed visualization of jet flow structures and vortex dynamics'
+    - 'Analysis of jet impingement on flat plate surfaces'
+    - 'Development of MATLAB scripts for automated image post-processing'
+    - 'Quantitative extraction of velocity profiles and flow characteristics'
+
+  url: ''
   github: ''
   img: ''
