@@ -41,6 +41,7 @@ Desktop.ini
 *.swp
 *.swo
 *~
+*.code-workspace
 .project
 .classpath
 .settings/
