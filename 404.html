@@ -4,31 +4,298 @@ title: 404
 permalink: /404.html
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Error</title>
-    <link href="{{"bower_components/bootstrap/dist/css/bootstrap.min.css" | prepend: site.baseurl }}" rel="stylesheet">
-    <link href="{{"bower_components/components-font-awesome/css/font-awesome.min.css"| prepend: site.baseurl }}" rel="stylesheet">
-    <link href="{{"bower_components/animate.css/animate.min.css"| prepend: site.baseurl }}" rel="stylesheet">
-    <link href="{{"static/css/style.min.css"| prepend: site.baseurl }}" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 – Page Not Found</title>
+
+  <!-- Google Font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for social icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  
+  <!-- Academicons for ResearchGate -->
+  <link href="{{ site.baseurl }}/static/font-academic/academicons.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent: #4ac4ff;
+      --accent-soft: rgba(74, 196, 255, 0.05);
+      --glass-bg: rgba(255, 255, 255, 0.05);
+      --text-main: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text-main);
+      background: #ffffff url("/static/img/photos/flight4_starship.jpeg") center/cover no-repeat fixed;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.25);
+      z-index: 0;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 1.5rem;
+      padding-top: 10rem;
+    }
+
+    .error-section {
+      max-width: 800px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .error-box {
+      background: var(--glass-bg);
+      border-radius: 40px;
+      padding: 2.5rem 4rem;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      margin: 0 0 2.5rem 0;
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .error-box h1 {
+      font-size: 5.5rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.3rem;
+    }
+
+    .error-box h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    .lead {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    .sub {
+      font-size: 0.98rem;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      padding: 0.5rem;
+      margin-bottom: 2rem;
+      width: auto;
+    }
+
+    .nav-buttons a {
+      padding: 0.75rem 1.8rem;
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.2s ease;
+      white-space: nowrap;
+      border-radius: 999px;
+    }
+
+    .nav-buttons a:hover {
+      background: var(--accent-soft);
+      transform: translateY(-1px);
+    }
+
+    .nav-buttons a:first-child {
+      background: var(--accent);
+    }
+
+    .nav-buttons a:first-child:hover {
+      background: #33b7fb;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 1.8rem;
+      width: 100%;
+    }
+
+    .social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.28);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .social a:hover {
+      background: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .copyright {
+      font-size: 0.8rem;
+      opacity: 0.9;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 640px) {
+      .wrapper {
+        padding: 2rem 1rem;
+      }
+      .error-box {
+        padding: 2rem 2.4rem;
+        border-radius: 28px;
+      }
+      .error-box h1 {
+        font-size: 4rem;
+        letter-spacing: 0.1em;
+      }
+      .error-box h2 {
+        font-size: 1.4rem;
+      }
+      .lead {
+        font-size: 1rem;
+      }
+      .sub {
+        font-size: 0.9rem;
+      }
+      .nav-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+      }
+      .nav-buttons a {
+        padding: 0.75rem 1.5rem;
+        width: 100%;
+      }
+      .social {
+        gap: 0.6rem;
+      }
+      .social a {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .error-box {
+        padding: 1.5rem 1.8rem;
+        border-radius: 24px;
+      }
+      .error-box h1 {
+        font-size: 3.5rem;
+      }
+      .error-box h2 {
+        font-size: 1.2rem;
+      }
+      .nav-buttons a {
+        padding: 0.75rem 1.8rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
-<body class="gray-bg">
-    <div class="middle-box text-center animated fadeInDown">
+<body>
+  <div class="wrapper">
+    <section class="error-section">
+      <div class="error-box">
         <h1>404</h1>
-        <h3 class="font-bold">Page Not Found</h3>
-        <div class="error-desc">
-            <p>
-            Sorry, but the page you are looking for has not been found. Try checking the URL for error, then hit the refresh button on your browser or try found something else in my website.
-            </p>
-            <div>
-                <a class="btn btn-primary" href="/">Home</a>
-            </div>
-        </div>
-    </div>
-    <!-- Mainly scripts -->
-    <script src="{{"bower_components/jquery/dist/jquery.min.js"| prepend: site.baseurl }}"></script>
-    <script src="{{"bower_components/bootstrap/dist/js/bootstrap.min.js"| prepend: site.baseurl }}"></script>
+        <h2>Trajectory Not Found</h2>
+      </div>
+
+      <p class="lead">
+        The page you're looking for didn't make it into orbit.
+      </p>
+      <p class="sub">
+        It may have been moved, renamed, or never launched.
+        Use the buttons below to get back on course.
+      </p>
+
+      <nav class="nav-buttons">
+        <a href="/index.html#about-me">About</a>
+        <a href="/index.html#career">Career</a>
+        <a href="/index.html#projects">Projects</a>
+        <a href="/index.html#photos">Photos</a>
+        <a href="/index.html#contact">Contact</a>
+      </nav>
+
+      <div class="social">
+        <a href="https://github.com/AbRather" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/rather-hamid" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.researchgate.net/profile/Abdul-Hamid-25" target="_blank" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
+      </div>
+
+      <p class="copyright">
+        &copy; 2025 Hamid Rather. All rights reserved.
+      </p>
+    </section>
+  </div>
+
+  <script>
+    // Force proper navigation to homepage sections
+    document.querySelectorAll('.nav-buttons a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetHash = this.getAttribute('href').split('#')[1];
+        
+        // Clear any saved scroll position to prevent restoration
+        try {
+          sessionStorage.removeItem('siteScrollPosition');
+        } catch(e) {
+          // Ignore storage errors
+        }
+        
+        // Navigate to homepage with hash
+        window.location.href = '/#' + targetHash;
+      });
+    });
+  </script>
 </body>
 </html>
