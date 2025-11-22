@@ -1,17 +1,13 @@
-# Documentation files (keep only README.md)
-IMPLEMENTATION_COMPLETE.md
-REFERENCE_LETTERS_SETUP.md
-REFERENCE_LETTERS_QUICKSTART.md
-RESPONSIVE_IMPROVEMENTS.md
-PDF_DISPLAY_FIX.md
-FILE_STRUCTURE.md
-READY_TO_USE.md
-
 # Jekyll
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# Folder 
+_site/deployment_changes/
+
+
 
 # Ruby
 *.gem
