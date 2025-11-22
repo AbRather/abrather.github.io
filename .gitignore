@@ -7,7 +7,9 @@ _site/
 # Folder 
 _site/deployment_changes/
 
-
+# Vendor dependencies (not needed in repo)
+vendor/
+.bundle/
 
 # Ruby
 *.gem
@@ -35,6 +37,18 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
+# Backup and temporary files
+*-backup.css
+*-backup.js
+*-backup.html
+*_bak.*
+*.backup
+*.bak
+*~
+*.orig
+*-old-*.css
+*-old-*.js
+
 # Editor directories and files
 .vscode/
 .idea/
@@ -60,3 +74,23 @@ bower_components/
 .env
 .env.local
 .env.*.local
+
+# Backup files
+*.bak
+*.backup
+*~.backup
+
+# Cache files
+.cache/
+*.cache
+
+# Build artifacts
+dist/
+build/
+
+# Documentation artifacts (optional - uncomment if you want to ignore)
+# *_COMPLETE.md
+# *_SETUP.md
+# *_QUICKSTART.md
+# *_FIX.md
+# FILE_STRUCTURE.md
