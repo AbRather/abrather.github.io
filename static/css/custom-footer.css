@@ -1,10 +1,22 @@
 /*--------------------------------------------------------------
 # Footer Section
 --------------------------------------------------------------*/
+
+/* Ensure proper page layout */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+footer {
+    display: block;
+    width: 100%;
+}
+
 footer.site-footer {
     background-color: #2c3e50;
     color: #ecf0f1;
-    padding: 40px 0 0 0;
+    padding: 40px 0 20px 0;
     margin: 60px 0 0 0 !important;
     width: 100%;
     position: relative;
@@ -12,6 +24,8 @@ footer.site-footer {
 
 footer.site-footer .container {
     max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer.site-footer .footer-heading {
@@ -108,7 +122,7 @@ footer.site-footer .footer-divider {
 
 footer.site-footer .footer-copyright {
     margin-bottom: 0;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 footer.site-footer .copyright-text {
@@ -127,7 +141,12 @@ footer.site-footer .copyright-subtext {
 @media (max-width: 991px) {
     footer.site-footer {
         margin: 50px 0 0 0 !important;
-        padding: 35px 0 0 0;
+        padding: 35px 0 20px 0;
+    }
+    
+    footer.site-footer .container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     footer.site-footer .footer-col {
@@ -138,12 +157,12 @@ footer.site-footer .copyright-subtext {
 @media (max-width: 768px) {
     footer.site-footer {
         margin: 40px 0 0 0 !important;
-        padding: 30px 0 0 0;
+        padding: 30px 0 20px 0;
     }
     
     footer.site-footer .container {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     footer.site-footer .footer-heading {
@@ -159,12 +178,10 @@ footer.site-footer .copyright-subtext {
     
     footer.site-footer .footer-col {
         margin-bottom: 25px;
-        text-align: center;
     }
     
-    footer.site-footer .footer-links {
-        text-align: left;
-        display: inline-block;
+    footer.site-footer .footer-copyright {
+        padding-bottom: 25px;
     }
     
     footer.site-footer .footer-bottom {
@@ -180,7 +197,12 @@ footer.site-footer .copyright-subtext {
 @media (max-width: 480px) {
     footer.site-footer {
         margin: 30px 0 0 0 !important;
-        padding: 25px 0 0 0;
+        padding: 25px 0 15px 0;
+    }
+    
+    footer.site-footer .container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     footer.site-footer .footer-heading {
@@ -197,6 +219,10 @@ footer.site-footer .copyright-subtext {
     footer.site-footer .footer-social a {
         font-size: 16px;
         margin-right: 12px;
+    }
+    
+    footer.site-footer .footer-copyright {
+        padding-bottom: 20px;
     }
     
     footer.site-footer .footer-bottom {

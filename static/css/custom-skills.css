@@ -1,34 +1,35 @@
-/*--------------------------------------------------------------
-# Skills - 4 Column Grid Layout
---------------------------------------------------------------*/
+/*================================================================
+# SKILLS SECTION 
+================================================================*/
+
+/* ===== BASE STYLES (Mobile First - 320px+) ===== */
 .skills {
   padding: 60px 0;
   background: #ffffff;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .skills .container {
   max-width: none !important;
-  width: 100% !important;
-  margin: 0 auto;
-  padding-left: clamp(20px, 5vw, 40px) !important;
-  padding-right: clamp(20px, 5vw, 40px) !important;
+  width: 90% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
   box-sizing: border-box;
 }
 
 .skills .section-title {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .skills .section-title h2 {
-  font-size: clamp(24px, 5vw, 32px);
+  font-size: clamp(1.75rem, 6vw, 2.25rem);
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
   position: relative;
   color: #046b99;
 }
@@ -46,42 +47,50 @@
 
 .skills .section-title p {
   margin-bottom: 0;
-  color: #666;
-  font-size: clamp(14px, 3vw, 16px);
-}
-
-.skills-grid {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: clamp(15px, 2vw, 25px);
-  justify-content: space-between;
-}
-
-.skill-column {
-  flex: 1 1 0;
-  max-width: none;
-  min-width: 0;
-  margin-bottom: 0;
+  color: #000000;
+  font-size: 18px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*--------------------------------------------------------------
-# Skill Cards
+# Skills Grid Layout - Mobile First
+--------------------------------------------------------------*/
+.skills-grid {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.skill-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*--------------------------------------------------------------
+# Skill Cards - Equal Height & Proper Spacing
 --------------------------------------------------------------*/
 .skill-card {
   background: #f8f9fa;
   padding: 40px 30px;
-  border-radius: 10px;
-  height: 100%;
-  min-height: 600px;
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  background: #ffffff;
 }
 
 .skill-card .skill-icon {
@@ -92,70 +101,89 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 25px;
+  margin: 0 auto 20px;
   background: transparent;
   transition: all 0.3s ease;
 }
 
 .skill-card:hover .skill-icon {
-  background: rgba(249, 170, 67, 0.1);
-  transform: scale(1.05);
+  background: rgba(0, 166, 210, 0.1);
+  transform: rotate(360deg);
+  border-color: #046b99;
 }
 
 .skill-card .skill-icon i {
-  font-size: 38px;
+  font-size: 36px;
   color: #00a6d2;
+  transition: color 0.3s ease;
+}
+
+.skill-card:hover .skill-icon i {
+  color: #046b99;
 }
 
 .skill-card h3 {
   color: #046b99;
-  font-size: 20px;
+  font-size: clamp(1.375rem, 4vw, 1.75rem);
   font-weight: 700;
   text-align: center;
-  margin-bottom: 35px;
-  letter-spacing: 1.5px;
+  margin-bottom: 28px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  flex-shrink: 0;
 }
 
 /*--------------------------------------------------------------
-# Circular Progress Skills
+# Circular Progress Skills - Responsive SVG (viewBox scaling)
 --------------------------------------------------------------*/
 .circular-skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  padding: 0 15px;
+  gap: 25px 15px;
+  padding: 0 10px;
+  width: 100%;
+  flex: 1;
+  align-content: start;
 }
 
 .circular-skill-item {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .circular-progress {
   position: relative;
-  width: 130px;
-  height: 130px;
-  margin: 0 auto 15px;
+  width: 100%;
+  max-width: 110px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto 12px;
+  flex-shrink: 0;
 }
 
+/* SVG uses viewBox for perfect scaling across all devices */
 .progress-ring {
+  width: 100%;
+  height: 100%;
   transform: rotate(-90deg);
-  width: 130px;
-  height: 130px;
 }
 
 .progress-ring-circle-bg {
   fill: none;
-  stroke: #e0e0e0;
-  stroke-width: 10;
+  stroke: #e9ecef;
+  stroke-width: 7;
 }
 
 .progress-ring-circle {
   fill: none;
   stroke: #00a6d2;
-  stroke-width: 10;
+  stroke-width: 7;
   stroke-linecap: round;
-  stroke-dasharray: 327;
-  transition: stroke-dashoffset 1.5s ease-in-out;
+  stroke-dasharray: 339.292; /* 2 * PI * 54 */
+  stroke-dashoffset: 339.292; /* Start hidden */
+  transition: stroke-dashoffset 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .percentage-text {
@@ -163,293 +191,574 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 28px;
+  font-size: clamp(0.875rem, 3vw, 1.125rem);
   font-weight: 700;
   color: #046b99;
+  pointer-events: none;
+  white-space: nowrap;
 }
 
 .circular-skill-item .skill-name {
   color: #555;
-  font-size: 15px;
-  line-height: 1.4;
+  font-size: clamp(0.75rem, 2.5vw, 0.875rem);
+  line-height: 1.3;
   font-weight: 600;
+  word-wrap: break-word;
+  hyphens: auto;
+  text-align: center;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 /*--------------------------------------------------------------
 # Knowledge & Tools Lists
 --------------------------------------------------------------*/
 .knowledge-list {
-  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  flex: 1;
 }
 
 .knowledge-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 22px;
   color: #555;
-  font-size: 16px;
+  font-size: clamp(1.125rem, 3vw, 1.375rem);
+  transition: all 0.2s ease;
+  padding: 3px 0;
+}
+
+.knowledge-item:hover {
+  color: #00a6d2;
+  transform: translateX(5px);
 }
 
 .knowledge-item i {
   color: #00a6d2;
-  margin-right: 14px;
+  margin-right: 12px;
   margin-top: 3px;
-  font-size: 18px;
+  font-size: clamp(1.125rem, 3vw, 1.375rem);
   flex-shrink: 0;
+}
+
+.knowledge-item:hover i {
+  color: #046b99;
 }
 
 .knowledge-item span {
   line-height: 1.6;
   font-weight: 500;
+  word-wrap: break-word;
+  flex: 1;
 }
 
+
 /*--------------------------------------------------------------
-# Language Skills (Dots)
+# Language Skills - Dot Indicators
+# EXTERNAL GAP CONTROL: Adjust the 'gap' value in .language-skills below
+# to increase/decrease spacing between language rows (English, German, etc.)
 --------------------------------------------------------------*/
 .language-skills {
-  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* ← ADJUST THIS to control spacing between languages */
+  width: 100%;
+  flex: 1;
 }
 
 .language-item {
-  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.language-item:hover {
+  transform: translateX(5px);
 }
 
 .language-name {
   color: #046b99;
-  font-size: 17px;
+  font-size: clamp(1rem, 3vw, 1.125rem);
   font-weight: 700;
-  margin-bottom: 8px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 .language-description {
   color: #666;
-  font-size: 13px;
+  font-size: clamp(0.8125rem, 2.5vw, 0.875rem);
   font-style: italic;
-  margin-bottom: 10px;
   font-weight: 400;
+  line-height: 1.4;
 }
 
 .dot-indicators {
   display: flex;
-  gap: 11px;
-  flex-wrap: wrap;
+  gap: 6px;
+  flex-wrap: nowrap; /* CRITICAL: Never wrap to second row */
+  margin-top: 4px;
+  justify-content: flex-start;
 }
 
 .dot {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background: #e0e0e0;
+  background: #e9ecef;
   transition: all 0.3s ease;
-  border: 1px solid #ddd;
+  border: 2px solid #dee2e6;
+  flex-shrink: 0;
 }
 
 .dot.filled {
   background: #00a6d2;
-  box-shadow: 0 0 10px rgba(249, 170, 67, 0.6);
   border-color: #00a6d2;
-  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(0, 166, 210, 0.5);
 }
 
-/*--------------------------------------------------------------
-# Responsive Design
---------------------------------------------------------------*/
-@media (max-width: 1399px) {
-  .skills .container {
-    max-width: 1200px;
-  }
-  
-  .skill-column {
-    max-width: 280px;
-    min-width: 240px;
-  }
-  
-  .skills-grid {
-    gap: 20px;
-  }
+.dot.filled.dot-animated {
+  animation: dotPulse 0.6s ease-out;
 }
 
-@media (max-width: 1199px) {
-  .skills .container {
-    max-width: 960px;
-  }
-  
-  .skills-grid {
-    gap: 18px;
-  }
-  
-  .skill-column {
-    max-width: 260px;
-    min-width: 220px;
-  }
-  
-  .skill-card {
-    min-height: 560px;
-    padding: 30px 20px;
-  }
-  
-  .circular-progress {
-    width: 110px;
-    height: 110px;
-  }
-  
-  .progress-ring {
-    width: 110px;
-    height: 110px;
-  }
-  
-  .progress-ring-circle-bg {
-    stroke-width: 9;
-  }
-  
-  .progress-ring-circle {
-    stroke-width: 9;
-  }
-  
-  .percentage-text {
-    font-size: 22px;
-  }
+@keyframes dotPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
 }
 
-@media (max-width: 991px) {
-  .skills-grid {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .skill-column {
-    flex: 0 0 45%;
-    max-width: 400px;
-    min-width: 300px;
-    margin-bottom: 20px;
-  }
-  
-  .skill-card {
-    min-height: auto;
-    padding: 35px 25px;
-  }
-  
-  .circular-skills {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 767px) {
+/* ===== SMALL MOBILE (576px+) ===== */
+@media (min-width: 576px) {
   .skills {
-    padding: 50px 0;
+    padding: 70px 0;
   }
   
   .skills .container {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
-  
-  .skills .section-title h2 {
-    font-size: 28px;
-  }
-  
-  .skills .section-title p {
-    font-size: 14px;
-  }
-  
-  .skills-grid {
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .skill-column {
-    flex: 0 0 100%;
-    max-width: 100%;
-    min-width: 100%;
-    margin-bottom: 0;
+    width: 90% !important;
+    padding: 0 !important;
   }
   
   .skill-card {
-    padding: 30px 20px;
-    min-height: auto;
-  }
-  
-  .skill-card h3 {
-    font-size: 18px;
-    margin-bottom: 25px;
-  }
-  
-  .circular-skills {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 0 10px;
+    padding: 42px 32px;
   }
   
   .circular-progress {
-    width: 100px;
-    height: 100px;
+    max-width: 115px;
   }
   
-  .progress-ring {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .percentage-text {
-    font-size: 20px;
-  }
-  
-  .skill-name {
-    font-size: 13px;
+  .circular-skills {
+    gap: 26px 16px;
   }
   
   .knowledge-list {
-    gap: 12px;
+    gap: 15px;
   }
   
-  .knowledge-item {
-    font-size: 14px;
+  .language-skills {
+    gap: 20px; /* ← ADJUST THIS for 576px+ screens */
   }
   
-  .language-item {
-    margin-bottom: 20px;
-  }
-  
-  .language-name {
-    font-size: 15px;
-  }
-  
-  .language-description {
-    font-size: 12px;
+  .dot {
+    width: 13px;
+    height: 13px;
   }
   
   .dot-indicators {
     gap: 7px;
+  }
+}
+
+/* ===== TABLET PORTRAIT (768px+) ===== */
+@media (min-width: 768px) {
+  .skills {
+    padding: 80px 0;
+  }
+  
+  .skills .container {
+    width: 90% !important;
+    padding: 0 !important;
+  }
+  
+  .skills .section-title {
+    padding-bottom: 45px;
+  }
+  
+  .skills-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 28px;
+  }
+  
+  /* 2x2 grid on tablet */
+  .skill-column {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .skill-card {
+    padding: 45px 35px;
+    min-height: 520px;
+  }
+  
+  .skill-card .skill-icon {
+    width: 85px;
+    height: 85px;
+  }
+  
+  .skill-card .skill-icon i {
+    font-size: 38px;
+  }
+  
+  .circular-progress {
+    max-width: 120px;
+  }
+  
+  .circular-skills {
+    gap: 28px 18px;
+  }
+  
+  .knowledge-list {
+    gap: 16px;
+  }
+  
+  .language-skills {
+    gap: 22px; /* ← ADJUST THIS for 768px+ screens */
+  }
+  
+  .dot {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .dot-indicators {
+    gap: 8px;
+  }
+}
+
+/* ===== DESKTOP (992px+) - 4 Columns ===== */
+@media (min-width: 992px) {
+  .skills .container {
+    width: 90% !important;
+    padding: 0 !important;
+    max-width: none !important;
+  }
+  
+  .skills-grid {
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+  
+  /* Equal-width 4 columns */
+  .skill-column {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .skill-card {
+    padding: 40px 25px;
+    min-height: 580px;
+  }
+  
+  .skill-card .skill-icon {
+    width: 72px;
+    height: 72px;
+  }
+  
+  .skill-card .skill-icon i {
+    font-size: 34px;
+  }
+  
+  .skill-card h3 {
+    font-size: 1.375rem;
+    margin-bottom: 24px;
+  }
+  
+  .circular-progress {
+    max-width: 95px;
+    margin-bottom: 10px;
+  }
+  
+  .circular-skills {
+    gap: 22px 12px;
+    padding: 0 5px;
+  }
+  
+  .progress-ring-circle-bg,
+  .progress-ring-circle {
+    stroke-width: 7;
+  }
+  
+  .percentage-text {
+    font-size: 1.125rem;
+  }
+  
+  .circular-skill-item .skill-name {
+    font-size: 0.9375rem;
+    line-height: 1.3;
+  }
+  
+  .knowledge-list {
+    gap: 13px;
+  }
+  
+  .knowledge-item {
+    font-size: 1.125rem;
+    padding: 2px 0;
+  }
+  
+  .knowledge-item i {
+    font-size: 1.0625rem;
+    margin-right: 9px;
+  }
+  
+  .language-skills {
+    gap: 24px; /* ← ADJUST THIS for 992px+ screens */
+  }
+  
+  .language-name {
+    font-size: 1.25rem;
+  }
+  
+  .language-description {
+    font-size: 1rem;
   }
   
   .dot {
     width: 11px;
     height: 11px;
   }
+  
+  .dot-indicators {
+    gap: 6px;
+  }
 }
 
-@media (max-width: 480px) {
-  .skills .section-title h2 {
-    font-size: 24px;
+/* ===== LARGE DESKTOP (1200px+) ===== */
+@media (min-width: 1200px) {
+  .skills .container {
+    width: 90% !important;
+    padding: 0 !important;
+    max-width: none !important;
   }
   
-  .circular-skills {
-    grid-template-columns: 1fr;
-    gap: 25px;
+  .skills-grid {
+    gap: 15px;
+  }
+  
+  .skill-card {
+    padding: 60px 45px;
+    min-height: 660px;
+  }
+  
+  .skill-card .skill-icon {
+    width: 95px;
+    height: 95px;
+  }
+  
+  .skill-card .skill-icon i {
+    font-size: 44px;
+  }
+  
+  .skill-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: 32px;
   }
   
   .circular-progress {
-    width: 120px;
-    height: 120px;
+    max-width: 125px;
+    margin-bottom: 16px;
   }
   
-  .progress-ring {
-    width: 120px;
-    height: 120px;
+  .circular-skills {
+    gap: 30px 20px;
+    padding: 0 10px;
   }
   
-  .skill-name {
-    font-size: 14px;
+  .progress-ring-circle-bg,
+  .progress-ring-circle {
+    stroke-width: 8;
+  }
+  
+  .percentage-text {
+    font-size: 1.5rem;
+  }
+  
+  .circular-skill-item .skill-name {
+    font-size: 1.125rem;
+  }
+  
+  .knowledge-list {
+    gap: 18px;
+  }
+  
+  .knowledge-item {
+    font-size: 1.375rem;
+  }
+  
+  .knowledge-item i {
+    font-size: 1.25rem;
+    margin-right: 13px;
+  }
+  
+  .language-skills {
+    gap: 26px; /* ← ADJUST THIS for 1200px+ screens */
+  }
+  
+  .language-name {
+    font-size: 1.5rem;
+  }
+  
+  .language-description {
+    font-size: 1.125rem;
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .dot-indicators {
+    gap: 8px;
   }
 }
+
+/* ===== EXTRA LARGE DESKTOP (1400px+) ===== */
+@media (min-width: 1400px) {
+  .skills .container {
+    width: 90% !important;
+    padding: 0 !important;
+    max-width: none !important;
+  }
+  
+  .skills-grid {
+    gap: 20px;
+  }
+  
+  .skill-card {
+    padding: 70px 50px;
+    min-height: 700px;
+  }
+  
+  .skill-card .skill-icon {
+    width: 105px;
+    height: 105px;
+  }
+  
+  .skill-card .skill-icon i {
+    font-size: 50px;
+  }
+  
+  .skill-card h3 {
+    font-size: 2rem;
+    margin-bottom: 36px;
+  }
+  
+  .circular-progress {
+    max-width: 140px;
+    margin-bottom: 18px;
+  }
+  
+  .circular-skills {
+    gap: 32px 24px;
+    padding: 0 15px;
+  }
+  
+  .progress-ring-circle-bg,
+  .progress-ring-circle {
+    stroke-width: 9;
+  }
+  
+  .percentage-text {
+    font-size: 1.75rem;
+  }
+  
+  .circular-skill-item .skill-name {
+    font-size: 1.25rem;
+  }
+  
+  .knowledge-list {
+    gap: 20px;
+  }
+  
+  .knowledge-item {
+    font-size: 1.5rem;
+  }
+  
+  .knowledge-item i {
+    font-size: 1.375rem;
+    margin-right: 14px;
+  }
+  
+  .language-skills {
+    gap: 28px; /* ← ADJUST THIS for 1400px+ screens */
+  }
+  
+  .language-name {
+    font-size: 1.75rem;
+  }
+  
+  .language-description {
+    font-size: 1.25rem;
+  }
+  
+  .dot {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .dot-indicators {
+    gap: 8px;
+  }
+}
+
+/* ===== ACCESSIBILITY & PERFORMANCE ===== */
+@media (prefers-reduced-motion: reduce) {
+  .skill-card,
+  .skill-card .skill-icon,
+  .skill-card:hover,
+  .progress-ring-circle,
+  .dot,
+  .knowledge-item,
+  .dot-animated {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .skill-card:hover {
+    transform: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .knowledge-item:hover {
+    transform: none;
+    color: #555;
+  }
+  
+  .skill-card:hover .skill-icon {
+    transform: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .skills {
+    padding: 30px 0;
+    page-break-inside: avoid;
+  }
+  
+  .skill-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    page-break-inside: avoid;
+  }
+  
+  .skill-card:hover {
+    transform: none;
+  }
+}
+

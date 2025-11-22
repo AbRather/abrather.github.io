@@ -8,7 +8,7 @@
 
         <div class="skills-grid">
             
-            <!-- Column 1: Core Technical Skills (Circular) -->
+            <!-- Column 1: Core Technical Skills (Circular Progress) -->
             <div class="skill-column">
                 <div class="skill-card">
                     <div class="skill-icon">
@@ -19,10 +19,10 @@
                         {% for skill in site.data.skills.circular_skills %}
                         <div class="circular-skill-item">
                             <div class="circular-progress" data-percentage="{{ skill.percentage }}">
-                                <svg class="progress-ring" width="130" height="130">
-                                    <circle class="progress-ring-circle-bg" cx="65" cy="65" r="52"></circle>
-                                    <circle class="progress-ring-circle" cx="65" cy="65" r="52" 
-                                            style="stroke-dashoffset: {{ 327 | minus: skill.percentage | times: 3.27 }}"></circle>
+                                <svg class="progress-ring" viewBox="0 0 120 120">
+                                    <circle class="progress-ring-circle-bg" cx="60" cy="60" r="54"></circle>
+                                    <circle class="progress-ring-circle" cx="60" cy="60" r="54" 
+                                            style="stroke-dashoffset: 339.292"></circle>
                                 </svg>
                                 <div class="percentage-text">{{ skill.percentage }}%</div>
                             </div>
@@ -33,7 +33,7 @@
                 </div>
             </div>
 
-            <!-- Column 2: Knowledge Areas (Checkmarks) -->
+            <!-- Column 2: Knowledge Areas -->
             <div class="skill-column">
                 <div class="skill-card">
                     <div class="skill-icon">
@@ -43,7 +43,7 @@
                     <div class="knowledge-list">
                         {% for item in site.data.skills.knowledge_areas %}
                         <div class="knowledge-item">
-                            <i class="fa fa-check"></i>
+                            <i class="fa fa-check-circle"></i>
                             <span>{{ item }}</span>
                         </div>
                         {% endfor %}
@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <!-- Column 3: Technical Tools (Checkmarks) -->
+            <!-- Column 3: Technical Tools -->
             <div class="skill-column">
                 <div class="skill-card">
                     <div class="skill-icon">
@@ -61,7 +61,7 @@
                     <div class="knowledge-list">
                         {% for item in site.data.skills.technical_list %}
                         <div class="knowledge-item">
-                            <i class="fa fa-check"></i>
+                            <i class="fa fa-check-circle"></i>
                             <span>{{ item }}</span>
                         </div>
                         {% endfor %}
@@ -102,56 +102,121 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const skillsSection = document.getElementById('skills');
+    if (!skillsSection) return;
     
+    // Dynamic circle sizing - calculate based on actual SVG size
     function animateCircularProgress() {
-        const circles = skillsSection.querySelectorAll('.progress-ring-circle');
-        circles.forEach(circle => {
-            const percentage = circle.closest('.circular-progress').getAttribute('data-percentage');
-            const circumference = 2 * Math.PI * 52; // radius is 52
+        const progressItems = skillsSection.querySelectorAll('.circular-progress');
+        progressItems.forEach(item => {
+            const percentage = parseInt(item.getAttribute('data-percentage'));
+            const circle = item.querySelector('.progress-ring-circle');
+            const radius = 54; // Matches SVG radius
+            const circumference = 2 * Math.PI * radius; // ≈ 339.292
             const offset = circumference - (percentage / 100) * circumference;
-            circle.style.strokeDashoffset = offset;
+            
+            // Animate with delay
+            setTimeout(() => {
+                circle.style.strokeDashoffset = offset;
+            }, 100);
         });
     }
     
     function resetCircularProgress() {
         const circles = skillsSection.querySelectorAll('.progress-ring-circle');
         circles.forEach(circle => {
-            circle.style.strokeDashoffset = 327; // Full circle
+            circle.style.strokeDashoffset = 339.292; // Full circle (hidden)
         });
     }
     
-    // Animate dots
+    // Animate dots with stagger effect
     function animateDots() {
         const dots = skillsSection.querySelectorAll('.dot.filled');
         dots.forEach((dot, index) => {
             setTimeout(() => {
-                dot.style.transform = 'scale(1.2)';
-                setTimeout(() => {
-                    dot.style.transform = 'scale(1)';
-                }, 200);
-            }, index * 50);
+                dot.classList.add('dot-animated');
+            }, index * 40);
         });
     }
     
-    // Check if skills section is in viewport
+    // Intersection Observer for scroll animations
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Reset and animate when entering viewport
                 resetCircularProgress();
                 setTimeout(() => {
                     animateCircularProgress();
                     animateDots();
-                }, 100);
+                }, 150);
             } else {
-                // Reset when leaving viewport
+                // Reset when out of view
                 resetCircularProgress();
+                const dots = skillsSection.querySelectorAll('.dot.filled');
+                dots.forEach(dot => dot.classList.remove('dot-animated'));
             }
         });
     }, { threshold: 0.2 });
     
-    if (skillsSection) {
-        observer.observe(skillsSection);
+    observer.observe(skillsSection);
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const skillsSection = document.getElementById('skills');
+    if (!skillsSection) return;
+    
+    // Dynamic circle sizing - calculate based on actual SVG size
+    function animateCircularProgress() {
+        const progressItems = skillsSection.querySelectorAll('.circular-progress');
+        progressItems.forEach(item => {
+            const percentage = parseInt(item.getAttribute('data-percentage'));
+            const circle = item.querySelector('.progress-ring-circle');
+            const radius = 54; // Matches SVG radius
+            const circumference = 2 * Math.PI * radius; // ≈ 339.292
+            const offset = circumference - (percentage / 100) * circumference;
+            
+            // Animate with delay
+            setTimeout(() => {
+                circle.style.strokeDashoffset = offset;
+            }, 100);
+        });
     }
+    
+    function resetCircularProgress() {
+        const circles = skillsSection.querySelectorAll('.progress-ring-circle');
+        circles.forEach(circle => {
+            circle.style.strokeDashoffset = 339.292; // Full circle (hidden)
+        });
+    }
+    
+    // Animate dots with stagger effect
+    function animateDots() {
+        const dots = skillsSection.querySelectorAll('.dot.filled');
+        dots.forEach((dot, index) => {
+            setTimeout(() => {
+                dot.classList.add('dot-animated');
+            }, index * 40);
+        });
+    }
+    
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                resetCircularProgress();
+                setTimeout(() => {
+                    animateCircularProgress();
+                    animateDots();
+                }, 150);
+            } else {
+                // Reset when out of view
+                resetCircularProgress();
+                const dots = skillsSection.querySelectorAll('.dot.filled');
+                dots.forEach(dot => dot.classList.remove('dot-animated'));
+            }
+        });
+    }, { threshold: 0.2 });
+    
+    observer.observe(skillsSection);
 });
 </script>

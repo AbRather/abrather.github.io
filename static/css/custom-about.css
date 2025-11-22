@@ -8,8 +8,9 @@
 .about .container {
     max-width: 1350px !important;
     width: 100%;
-    padding-left: max(20px, 5vw);
-    padding-right: max(20px, 5vw);
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .about .section-title {
@@ -45,8 +46,8 @@
 }
 
 .about .content {
-    padding-left: max(10px, 2vw);
-    padding-right: max(10px, 2vw);
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .about .content h3 {
@@ -94,12 +95,12 @@
 /* Responsive - Universal approach for all devices */
 @media (max-width: 991px) {
     .about {
-        padding: clamp(40px, 8vw, 50px) 0;
+        padding: 50px 0;
     }
     
     .about .content {
-        padding-left: max(15px, 3vw);
-        padding-right: max(15px, 3vw);
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 30px;
     }
     
@@ -111,12 +112,12 @@
 
 @media (max-width: 768px) {
     .about {
-        padding: clamp(35px, 7vw, 50px) 0;
+        padding: 50px 0;
     }
     
     .about .container {
-        padding-left: max(20px, 6vw);
-        padding-right: max(20px, 6vw);
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     .about .row {
@@ -140,8 +141,8 @@
     }
     
     .about .content {
-        padding-left: max(15px, 4vw);
-        padding-right: max(15px, 4vw);
+        padding-left: 15px;
+        padding-right: 15px;
         padding-top: 20px;
     }
     
@@ -152,17 +153,17 @@
 
 @media (max-width: 480px) {
     .about {
-        padding: clamp(30px, 6vw, 40px) 0;
+        padding: 40px 0;
     }
     
     .about .container {
-        padding-left: max(15px, 5vw);
-        padding-right: max(15px, 5vw);
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
     .about .content {
-        padding-left: max(10px, 3vw);
-        padding-right: max(10px, 3vw);
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     .about .headshot {

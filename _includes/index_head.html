@@ -22,16 +22,17 @@
   <!-- Removed missing jquery.gritter.css -->
   <!-- Custom styles for this template -->
   <!-- <link href="{{"static/css/pygments.css"| prepend: site.baseurl }}" rel="stylesheet"> -->
+  <link href="{{"static/css/custom-global-fixes.css?v=1.0"| prepend: site.baseurl }}" rel="stylesheet">
   <link href="{{"static/css/style.min.css"| prepend: site.baseurl }}" rel="stylesheet">
   <link href="{{"static/css/custom-hero.css"| prepend: site.baseurl }}" rel="stylesheet">
   <link href="{{"static/css/custom-about.css"| prepend: site.baseurl }}" rel="stylesheet">
-  <link href="{{"static/css/custom-skills.css"| prepend: site.baseurl }}" rel="stylesheet">
-  <link href="{{"static/css/custom-career.css"| prepend: site.baseurl }}" rel="stylesheet">
-  <link href="{{"static/css/custom-projects.css"| prepend: site.baseurl }}" rel="stylesheet">
-  <link href="{{"static/css/custom-publications.css"| prepend: site.baseurl }}" rel="stylesheet">
-  <link href="{{"static/css/custom-photos.css"| prepend: site.baseurl }}" rel="stylesheet">
-  <link href="{{"static/css/custom-contact.css"| prepend: site.baseurl }}" rel="stylesheet">
-  <link href="{{"static/css/custom-footer.css"| prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{ "static/css/custom-skills.css?v=18.0" | prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{"static/css/custom-career.css?v=4.0"| prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{ "static/css/custom-projects.css?v=6.0" | prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{"static/css/custom-publications.css?v=3.0"| prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{"static/css/custom-photos.css?v=5.0"| prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{"static/css/custom-contact.css?v=6.0"| prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{"static/css/custom-footer.css?v=1.0"| prepend: site.baseurl }}" rel="stylesheet">
 
   <!-- Third-party scripts -->
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
@@ -43,6 +44,100 @@
 
   <!-- Custom and plugin javascript -->
   <!-- <script src="{{"static/js/inspinia.js"| prepend: site.baseurl }}"></script> -->
+
+  <!-- Scroll position restoration -->
+  <script>
+    (function() {
+      'use strict';
+      
+      // Enable manual scroll restoration
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+      
+      var STORAGE_KEY = 'siteScrollPosition';
+      var restoreAttempts = 0;
+      var maxAttempts = 5;
+      
+      // Save scroll position
+      var saveScrollPosition = function() {
+        var scrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        try {
+          sessionStorage.setItem(STORAGE_KEY, scrollY.toString());
+        } catch(e) {
+          // Ignore storage errors
+        }
+      };
+      
+      // Throttled scroll save
+      var scrollTimer = null;
+      var handleScroll = function() {
+        if (scrollTimer) {
+          clearTimeout(scrollTimer);
+        }
+        scrollTimer = setTimeout(saveScrollPosition, 200);
+      };
+      
+      // Restore scroll position with retry logic
+      var restoreScrollPosition = function() {
+        try {
+          var savedY = sessionStorage.getItem(STORAGE_KEY);
+          if (savedY && savedY !== '0' && savedY !== 0) {
+            var targetY = parseInt(savedY, 10);
+            
+            if (!isNaN(targetY) && targetY > 0) {
+              // Force immediate scroll
+              document.documentElement.scrollTop = targetY;
+              document.body.scrollTop = targetY;
+              window.scrollTo(0, targetY);
+              
+              // Verify after short delay
+              setTimeout(function() {
+                var currentY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+                
+                if (Math.abs(currentY - targetY) > 50 && restoreAttempts < maxAttempts) {
+                  restoreAttempts++;
+                  document.documentElement.scrollTop = targetY;
+                  document.body.scrollTop = targetY;
+                  window.scrollTo(0, targetY);
+                }
+              }, 200);
+            }
+          }
+        } catch(e) {
+          // Ignore errors
+        }
+      };
+      
+      // Attach save listeners
+      if (window.addEventListener) {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('beforeunload', saveScrollPosition, false);
+        window.addEventListener('pagehide', saveScrollPosition, false);
+        window.addEventListener('unload', saveScrollPosition, false);
+      }
+      
+      // Restore scroll - multiple attempts at different stages
+      var tryRestore = function() {
+        setTimeout(restoreScrollPosition, 0);
+        setTimeout(restoreScrollPosition, 100);
+        setTimeout(restoreScrollPosition, 300);
+        setTimeout(restoreScrollPosition, 500);
+      };
+      
+      // Start restoration process
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', tryRestore);
+      } else {
+        tryRestore();
+      }
+      
+      window.addEventListener('load', function() {
+        setTimeout(restoreScrollPosition, 100);
+        setTimeout(restoreScrollPosition, 500);
+      });
+    })();
+  </script>
 
 <!-- GrowingIO -->
 {% if site.gio %}

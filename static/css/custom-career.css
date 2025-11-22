@@ -153,15 +153,41 @@
     }
 }
 
-/* Professional Experience heading color */
+/* Timeline Icon Size Override - Desktop */
+@media only screen and (min-width: 1170px) {
+    .career .center-orientation .vertical-timeline-icon {
+        width: 60px !important;
+        height: 60px !important;
+        margin-left: -30px !important;
+    }
+    .career .center-orientation .vertical-timeline-icon i {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 22px !important;
+        display: block !important;
+        position: relative !important;
+        left: 50% !important;
+        top: 50% !important;
+        margin-left: -14px !important;
+        margin-top: -14px !important;
+        line-height: 28px !important;
+        text-align: center !important;
+    }
+}
+
+/* Professional Experience heading color and size */
 .career #vertical-timeline .vertical-timeline-content h2 {
     color: #046b99;
+    font-size: 22px;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 
-/* Professional Experience paragraph color */
+/* Professional Experience paragraph color and size */
 .career #vertical-timeline .vertical-timeline-content p {
     color: #000000;
+    font-size: 16px;
+    line-height: 1.7;
     position: relative;
     padding-left: 20px;
     transition: color 0.3s ease;
@@ -261,19 +287,23 @@
     margin-top: 8px;
     color: #046b99;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     font-style: italic;
 }
 
 /* Education Section Styles */
 .career #education-timeline .vertical-timeline-content h2 {
     color: #046b99;
+    font-size: 22px;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 
 /* Education paragraph - no bullet points */
 .career #education-timeline .vertical-timeline-content p {
     color: #000000;
+    font-size: 16px;
+    line-height: 1.7;
     transition: color 0.3s ease;
 }
 
@@ -397,7 +427,7 @@
     margin-top: 8px;
     color: #046b99;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     font-style: italic;
 }
 
@@ -747,32 +777,49 @@
         left: 30px !important;
     }
     
+    /* Force timeline blocks to be visible on mobile - override animation states */
     .career #vertical-timeline .vertical-timeline-block,
     .career #education-timeline .vertical-timeline-block {
         width: 100%;
         margin-bottom: 30px;
+        opacity: 1 !important;
+        transform: translateX(0) !important;
     }
     
+    /* Force icons to be visible on mobile */
     .career #vertical-timeline .vertical-timeline-icon,
     .career #education-timeline .vertical-timeline-icon {
         left: 12px;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         margin-left: 0;
+        opacity: 1 !important;
+        transform: scale(1) !important;
     }
     
     .career #vertical-timeline .vertical-timeline-icon i,
     .career #education-timeline .vertical-timeline-icon i {
-        font-size: 18px;
-        line-height: 40px;
+        width: 24px;
+        height: 24px;
+        font-size: 22px;
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        margin-left: -12px;
+        margin-top: -12px;
+        line-height: 24px;
+        text-align: center;
     }
     
     .career #vertical-timeline .vertical-timeline-content,
     .career #education-timeline .vertical-timeline-content {
-        margin-left: 70px;
-        width: calc(100% - 70px);
+        margin-left: 73px;
+        width: calc(100% - 73px);
         float: none !important;
         padding: 20px;
+        opacity: 1 !important;
+        display: block !important;
     }
     
     .career #vertical-timeline .vertical-timeline-content::before,
@@ -782,14 +829,14 @@
     
     .career #vertical-timeline .vertical-timeline-content h2,
     .career #education-timeline .vertical-timeline-content h2 {
-        font-size: 20px;
+        font-size: 21px;
         margin-bottom: 12px;
     }
     
     .career #vertical-timeline .vertical-timeline-content p,
     .career #education-timeline .vertical-timeline-content p {
-        font-size: 14px;
-        line-height: 1.6;
+        font-size: 15px;
+        line-height: 1.65;
         margin-bottom: 10px;
         padding-left: 18px;
     }
@@ -887,42 +934,64 @@
         padding: 10px 15px;
     }
     
-    /* Timeline adjustments */
+    /* Timeline adjustments - force visibility */
     .career #vertical-timeline::before,
     .career #education-timeline::before {
         left: 20px !important;
         width: 2px;
     }
     
+    /* Force timeline blocks to be visible */
+    .career #vertical-timeline .vertical-timeline-block,
+    .career #education-timeline .vertical-timeline-block {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+    }
+    
+    /* Force icons to be visible */
     .career #vertical-timeline .vertical-timeline-icon,
     .career #education-timeline .vertical-timeline-icon {
         left: 5px;
-        width: 32px;
-        height: 32px;
+        width: 42px;
+        height: 42px;
+        opacity: 1 !important;
+        transform: scale(1) !important;
     }
     
     .career #vertical-timeline .vertical-timeline-icon i,
     .career #education-timeline .vertical-timeline-icon i {
-        font-size: 14px;
-        line-height: 32px;
+        width: 20px;
+        height: 20px;
+        font-size: 18px;
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        margin-left: -10px;
+        margin-top: -10px;
+        line-height: 20px;
+        text-align: center;
     }
     
     .career #vertical-timeline .vertical-timeline-content,
     .career #education-timeline .vertical-timeline-content {
-        margin-left: 50px;
-        width: calc(100% - 50px);
+        margin-left: 58px;
+        width: calc(100% - 58px);
         padding: 15px;
+        opacity: 1 !important;
+        display: block !important;
     }
     
     .career #vertical-timeline .vertical-timeline-content h2,
     .career #education-timeline .vertical-timeline-content h2 {
-        font-size: 18px;
+        font-size: 19px;
         margin-bottom: 10px;
     }
     
     .career #vertical-timeline .vertical-timeline-content p,
     .career #education-timeline .vertical-timeline-content p {
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 1.6;
         padding-left: 15px;
         margin-bottom: 8px;
     }
