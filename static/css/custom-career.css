@@ -519,6 +519,55 @@
 /*--------------------------------------------------------------
 # Reference Modal Styles
 --------------------------------------------------------------*/
+.reference-modal .modal-dialog {
+    max-width: 900px;
+    width: 96%;
+    margin: 20px auto;
+}
+
+@media (min-width: 1600px) {
+    .reference-modal .modal-dialog {
+        max-width: 950px;
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .reference-modal .modal-dialog {
+        max-width: 900px;
+        width: 70%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .reference-modal .modal-dialog {
+        max-width: 850px;
+        width: 85%;
+        margin: 18px auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .reference-modal .modal-dialog {
+        width: 92%;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .reference-modal .modal-dialog {
+        width: 96%;
+        margin: 12px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .reference-modal .modal-dialog {
+        width: 98%;
+        margin: 10px auto;
+    }
+}
+
 .reference-modal .modal-content {
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -558,8 +607,8 @@
 
 .reference-modal .modal-body {
     padding: 0;
-    min-height: 600px;  /* Reduced from 700px */
-    max-height: 80vh;  /* Reduced from 90vh */
+    min-height: 700px;
+    max-height: 85vh;
     background: #525252;
     position: relative;
     overflow: hidden;
@@ -571,8 +620,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 600px;  /* Reduced from 700px */
-    height: 75vh;  /* Reduced from 85vh */
+    min-height: 700px;
+    height: 80vh;
     color: #fff;
     background: #525252;
 }
@@ -594,8 +643,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 600px;  /* Reduced from 700px */
-    height: 75vh;  /* Reduced from 85vh */
+    min-height: 700px;
+    height: 80vh;
     padding: 40px;
     text-align: center;
     background: #525252;
@@ -625,9 +674,9 @@
 
 .pdf-viewer-container {
     width: 100%;
-    height: 75vh;
-    min-height: 600px;
-    max-height: 750px;
+    height: 80vh;
+    min-height: 700px;
+    max-height: 850px;
     background: #525252;
     position: relative;
     overflow: auto;  /* Enable scrolling for multi-page PDFs */
@@ -636,7 +685,7 @@
 .pdf-viewer {
     width: 100%;
     height: 100%;
-    min-height: 600px;
+    min-height: 700px;
     border: none;
     background: #fff;
     display: block;
@@ -859,9 +908,8 @@
     
     /* Reference modal adjustments */
     .reference-modal .modal-dialog {
-        margin: 10px;
-        max-width: 100%;
-        width: 100%;
+        margin: 12px auto;
+        width: 96%;
     }
     
     .reference-badge {

@@ -83,6 +83,261 @@
     font-weight: 700;
 }
 
+/* CV Button */
+.cv-button-wrapper {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.btn-cv {
+    background-color: #00a6d2;
+    color: #ffffff;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-cv i {
+    font-size: 16px;
+}
+
+.btn-cv:hover {
+    background-color: #0088b0;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 166, 210, 0.3);
+}
+
+.btn-cv:active {
+    transform: translateY(0);
+}
+
+/* CV Modal - Same style as Reference Modal */
+.cv-modal .modal-dialog {
+    max-width: 900px;
+    width: 96%;
+    margin: 20px auto;
+}
+
+@media (min-width: 1600px) {
+    .cv-modal .modal-dialog {
+        max-width: 950px;
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .cv-modal .modal-dialog {
+        max-width: 900px;
+        width: 70%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .cv-modal .modal-dialog {
+        max-width: 850px;
+        width: 85%;
+        margin: 18px auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .cv-modal .modal-dialog {
+        width: 92%;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .cv-modal .modal-dialog {
+        width: 96%;
+        margin: 12px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-modal .modal-dialog {
+        width: 98%;
+        margin: 10px auto;
+    }
+}
+
+.cv-modal .modal-content {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.cv-modal .modal-header {
+    background: linear-gradient(135deg, #046b99 0%, #00a6d2 100%);
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 20px 25px;
+    border-bottom: none;
+}
+
+.cv-modal .modal-header .close {
+    color: #fff;
+    opacity: 0.8;
+    text-shadow: none;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.cv-modal .modal-header .close:hover {
+    opacity: 1;
+}
+
+.cv-modal .modal-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.cv-modal .modal-title i {
+    margin-right: 10px;
+    color: #f9aa43;
+}
+
+.cv-modal .modal-body {
+    padding: 0;
+    min-height: 700px;
+    max-height: 85vh;
+    background: #525252;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Loading State */
+.cv-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+    height: 80vh;
+    color: #fff;
+    background: #525252;
+}
+
+.cv-loader i {
+    color: #046b99;
+    margin-bottom: 20px;
+}
+
+.cv-loader p {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Error State */
+.cv-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+    height: 80vh;
+    padding: 40px;
+    text-align: center;
+    background: #525252;
+}
+
+.cv-error i {
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+.cv-error p {
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.cv-error .error-message {
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* PDF Viewer Container */
+.cv-content {
+    width: 100%;
+    height: 100%;
+}
+
+.pdf-viewer-container {
+    width: 100%;
+    height: 80vh;
+    min-height: 700px;
+    max-height: 850px;
+    background: #525252;
+    position: relative;
+    overflow: auto;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    border: none;
+    background: #fff;
+    display: block;
+    transform: scale(1);
+    transform-origin: top left;
+}
+
+/* Modal Footer */
+.cv-modal .modal-footer {
+    padding: 15px 25px;
+    background: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.cv-modal .modal-footer .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.cv-modal .modal-footer .btn-primary {
+    background: #046b99;
+    border-color: #046b99;
+}
+
+.cv-modal .modal-footer .btn-primary:hover {
+    background: #035580;
+    border-color: #035580;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(4, 107, 153, 0.3);
+}
+
+.cv-modal .modal-footer .btn-default {
+    border-color: #ddd;
+}
+
+.cv-modal .modal-footer .btn-default:hover {
+    background: #f5f5f5;
+    border-color: #bbb;
+}
+
+.cv-modal .modal-footer .btn.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
 .about .headshot {
     border-radius: 10px;
     width: 100%;
@@ -107,6 +362,11 @@
     .about .headshot {
         max-width: min(350px, 85vw);
         margin-bottom: 20px;
+    }
+    
+    .cv-modal .modal-dialog {
+        width: 95%;
+        margin: 30px auto;
     }
 }
 
@@ -148,6 +408,32 @@
     
     .about .headshot {
         max-width: min(280px, 80vw);
+    }
+    
+    .btn-cv {
+        font-size: 14px;
+        padding: 11px 24px;
+    }
+    
+    .cv-loader,
+    .cv-error {
+        min-height: 500px;
+        height: 70vh;
+    }
+    
+    .cv-modal .modal-body {
+        min-height: 500px;
+        max-height: 80vh;
+    }
+    
+    .pdf-viewer-container {
+        height: 70vh;
+        min-height: 500px;
+        max-height: 700px;
+    }
+    
+    .pdf-viewer {
+        min-height: 500px;
     }
 }
 

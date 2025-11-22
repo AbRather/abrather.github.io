@@ -229,6 +229,7 @@
 
 .btn-contact:hover {
     background-color: #0088b0;
+    color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(0, 166, 210, 0.3);
 }

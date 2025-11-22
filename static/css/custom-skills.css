@@ -25,11 +25,11 @@
 }
 
 .skills .section-title h2 {
-  font-size: clamp(1.75rem, 6vw, 2.25rem);
+  font-size: clamp(28px, 5vw, 36px);
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   position: relative;
   color: #046b99;
 }
@@ -381,13 +381,13 @@
   }
   
   .skills .section-title {
-    padding-bottom: 45px;
+    padding-bottom: 30px;
   }
   
   .skills-grid {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 40px;
     gap: 28px;
   }
   

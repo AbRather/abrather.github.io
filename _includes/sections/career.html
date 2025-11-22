@@ -64,7 +64,7 @@
                 {% for career in site.data.careers %}
                 {% if career.reference and career.reference.available %}
                 <div class="modal fade reference-modal" id="referenceModal{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="referenceModalLabel{{ forloop.index }}">
-                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-dialog modal-xl" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -88,7 +88,7 @@
                                     <div class="pdf-viewer-container">
                                         <embed 
                                             class="pdf-viewer" 
-                                            data-src="{{ site.baseurl }}/static/pdf/references/{{ career.reference.filename }}#zoom=100&view=FitH&toolbar=1"
+                                            data-src="{{ site.baseurl }}/static/pdf/references/{{ career.reference.filename }}#view=Fit&toolbar=1"
                                             id="pdfFrame{{ forloop.index }}"
                                             type="application/pdf"
                                             width="100%"

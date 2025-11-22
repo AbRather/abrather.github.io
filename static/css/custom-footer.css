@@ -50,6 +50,16 @@ footer.site-footer .footer-links li {
     margin-bottom: 10px;
 }
 
+footer.site-footer .footer-col .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+footer.site-footer .footer-col .row > div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 footer.site-footer .footer-links a {
     color: #ecf0f1;
     text-decoration: none;
