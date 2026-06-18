@@ -30,8 +30,8 @@ language_skills:
     level: 9
     description: "Fluent - Native Speaker"
   - name: Arabic
-    level: 4
-    description: "Basic - Elementary"
+    level: 6
+    description: "Intermediate - Conversational"
 
 # List-based skills (for knowledge areas)
 knowledge_areas:
