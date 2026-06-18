@@ -26,7 +26,10 @@ language_skills:
   - name: Hindi
     level: 9
     description: "Fluent - Native Speaker"
-  - name: Urdu/Kashmiri
+  - name: Kashmiri
+    level: 9
+    description: "Fluent - Native Speaker"
+  - name: Urdu
     level: 9
     description: "Fluent - Native Speaker"
   - name: Arabic
