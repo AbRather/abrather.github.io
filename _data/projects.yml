@@ -213,7 +213,7 @@
   github: ''
   img: ''
 # ========================== Credit Card Dashboard ==========================
-- name: 'Real-Time data analysis Dashboard'
+- name: 'Real-Time Data Analysis Dashboard'
   i18n: 'credit_card_dashboard'
   icon: 'fa fa-line-chart'
   desc: 'Development of a comprehensive Power BI dashboard using SQL and DAX to monitor financial key figures and customer behavior'
