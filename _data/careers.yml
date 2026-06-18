@@ -7,8 +7,8 @@
     details:
       - Developing and automating data analysis pipelines in Python (Pandas, Matplotlib) to process and visualize experimental data from materials science research.
       - My work supports high-profile projects like HyTank (an Airbus project) and WaGuPa, focusing on materials for cryogenic liquid hydrogen (LH2) storage.
-      - Designed, built, and commissioned a high-pressure helium permeation test stand, integrating all hardware, sensors, and DAQ systems from the ground up.
-      - Conducting cryogenic material characterization for the HyTank project, including tensile tests on composites submerged in liquid nitrogen (−196°C).
+      - Designed, built, and commissioned a high-pressure helium permeation test stand, integrating all hardware, sensors from the ground up.
+      - Conducting cryogenic material characterization for the HyTank project, including permeability tests on composites specimen.
       - Performing coupled Ansys (CFD) simulations for material analysis in composite tank structures.
     i18n: faser_des
   date:
