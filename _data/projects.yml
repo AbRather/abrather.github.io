@@ -143,42 +143,7 @@
   github: ''
   img: ''
 
-  # ========================== Credit Card Dashboard ==========================
-- name: 'Real-Time Credit Card Financial Dashboard'
-  i18n: 'credit_card_dashboard'
-  icon: 'fa fa-line-chart'
-  desc: 'Development of a comprehensive Power BI dashboard using SQL and DAX to monitor financial key figures and customer behavior'
-  details: 'This project aimed to bridge the gap between raw transaction data and actionable business insights by developing a real-time monitoring system for credit card operations.
-   The solution enables stakeholders to control project key figures and visualize complex financial data, facilitating faster and more accurate internal management reporting.
-   By synthesizing data from over 46 million transactions, the dashboard provides immediate visibility into $57 million in revenue and $8 million in interest earned.
-   The analysis revealed critical risk segments, including a 6.06% delinquency rate, allowing for the implementation of data-driven risk mitigation strategies.
-    <br>
-   From a technical perspective, the project involved orchestrating a complete ETL pipeline. Raw data was imported, cleaned, and structured within a PostgreSQL database using SQL. 
-   Advanced DAX functions were defined to calculate dynamic measures for weekly trends and customer segmentation. 
-   The final Power BI visualization automates the reporting process, ensuring data consistency and plausibility while offering interactive filtering 
-   by geography, card category, and customer demographics.'
-
-  technologies:
-    - 'Power BI'
-    - 'SQL (PostgreSQL)'
-    - 'DAX'
-    - 'ETL Pipelines'
-    - 'Data Modeling'
-    - 'Data Quality Management'
-    - 'Financial Analysis'
-    - 'Data Visualization'
-  features:
-    - 'Automated data extraction and transformation using SQL'
-    - 'Real-time monitoring of $57M revenue and transaction trends'
-    - 'Dynamic KPI calculation using advanced DAX measures'
-    - 'Interactive customer segmentation (Age, Job, Income)'
-    - 'Risk analysis and delinquency rate tracking'
-    - 'Weekly trend reporting for internal management'
-
-  url: ''
-  #github: 'https://github.com/rishabhnmishra/Credit_Card_Financial_Dashboard/tree/main'
-  img: ''
-
+  
   # ========================== Heat Transfer Projects ==========================
 - name: 'Experimental Heat Transfer & Thermal Management Analysis'
   i18n: 'heat_transfer_analysis'
@@ -246,4 +211,39 @@
 
   url: ''
   github: ''
+  img: ''
+# ========================== Credit Card Dashboard ==========================
+- name: 'Real-Time data analysis Dashboard'
+  i18n: 'credit_card_dashboard'
+  icon: 'fa fa-line-chart'
+  desc: 'Development of a comprehensive Power BI dashboard using SQL and DAX to monitor financial key figures and customer behavior'
+  details: 'This project aimed to bridge the gap between raw transaction data and actionable business insights by developing a real-time monitoring system for credit card operations.
+   The solution enables stakeholders to control project key figures and visualize complex financial data, facilitating faster and more accurate internal management reporting.
+   By synthesizing data from over 46 million transactions, the dashboard provides immediate visibility into $57 million in revenue and $8 million in interest earned.
+   The analysis revealed critical risk segments, including a 6.06% delinquency rate, allowing for the implementation of data-driven risk mitigation strategies.
+    <br>
+   From a technical perspective, the project involved orchestrating a complete ETL pipeline. Raw data was imported, cleaned, and structured within a PostgreSQL database using SQL. 
+   Advanced DAX functions were defined to calculate dynamic measures for weekly trends and customer segmentation. 
+   The final Power BI visualization automates the reporting process, ensuring data consistency and plausibility while offering interactive filtering 
+   by geography, card category, and customer demographics.'
+
+  technologies:
+    - 'Power BI'
+    - 'SQL (PostgreSQL)'
+    - 'DAX'
+    - 'ETL Pipelines'
+    - 'Data Modeling'
+    - 'Data Quality Management'
+    - 'Financial Analysis'
+    - 'Data Visualization'
+  features:
+    - 'Automated data extraction and transformation using SQL'
+    - 'Real-time monitoring of $57M revenue and transaction trends'
+    - 'Dynamic KPI calculation using advanced DAX measures'
+    - 'Interactive customer segmentation (Age, Job, Income)'
+    - 'Risk analysis and delinquency rate tracking'
+    - 'Weekly trend reporting for internal management'
+
+  url: ''
+  #github: 'https://github.com/rishabhnmishra/Credit_Card_Financial_Dashboard/tree/main'
   img: ''
