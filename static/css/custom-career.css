@@ -202,14 +202,20 @@
     font-weight: bold;
 }
 
-/* Initial state - hidden and positioned */
+/* Initial state - blocks start visible by default on desktop */
 .career #vertical-timeline .vertical-timeline-block {
-    opacity: 0;
-    transform: translateX(-50px);
+    opacity: 1;
+    transform: translateX(0);
     transition: all 0.6s ease-out;
 }
 
-.career #vertical-timeline .vertical-timeline-block:nth-child(even) {
+/* Only apply hidden state on scroll-based animation trigger */
+.career #vertical-timeline .vertical-timeline-block.scroll-hidden {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.career #vertical-timeline .vertical-timeline-block.scroll-hidden:nth-child(even) {
     transform: translateX(50px);
 }
 
@@ -221,9 +227,14 @@
 
 /* Icon animation */
 .career #vertical-timeline .vertical-timeline-icon {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease-out;
+}
+
+.career #vertical-timeline .vertical-timeline-block.scroll-hidden .vertical-timeline-icon {
     opacity: 0;
     transform: scale(0);
-    transition: all 0.5s ease-out;
 }
 
 .career #vertical-timeline .vertical-timeline-block.animate-in .vertical-timeline-icon {
@@ -307,31 +318,25 @@
     transition: color 0.3s ease;
 }
 
-/* Initial state - hidden and positioned for animation */
+/* Initial state - education blocks start visible */
 .career #education-timeline .vertical-timeline-block {
     opacity: 1;
     transform: translateX(0);
     transition: all 0.6s ease-out;
 }
 
-/* Animation will override when triggered */
-.career #education-timeline .vertical-timeline-block:not(.animate-in) {
+/* Only apply hidden state on scroll-based animation trigger */
+.career #education-timeline .vertical-timeline-block.scroll-hidden {
     opacity: 0;
     transform: translateX(-50px);
 }
 
-/* Show education items when tab is active (fallback) */
-.career .tab-pane.active #education-timeline .vertical-timeline-block {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.career #education-timeline .vertical-timeline-block:nth-child(even):not(.animate-in) {
+.career #education-timeline .vertical-timeline-block.scroll-hidden:nth-child(even) {
     transform: translateX(50px);
 }
 
-/* Show even items when tab is active (fallback) */
-.career .tab-pane.active #education-timeline .vertical-timeline-block:nth-child(even) {
+/* Show education items when tab is active (fallback) */
+.career .tab-pane.active #education-timeline .vertical-timeline-block {
     opacity: 1;
     transform: translateX(0);
 }
@@ -349,8 +354,8 @@
     transition: all 0.5s ease-out;
 }
 
-/* Hide icons only before animation */
-.career #education-timeline .vertical-timeline-block:not(.animate-in) .vertical-timeline-icon {
+/* Hide icons only when scroll-hidden */
+.career #education-timeline .vertical-timeline-block.scroll-hidden .vertical-timeline-icon {
     opacity: 0;
     transform: scale(0);
 }
@@ -999,9 +1004,9 @@
     /* Force icons to be visible */
     .career #vertical-timeline .vertical-timeline-icon,
     .career #education-timeline .vertical-timeline-icon {
-        left: 5px;
-        width: 42px;
-        height: 42px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
         opacity: 1 !important;
         transform: scale(1) !important;
     }
@@ -1010,94 +1015,36 @@
     .career #education-timeline .vertical-timeline-icon i {
         width: 20px;
         height: 20px;
-        font-size: 18px;
-        display: block;
-        position: relative;
+        font-size: 16px;
         left: 50%;
         top: 50%;
         margin-left: -10px;
         margin-top: -10px;
         line-height: 20px;
-        text-align: center;
     }
     
     .career #vertical-timeline .vertical-timeline-content,
     .career #education-timeline .vertical-timeline-content {
-        margin-left: 58px;
-        width: calc(100% - 58px);
+        margin-left: 60px;
+        width: calc(100% - 60px);
+        float: none !important;
         padding: 15px;
-        opacity: 1 !important;
-        display: block !important;
+        font-size: 14px;
     }
     
     .career #vertical-timeline .vertical-timeline-content h2,
     .career #education-timeline .vertical-timeline-content h2 {
-        font-size: 19px;
+        font-size: 18px;
         margin-bottom: 10px;
     }
     
     .career #vertical-timeline .vertical-timeline-content p,
     .career #education-timeline .vertical-timeline-content p {
         font-size: 14px;
-        line-height: 1.6;
-        padding-left: 15px;
         margin-bottom: 8px;
-    }
-    
-    .career #vertical-timeline .vertical-timeline-content p::before {
-        font-size: 12px;
-    }
-    
-    .career #vertical-timeline .vertical-timeline-content .vertical-date,
-    .career #education-timeline .vertical-timeline-content .vertical-date {
-        font-size: 12px;
-    }
-    
-    .career #vertical-timeline .vertical-timeline-content .vertical-date > span:first-child {
-        padding: 4px 8px;
-        font-size: 12px;
-    }
-    
-    .career #vertical-timeline .vertical-timeline-content .vertical-date small {
-        font-size: 13px;
-        margin-top: 5px;
-    }
-    
-    /* Reference badge */
-    .reference-badge i {
-        font-size: 14px;
-    }
-    
-    /* Reference modal */
-    .pdf-viewer-container {
-        height: 60vh;
-        min-height: 400px;
-    }
-    
-    .reference-loader,
-    .reference-error {
-        min-height: 400px;
-        height: 60vh;
     }
     
     .reference-modal .modal-body {
         min-height: 400px;
-        max-height: 70vh;
     }
-    
-    .reference-badge[title]:hover::after {
-        display: none; /* Hide tooltip on very small screens */
-    }
-}
-
-/* Animation for modal appearance */
-.reference-modal.fade .modal-dialog {
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-    transform: scale(0.95);
-    opacity: 0;
-}
-
-.reference-modal.fade.in .modal-dialog {
-    transform: scale(1);
-    opacity: 1;
 }
